@@ -22,6 +22,7 @@ close but never the same. </br>
 The reason is simple: </br>
 CPU has 10 Million Interrupts per second, </br>
 Audio Algorithms do Not like to be interrupted. </br>
+Maybe L1 & L2 cache are Not Big Enough, dont know exactly. </br>
 
 Digital Audio is a Fast Sample & Hold,  </br>
 Interrupts create another Sample & Hold on top of that Sample & Hold. </br>
@@ -32,7 +33,6 @@ Video must be buffered in buckets to be displayed, very high speed serial,
 to very low speed parallel, but Audio cannot be buffered the same way. </br>
 Some people think that processing oversampled can solve the problem, but does Not, </br>
 the problem is Not frequency, is Interrupts. </br>
-
 
 The idea is to keep the S1000 alive, but there are many obstacles... </br>
 #1. There is No Schematics available. </br>
