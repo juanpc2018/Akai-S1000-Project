@@ -22,7 +22,8 @@ close but never the same. </br>
 The reason is simple: </br>
 CPU has 10 Million Interrupts per second, </br>
 Audio Algorithms do Not like to be interrupted. </br>
-Maybe L1 & L2 cache are Not Big Enough, dont know exactly. </br>
+Maybe L1 cache is Not Big Enough, </br>
+There is something lost, or distorted in translation. </br> 
 
 Digital Audio is a Fast Sample & Hold,  </br>
 Interrupts create another Sample & Hold on top of that Sample & Hold. </br>
