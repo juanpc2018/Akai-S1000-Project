@@ -65,9 +65,9 @@ The Project RoadMap. </br>
 2. Recreate all boards in KiCAd or similar, Target3001!, etc... </br>
 3. Reduce Size, Replace all CMOS logic with FPGA. </br> mini Akai S1000, similar to PiAmiga and A1500 Amiga cases. 
 4. design a complete SMT version. </br>
-5. replace the screen with other easier to find screens,  </br>
+5. replace hard to find components with easier to find components, like screen, </br>
    similar to Gotek that allows different screen types. </br>
-6. improve air flow design.
+6. improve air flow design with thermal camera.
 
 The project started long ago.. but Not Open Source, and incomplete. </br>
 Example: someone in Austrailia is making 32MB RAM boards for S1000 </br>
