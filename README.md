@@ -73,21 +73,26 @@ The project started long ago.. but Not Open Source, and incomplete. </br>
 Example: someone in Austrailia is making 32MB RAM boards for S1000 </br>
 https://www.firstpr.com.au/rwi/smem/  </br>
 S1000 allows 4x 8MB or 1x 32MB. </br>
-There were many 3rd party 8MB developers back in the day. </br>
+There were many 3rd party 8MB developers back in the day, </br>
+most used different chipset, some had resistor networks, capacitors, others Not, </br>
+some had electrolitics, others tantalum, some branded, some generic. </br>
+i have Generic 4-layer PCB, </br>
+16x Ti TMS44100DJ PCP 4063 IN -80 + 2x 74HC541 + 2x 74AC541 + 3x Res Net 4-101GB. </br> 
 
 32MB of RAM is plenty for a single instrument. </br>
 IF want a GM, GS or XG compatible SoundFont.sf2 with all 128 instruments, </br>
 is possible to find and convert many different SoundFonts available Online. </br>
-older soundcards SoundBlasters and Advanced Gravis had 2MB, 4MB, 8MB soundfonts available. </br>
+older soundcards Sound Blasters and Advanced Gravis had 2MB, 4MB, 8MB soundfonts available. </br>
 There is a Software that allows to Read & Write "Translate" many different formats. </br>
 https://www.fmjsoft.com/awavestudio.html#main </br>
 
-SCSI2SD project originally designed for Amiga and Macintosh computers, </br>
+SCSI2SD project & others originally designed for Amiga and Macintosh computers, </br>
 works for S1000, to emulate a HardDrive or scsi CD-ROM. </br>
 https://www.gee-jee.net/?m=201906 </br>
 
 The SCSI board has MB89352P + SCSI2SD </br>
-there was a very nice SCSI software analyzer somewhere on the Net. </br>
+
+there was a nice SCSI software analyzer somewhere on the Net. </br>
 https://datasheet.datasheetarchive.com/originals/distributors/Datasheets-111/DSAP0031844.pdf </br>
 https://datasheet.datasheetarchive.com/originals/distributors/Datasheets-X/DSA842000-248.pdf </br>
 
