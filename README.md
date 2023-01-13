@@ -19,10 +19,10 @@ CPU vs. DSP </br>
 No matter how good the code is, </br>
 CPU can never have the same result, </br>
 close but never the same. </br>
-The reason is simple: </br>
+The reasons are simple: </br>
 CPU has 10 Million Interrupts per second, </br>
 Audio Algorithms do Not like to be interrupted. </br>
-Maybe L1 cache is Not Big Enough, </br>
+L1 cache is Not Big Enough, </br>
 There is something lost, or distorted in the process. </br> 
 
 Digital Audio is a Fast Sample & Hold,  </br>
