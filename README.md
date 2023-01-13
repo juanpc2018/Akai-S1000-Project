@@ -87,14 +87,15 @@ older soundcards Sound Blasters and Advanced Gravis had 2MB, 4MB, 8MB upto 32MB 
 some better than others... some 8MB were better than some 32MB, </br>
 here some .SF2 examples: </br>
 http://www.arachnosoft.com/main/soundfont.php </br>
+https://www.vogons.org/viewtopic.php?p=707079 </br>
 https://www.reasonbanks.com/refill_proVitamin_demo.html </br>
 https://musical-artifacts.com/artifacts/538 </br>
 http://ntonyx.com/sf_f.htm </br>
 https://ia601004.us.archive.org/4/items/soundfonts_201910/8mbgm_enhanced18.sf2 </br>
 https://archive.org/download/500-soundfonts-full-gm-sets </br>
 
-Some people Remember Old Games MIDI music in a certein way, others in other way, different Guitars, or FM </br>
-There are many DOOM test online. </br>
+Some people Remember Old Games MIDI music in a certain way, others in other way, different Guitars, MT-32, FM, CZ-101 </br>
+There are many DOOM, Sierra & Prince of Persia Game tests online. </br>
 Software that allows to Read & Write "Translate" different formats. </br>
 https://www.fmjsoft.com/awavestudio.html#main </br>
 
