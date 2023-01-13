@@ -90,7 +90,7 @@ SCSI2SD project & others originally designed for Amiga and Macintosh computers, 
 works for S1000, to emulate a HardDrive or scsi CD-ROM. </br>
 https://www.gee-jee.net/?m=201906 </br>
 
-The SCSI board has MB89352P + SCSI2SD </br>
+The SCSI board has MB89352P </br>
 
 there was a nice SCSI software analyzer somewhere on the Net. </br>
 https://datasheet.datasheetarchive.com/originals/distributors/Datasheets-111/DSAP0031844.pdf </br>
