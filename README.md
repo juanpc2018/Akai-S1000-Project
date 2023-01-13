@@ -69,7 +69,7 @@ The Project RoadMap. </br>
    similar to Gotek that allows different screen types. </br>
 6. improve air flow design.
 
-The project has started long ago.. but Not Open Source, and incomplete. </br>
+The project started long ago.. but Not Open Source, and incomplete. </br>
 Example: someone in Austrailia is making 32MB RAM boards for S1000 </br>
 https://www.firstpr.com.au/rwi/smem/  </br>
 S1000 allows 4x 8MB or 1x 32MB. </br>
