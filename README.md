@@ -14,7 +14,7 @@ https://akaizer.blogspot.com </br>
 No WayBack archive, will upload later. </br>
 
 the problem with that software vs. Real S1000 Hardware, Real EPROM v2.2 </br>
-is the same problem all software has: </br>
+is the same problem with all software: </br>
 CPU vs. DSP </br>
 No matter how good the code is, </br>
 CPU can never have the same result of DSP, </br>
