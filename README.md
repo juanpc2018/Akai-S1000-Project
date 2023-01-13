@@ -29,12 +29,12 @@ There is something lost, or distorted in the process. </br>
 
 Digital Audio is a Fast Sample & Hold,  </br>
 Interrupts create another Sample & Hold on top of that Sample & Hold. </br>
-having Real AD/DA converters add analog flavor/taste/smell to digital samples.  </br>
-That problem is Not as noticieable in Video, because Video goes at 30fps, 60fps, 120fps, </br>
+having Real AD/DA converters add analog flavor/taste/smell to digital.  </br>
+That problem is Not noticieable in Video, because Video goes at 24fps, 30fps, 60fps, 120fps, 240fps. </br>
 instead audio goes at 44100, 48000, 96000 samples per second, and is played in real time, </br>
 Video must be buffered in buckets to be displayed, very high speed serial, </br>
 to very low speed parallel, but Audio cannot be buffered the same way. </br>
-Some people think that processing oversampled can solve the problem, but does Not, </br>
+Some people think that processing with Oversampling can solve the problem, but does Not, </br>
 the problem is Not frequency, is Interrupts. </br>
 
 The idea is to keep the S1000 alive, but there are many obstacles... </br>
