@@ -58,6 +58,7 @@ The Project RoadMap. </br>
 4. design a complete SMT version. </br>
 5. replace the screen with other easier to find screens,  </br>
    similar to Gotek that allows different screen types. </br>
+6. improve air flow design.
 
 The project has started long ago.. but Not Open Source, and incomplete. </br>
 Example: someone in Austrailia is making 32MB RAM boards for S1000 </br>
