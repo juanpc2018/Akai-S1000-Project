@@ -80,10 +80,19 @@ i have Generic 4-layer PCB, </br>
 16x Ti TMS44100DJ PCP 4063 IN -80 + 2x 74HC541 + 2x 74AC541 + 3x Res Net 4-101GB. </br> 
 
 32MB of RAM is plenty for a single instrument. </br>
-IF want a GM, GS or XG compatible SoundFont.sf2 with all 128 instruments, </br>
+A) you can download a very large SoundFont NugeKite and split the instruments, 
+B) IF want a complete GM, GS or XG compatible SoundFont.sf2 with all 128 instruments + Drum </br>
 is possible to find and convert many different SoundFonts available Online. </br>
-older soundcards Sound Blasters and Advanced Gravis had 2MB, 4MB, 8MB soundfonts available. </br>
-There is a Software that allows to Read & Write "Translate" many different formats. </br>
+older soundcards Sound Blasters and Advanced Gravis had 2MB, 4MB, 8MB upto 32MB soundfonts available. </br>
+some better than others... some 8MB were better than some 32MB, </br>
+here some .SF2 examples: </br>
+https://musical-artifacts.com/artifacts/538 </br>
+http://ntonyx.com/sf_f.htm </br>
+https://ia601004.us.archive.org/4/items/soundfonts_201910/8mbgm_enhanced18.sf2 </br>
+https://archive.org/download/500-soundfonts-full-gm-sets </br>
+
+Some people Remember Older Games MIDI music a certein way, others in other FM way </br>
+There is a Software that allows to Read & Write "Translate" different formats. </br>
 https://www.fmjsoft.com/awavestudio.html#main </br>
 
 SCSI2SD project & others originally designed for Amiga and Macintosh computers, </br>
