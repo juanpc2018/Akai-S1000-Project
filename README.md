@@ -5,7 +5,7 @@ and maybe try to recreate the S1000
 
 The reason is simple: </br>
 there is a project called Akaizer v2.4 for Windows </br>
-to emulate the Time Strech algorithm of the S1000 from EPROM v2.2 </br>
+to emulate the Time Strech algorithm of the S1000 introduced in EPROM v2.2 </br>
 https://the-akaizer-project.blogspot.com/ </br>
 https://drive.google.com/file/d/1gCJNSGe0BPfxVrWPJ2NzykjbzqH2iBag/view </br>
 
