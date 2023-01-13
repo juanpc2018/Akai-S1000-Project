@@ -8,7 +8,6 @@ there is a project called Akaizer v2.4 for Windows </br>
 to emulate the Time Strech algorithm of the S1000 introduced in EPROM v2.2 </br>
 https://the-akaizer-project.blogspot.com/ </br>
 https://drive.google.com/file/d/1gCJNSGe0BPfxVrWPJ2NzykjbzqH2iBag/view </br>
-
 there were versions for OSX & Linux. </br>
 https://akaizer.blogspot.com </br>
 No WayBack archive, will upload later. </br>
@@ -17,14 +16,22 @@ the problem with that software vs. Real S1000 Hardware, Real EPROM v2.2 </br>
 is the same problem with all software: </br>
 CPU vs. DSP </br>
 No matter how good the code is, </br>
-CPU can never have the same result of DSP, </br>
+CPU can never have the same result, </br>
 close but never the same. </br>
 The reason is simple: </br>
 CPU has 10Million Interrupts per second, </br>
 Audio Algorithms do Not like to be interrupted. </br>
-Digital Audio is a very fast Sample & Hold,  </br>
+
+Digital Audio is a Fast Sample & Hold,  </br>
 Interrupts create another Sample & Hold on top of that Sample & Hold. </br>
 also having Real AD/DA converters add analog flavor/taste/smell to digital samples.  </br>
+That problem is Not as noticieable in Video, because Video goes at 30fps, 60fps, 120fps, </br>
+instead audio goes at 44100, 48000, 96000 samples per second, and is played in real time, </br>
+Video must be buffered in buckets to be displayed, very high speed serial, 
+to very low speed parallel, but Audio cannot be buffered the same way. </br>
+Some people think that processing oversampled can solve the problem, but does Not, </br>
+the problem is Not frequency, is Interrupts. </br>
+
 
 The idea is to keep the S1000 alive, but there are many obstacles... </br>
 #1. There is No Schematics available. </br>
