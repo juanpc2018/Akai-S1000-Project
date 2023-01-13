@@ -1,6 +1,6 @@
 # Akai S1000 Project
 
-The idea is to put all information about Akai S1000 in 1 place...
+The idea is to put all information about the Akai S1000 in 1 place...
 and maybe try to recreate the S1000
 
 The reason is simple: </br>
