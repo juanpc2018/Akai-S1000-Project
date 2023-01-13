@@ -11,15 +11,16 @@ https://drive.google.com/file/d/1gCJNSGe0BPfxVrWPJ2NzykjbzqH2iBag/view </br>
 there were versions for OSX & Linux. </br>
 https://akaizer.blogspot.com </br>
 No WayBack archive, will upload later. </br>
+https://chilloutwithbeats.com/en/akaizer-intro/ </br>
 
-the problem with that software vs. Real S1000 Hardware, Real EPROM v2.2 </br>
+the problem with Software vs. Real S1000 Hardware, Real EPROM v2.2 </br>
 is the same problem with all software: </br>
 CPU vs. DSP </br>
 No matter how good the code is, </br>
 CPU can never have the same result, </br>
 close but never the same. </br>
 The reason is simple: </br>
-CPU has 10Million Interrupts per second, </br>
+CPU has 10 Million Interrupts per second, </br>
 Audio Algorithms do Not like to be interrupted. </br>
 
 Digital Audio is a Fast Sample & Hold,  </br>
