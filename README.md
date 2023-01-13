@@ -57,12 +57,13 @@ The Project RoadMap. </br>
 3. Reduce Size, Replace all CMOS logic with FPGA. </br> mini Akai S1000, similar to PiAmiga and A1500 Amiga cases. 
 4. design a complete SMT version. </br>
 5. replace the screen with other easier to find screens,  </br>
-   similar to Gotek that allows different screens. </br>
+   similar to Gotek that allows different screen types. </br>
 
 The project has started long ago.. but Not Open Source, and incomplete. </br>
 Example: someone in Austrailia is making 32MB RAM boards for S1000 </br>
 https://www.firstpr.com.au/rwi/smem/  </br>
 S1000 allows 4x 8MB or 1x 32MB. </br>
+There were many 3rd party 8MB developers back in the day. </br>
 
 32MB of RAM is plenty for a single instrument. </br>
 IF want a GM, GS or XG compatible SoundFont.sf2 with all 128 instruments, </br>
