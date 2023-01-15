@@ -101,6 +101,22 @@ There are many DOOM, Sierra & Prince of Persia Game tests online. </br>
 
 Software that allows to Read & Write "Translate" different formats. </br>
 https://www.fmjsoft.com/awavestudio.html#main </br>
+http://www.chickensys.com/translator/documentation/formatinfo/akai.html </br>
+http://www.chickensys.com/products2/software.html </br>
+https://samplerzone.com/products/millennium </br>
+https://archive.org/details/mesa_20210818 </br>
+http://oldschooldaw.com/forums/index.php?topic=2631.0 </br>
+http://web.archive.org/web/20000303000424/http://www.akaipro.com/software-MESAmac.html </br>
+http://web.archive.org/web/20000303013504/http://www.akaipro.com/software-MESApc.html </br>
+https://www.kvraudio.com/forum/viewtopic.php?t=229457 </br>
+https://web.archive.org/web/20070403104457/http://www.akaipro.com/archive_os/mesa2v2.zip </br>
+http://web.archive.org/web/20000817005312/http://www.akaipro.com/downloads.html </br>
+https://web.archive.org/web/20131010213139/http://www.hollowsun.com/gagnon/download/archive_om.html </br>
+http://macos9lives.com/smforum/index.php?topic=1255.msg15243#msg15243 </br>
+https://web.archive.org/web/20131205074601/http://www.hollowsun.com/gagnon/download/aks_dload.html </br>
+https://akais3000.wordpress.com/2010/01/01/mesa-akai-sample-editor/ </br>
+http://macos9lives.com/smforum/index.php?topic=1255.0 </br>
+
 
 SCSI2SD project & others originally designed for Amiga and Macintosh computers, </br>
 works for S1000, to emulate a HardDrive or scsi CD-ROM. </br>
