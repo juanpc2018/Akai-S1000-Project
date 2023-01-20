@@ -118,18 +118,3 @@ https://web.archive.org/web/20131205074601/http://www.hollowsun.com/gagnon/downl
 https://akais3000.wordpress.com/2010/01/01/mesa-akai-sample-editor/ </br>
 http://macos9lives.com/smforum/index.php?topic=1255.0 </br>
 
-
-SCSI2SD project & others originally designed for Amiga and Macintosh computers, </br>
-works for S1000, to emulate a HardDrive or scsi CD-ROM. </br>
-https://www.gee-jee.net/?m=201906 </br>
-
-The SCSI board has MB89352P </br>
-
-there was a nice SCSI software analyzer somewhere on the Net. </br>
-https://datasheet.datasheetarchive.com/originals/distributors/Datasheets-111/DSAP0031844.pdf </br>
-https://datasheet.datasheetarchive.com/originals/distributors/Datasheets-X/DSA842000-248.pdf </br>
-
-https://web.archive.org/web/20121122034712/http://wiki.petroskoutoupis.com/index.php5?title=SCSI_Trace </br>
-https://sourceforge.net/projects/scsitrace/files/ </br>
-
-https://scsiexplorer.com/ </br>
