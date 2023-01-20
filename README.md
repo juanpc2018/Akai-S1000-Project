@@ -102,7 +102,8 @@ havent tested vs. the more popular GM.sf2 on the net. </br>
 Some people Remember Old Games MIDI music in a certain way, others in other way, different Guitars, MT-32, FM, CZ-101 </br>
 There are many DOOM, Sierra & Prince of Persia Game tests online. </br>
 
-Software that allows to Read & Write "Translate" different formats. </br>
+Software that allows to Read & Write & "Translate" different formats. </br>
+https://sourceforge.net/projects/akaiutil/files/ </br>
 https://www.fmjsoft.com/awavestudio.html#main </br>
 http://www.chickensys.com/translator/documentation/formatinfo/akai.html </br>
 http://www.chickensys.com/products2/software.html </br>
