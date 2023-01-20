@@ -52,4 +52,8 @@ and the usual: </br>
 2x 74HC541 </br>
 2x 74AC541 </br>
 
+confirmed compatible: </br>
+Intel T21040-07 </br>
+
+
 
