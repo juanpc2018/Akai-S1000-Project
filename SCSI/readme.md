@@ -1,12 +1,15 @@
 SCSI add-on card for S1000 has External 50pin Centronics and internal 50-pin option. </br>
 External SCSI is Not required unless want to add an external SCSI CD-ROM "Obsolete", </br>
-or an external SCSI2SD v5, RaSCSI or similar that can load .iso CD-ROM images </br>
+or an external SCSI2SD v5, RaSCSI or similar that can load .iso CD-ROM images. </br>
 https://github.com/guinguin-instruments/Akai-Iso-2-SD
 
 Default SCSI card has External Connector, No Internal connector, but times change. </br>
 SCSI2SD project & others designed for Amiga, Atari and Macintosh computers, </br>
 works for S1000 to emulate a HardDrive or scsi CD-ROM. </br>
 https://www.gee-jee.net/?m=201906 </br>
+problem of this method: replacing the Floppy Drive with Gotek or HxC,
+and adding a internal SCSI2SD is removing the Digital i/o. </br>
+using external SCSI2SD or drilling a hole in the chassis is required to keep the Digital i/o board. </br> 
 
 Information about those SCSI connectors is getting hard to find.. </br>
 Found 2: </br>
