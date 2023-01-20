@@ -35,3 +35,10 @@ Diameter: 0.1000" (2.54) </br>
 0.1000" (2.54) from Bottom PCB edge. </br>
 0.6000" (15.24mm) from side PCB edge. </br>
 1.2000" (30.48mm) from side PCB edge. </br>
+
+Akai S1000 allows 1x32MB or 4x8MB memory modules.</br>
+what is better? </br>
+Thermally 1x32MB is better, less cards restricting airflow. </br>
+IF S1000 can access parallel "at same time" all 4x8MB cards </br>
+4x8MB could be faster to Read/Write, even using slower -80ns memory. </br>
+tests needed.
