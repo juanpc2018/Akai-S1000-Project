@@ -25,7 +25,7 @@ The Original SCSI card is designed "to fail" in case of an accident, </br>
 probably a CEO desition to buy a cheaper connector. </br>
 
 The SCSI S1000 has MB89352P </br>
-but the goal is to replace with FPGA. </br>
+but the goal is to replace that with FPGA. </br>
 there were nice SCSI software analyzer on the Net. </br>
 https://web.archive.org/web/20121122034712/http://wiki.petroskoutoupis.com/index.php5?title=SCSI_Trace </br>
 https://sourceforge.net/projects/scsitrace/files/ </br>
