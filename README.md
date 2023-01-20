@@ -96,8 +96,8 @@ http://ntonyx.com/sf_f.htm </br>
 https://ia601004.us.archive.org/4/items/soundfonts_201910/8mbgm_enhanced18.sf2 </br>
 https://archive.org/download/500-soundfonts-full-gm-sets </br>
 
-The 8x Original S-series CD-ROMs, the last one has different GM versions. </br>
-havent compared vs. the more popular GM.sf2 on the net. </br>
+The 8x Akai S-series CD-ROMs, the last one has different GM versions. </br>
+havent tested vs. the more popular GM.sf2 on the net. </br>
 
 Some people Remember Old Games MIDI music in a certain way, others in other way, different Guitars, MT-32, FM, CZ-101 </br>
 There are many DOOM, Sierra & Prince of Persia Game tests online. </br>
