@@ -1,4 +1,4 @@
-The 2MB card and the 8MB card based on the original design/scematics, </br>
+The 2MB card and the 8MB card based on the original design/schematics, </br>
 have exactly the same size: </br>
 5.3000" (134.62mm) </br>
 0.0640" (1.62mm) </br>
