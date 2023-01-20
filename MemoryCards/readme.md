@@ -59,4 +59,6 @@ Intel T21040-07 </br>
 Oki M514100A-70sj </br>
 
 
-
+https://www.firstpr.com.au/rwi/smem/ </br>
+https://www.firstpr.com.au/rwi/smem/8Meg.html </br>
+https://youtu.be/UcQVB6-I1oI </br>
