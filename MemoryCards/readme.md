@@ -19,3 +19,10 @@ Diameter: 0.1200" (3.05mm) </br>
 Bottom Holes: </br>
 0.2000" (5.08mm) from PCB edge. </br>
 Diameter: 0.1500" (3.81mm) </br>
+
+Optional: </br>
+Holes to secure the 64p connector.  </br>
+Diameter: 0.1000" (2.54) </br>
+0.1000" (2.54) from Bottom PCB edge. </br>
+0.6000" (15.24mm) from side PCB edge. </br>
+1.2000" (30.48mm) from side PCB edge. </br>
