@@ -1,7 +1,10 @@
-The 2MB card and the 8MB card have exactly the same size: </br>
+The 2MB card and the 8MB card based on the original design/scematics, </br>
+have exactly the same size: </br>
 5.3000" (134.62mm) </br>
 0.0640" (1.62mm) </br>
 3.5555" (90.31mm) </br>
+There are other 3rd party manufacturers, </br>
+with different size. </br>
 
 Pin 1-2: </br>
 1.4000" (35.56mm) from side PCB Edge. </br>
