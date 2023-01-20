@@ -19,6 +19,8 @@ similar: TE 536052-5 </br>
 https://www.te.com/usa-en/product-536052-5.html </br>
 https://www.te.com/usa-en/product-5536052-5.html </br>
 https://www.te.com/usa-en/product-7-536052-5.html </br>
+similar: </br>
+1334 ELCO 10 8457 064 002 025 </br>
 32x2 </br>
 0.1000" (2.54mm) x 0.1000" (2.54) </br>
 
@@ -51,14 +53,16 @@ The 8MB module i have: </br>
 and the usual: </br>
 2x 74HC541 </br>
 2x 74AC541 </br>
-The 2MB module: </br>
-Nec D421000C -80 </br>
 
-confirmed compatible: </br>
+Confirmed compatible: </br>
 Intel T21040-07 </br>
 Oki M514100A-70sj </br>
-
+Oki M514100AL-70tk </br>
+KM41C4000CJ-8 </br>
 
 https://www.firstpr.com.au/rwi/smem/ </br>
 https://www.firstpr.com.au/rwi/smem/8Meg.html </br>
 https://youtu.be/UcQVB6-I1oI </br>
+
+The 2MB module: </br>
+Nec D421000C -80 </br>
