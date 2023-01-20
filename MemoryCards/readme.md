@@ -41,4 +41,4 @@ what is better? </br>
 Thermally 1x32MB is better, less cards restricting airflow. </br>
 IF S1000 can access parallel "at same time" all 4x8MB cards </br>
 4x8MB could be faster to Read/Write, even using slower -80ns memory. </br>
-tests needed.
+1x32MB memory would require to be faster. </br>
