@@ -15,17 +15,17 @@ Information about those SCSI connectors is getting hard to find.. </br>
 Found 2: </br>
 Amphenol and TE </br>
 Amphenol had different models, most were designed for bracket mount,  </br>
-the SCSI Secure Ear Holders are Not on the connector, but the Bracket. </br>
-TE has the connector with Secure Ears in the connector it self, for chassis mount. </br>
-The -480 model had Bracket included. </br>
+the SCSI Secure Ears / Holders are Not on the connector, but the Bracket. </br>
+TE has the connector with Secure Ears are in the connector it self. </br>
+The -480 model has Bracket included. </br>
 https://www.connectorpeople.com/Connector/AMPHENOL/5/57-BC50B-AM100-480 </br>
 
-The Original S1000 SCSI card has a TE type connector with a Bracket type mount. </br>
-if you pull the scsi cable very hard, the force will destroy the connector/card & S1000 board. </br>
+The Original S1000 SCSI card has a TE type connector with a Bracket type mount "weird". </br>
+if you pull the scsi cable very hard, the force will destroy the connector/card or S1000 board. </br>
 The metallic chassis is Not holding the connector in the original design. </br>
 Using an Amphenol type connector, to secure the connector to bracket and chassis is the proper way. </br>
 The Original SCSI card is designed "to fail" in case of an accident, </br>
-probably a CEO desition to buy a cheaper connector. </br>
+probably CEO desition to buy a cheaper connector. </br>
 
 The SCSI S1000 has MB89352P </br>
 but the goal is to replace that with FPGA. </br>
