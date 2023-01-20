@@ -46,7 +46,7 @@ IF S1000 can access parallel "at same time" all 4x8MB cards </br>
 
 DRAM modules were very common, there are many equivalents: </br>
 http://fthain.github.io/dram/ </br>
-The 8MB module i have has: </br>
+The 8MB module i have: </br>
 16x Ti TMS44100DJ-80 </br>
 and the usual: </br>
 2x 74HC541 </br>
@@ -56,6 +56,7 @@ Nec D421000C -80 </br>
 
 confirmed compatible: </br>
 Intel T21040-07 </br>
+Oki M514100A-70sj </br>
 
 
 
