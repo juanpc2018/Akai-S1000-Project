@@ -27,7 +27,7 @@ if you pull the scsi cable very hard, the force will destroy the connector/card 
 The metallic chassis is Not holding the connector in the original design. </br>
 Using an Amphenol type connector, to secure the connector to bracket and chassis is the proper way. </br>
 The Original SCSI card is designed "to fail" in case of an accident, </br>
-probably CEO decision to buy a cheaper connector, one of many. </br>
+probably CEO decision to buy a cheaper connector. </br>
 
 The SCSI S1000 has MB89352P </br>
 but the goal is to replace that with FPGA. </br>
