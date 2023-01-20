@@ -8,6 +8,10 @@ Pin 63-64: 0.8000" (20.32mm) from PCB edge. </br>
 Pin 1-63: 0.3000" (7.62mm) from PCB edge.  </br>
 Pin 2-64: 0.2000" (5.08mm) from PCB edge.  </br>
 
+64pin male connector: 64P-6033-0431-0 89 50 </br>
+32x2 </br>
+0.1000" (2.54mm) x 0.1000" (2.54) </br>
+
 Top Holes: </br>
 0.1600" (4.07mm) from PCB edge. </br>
 Diameter: 0.1200" (3.05mm) </br>
