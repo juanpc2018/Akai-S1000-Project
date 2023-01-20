@@ -4,7 +4,11 @@ or an external SCSI2SD v5, RaSCSI or similar that can load .iso CD-ROM images </
 https://github.com/guinguin-instruments/Akai-Iso-2-SD
 
 Default SCSI card has External Connector, No Internal connector, but times change. </br>
-Information about those connectors is getting hard to find.. </br>
+SCSI2SD project & others designed for Amiga, Atari and Macintosh computers, </br>
+works for S1000 to emulate a HardDrive or scsi CD-ROM. </br>
+https://www.gee-jee.net/?m=201906 </br>
+
+Information about those SCSI connectors is getting hard to find.. </br>
 Found 2: </br>
 Amphenol and TE </br>
 Amphenol had different models, most were designed for bracket mount,  </br>
@@ -13,17 +17,16 @@ TE has the connector with Secure Ears in the connector it self, for chassis moun
 The -480 model had Bracket included. </br>
 https://www.connectorpeople.com/Connector/AMPHENOL/5/57-BC50B-AM100-480 </br>
 
-The Original S1000 SCSI card has a TE type connector but with a Bracket type mount. </br>
-if you pull the scsi cable very hard, the force will destroy the connector/card & board. </br>
-The S1000 metallic chassis is Not holding the connector in the original design. </br>
+The Original S1000 SCSI card has a TE type connector with a Bracket type mount. </br>
+if you pull the scsi cable very hard, the force will destroy the connector/card & S1000 board. </br>
+The metallic chassis is Not holding the connector in the original design. </br>
 Using an Amphenol type connector, to secure the connector to bracket and chassis is the proper way. </br>
-
-SCSI2SD project & others designed for Amiga, Atari and Macintosh computers, </br>
-works for S1000 to emulate a HardDrive or scsi CD-ROM. </br>
-https://www.gee-jee.net/?m=201906 </br>
+The Original SCSI card is designed "to fail" in case of an accident, </br>
+probably a CEO desition to buy a cheaper connector. </br>
 
 The SCSI S1000 has MB89352P </br>
-there was a nice SCSI software analyzer somewhere on the Net. </br>
+but the goal is to replace with FPGA. </br>
+there were nice SCSI software analyzer on the Net. </br>
 https://web.archive.org/web/20121122034712/http://wiki.petroskoutoupis.com/index.php5?title=SCSI_Trace </br>
 https://sourceforge.net/projects/scsitrace/files/ </br>
 https://scsiexplorer.com/ </br>
