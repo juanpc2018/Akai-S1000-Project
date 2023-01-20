@@ -16,7 +16,7 @@ Found 2: </br>
 Amphenol and TE </br>
 Amphenol had different models, most were designed for bracket mount,  </br>
 the SCSI Secure Ears / Holders are Not on the connector, but the Bracket. </br>
-TE has the connector with Secure Ears are in the connector it self. </br>
+TE has the connector with Secure Ears in the connector it self. </br>
 The -480 model has Bracket included. </br>
 https://www.connectorpeople.com/Connector/AMPHENOL/5/57-BC50B-AM100-480 </br>
 
