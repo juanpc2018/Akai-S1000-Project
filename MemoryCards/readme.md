@@ -14,6 +14,7 @@ Pin 2-64: </br>
 
 64pin male "Eurocard" connector: </br>
 64P-6033-0431-0 89 50 </br>
+https://www.questcomp.com/part/4/64p-6033-0431-0/65373898
 similar: TE 536052-5 </br>
 https://www.te.com/usa-en/product-536052-5.html </br>
 https://www.te.com/usa-en/product-5536052-5.html </br>
