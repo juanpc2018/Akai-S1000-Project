@@ -44,9 +44,9 @@ IF S1000 can access parallel "at same time" all 4x8MB cards </br>
 4x8MB could be faster to Read/Write, even using slower -80ns memory. </br>
 1x32MB memory would require to be faster. </br>
 
-DRAM modules were very common, there are many equivalents:
-http://fthain.github.io/dram/
-The 8MB module i have has:
+DRAM modules were very common, there are many equivalents: </br>
+http://fthain.github.io/dram/ </br>
+The 8MB module i have has: </br>
 16x Ti TMS44100DJ-80 </br>
 and the usual: </br>
 2x 74HC541 </br>
