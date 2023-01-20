@@ -1,4 +1,4 @@
-The Screen is a "Jumbo" 640x240 40x8 4008 Hitachi HD44780 compatible, 
+The Screen is a "Jumbo" 640x240 40x8 4008 110x30mm Screen, 140x40mm size, Hitachi HD44780 compatible, </br>
 
 There are 2 options: </br>
 A) replace the backlight of the original screen, </br>
