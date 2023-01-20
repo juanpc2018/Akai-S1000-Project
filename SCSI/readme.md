@@ -1,17 +1,22 @@
 SCSI add-on card for S1000 has External 50pin Centronics and internal 50-pin option. </br>
-External SCSI is Not required unless want to add an SCSI CD-ROM "Obsolete", </br>
-or an external SCSI2SD v5 or similar that can load .iso CD-ROM images </br>
+External SCSI is Not required unless want to add an external SCSI CD-ROM "Obsolete", </br>
+or an external SCSI2SD v5, RaSCSI or similar that can load .iso CD-ROM images </br>
 https://github.com/guinguin-instruments/Akai-Iso-2-SD
 
-Default SCSI card was External Connector, No Internal connector, but times change. </br>
+Default SCSI card has External Connector, No Internal connector, but times change. </br>
 Information about those connectors is getting hard to find.. </br>
-Found 2 manufacturers: </br>
+Found 2: </br>
 Amphenol and TE </br>
-Amphenol had different models, but most were designed for bracket mount,  </br>
-but... the SCSI Ear Secure Holders are Not on the connector, but the Bracket. </br>
-TE has the standard connector with Secure Ears in the connector it self, for chassis mount. </br>
+Amphenol had different models, most were designed for bracket mount,  </br>
+the SCSI Secure Ear Holders are Not on the connector, but the Bracket. </br>
+TE has the connector with Secure Ears in the connector it self, for chassis mount. </br>
 The -480 model had Bracket included. </br>
 https://www.connectorpeople.com/Connector/AMPHENOL/5/57-BC50B-AM100-480 </br>
+
+The Original S1000 SCSI card has a TE type connector but with a Bracket type mount. </br>
+if you pull the scsi cable very hard, the force will destroy the connector/card & board. </br>
+The S1000 metallic chassis is Not holding the connector in the original design. </br>
+Using an Amphenol type connector, to secure the connector to bracket and chassis is the proper way. </br>
 
 SCSI2SD project & others designed for Amiga, Atari and Macintosh computers, </br>
 works for S1000 to emulate a HardDrive or scsi CD-ROM. </br>
