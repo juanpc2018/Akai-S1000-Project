@@ -1,6 +1,6 @@
 SCSI add-on card for S1000 has External 50pin Centronics and internal 50-pin option. </br>
 External SCSI is Not required unless want to add an external SCSI CD-ROM "Obsolete", </br>
-or an external SCSI2SD v5, RaSCSI or similar that can load .iso CD-ROM images. </br>
+or an external SCSI2SD v5, RaSCSI, BlueSCSI or similar that can load .iso CD-ROM images. </br>
 https://github.com/guinguin-instruments/Akai-Iso-2-SD
 
 Default SCSI card has External Connector, No Internal connector, but times change. </br>
