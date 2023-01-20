@@ -1,10 +1,13 @@
-The Screen is a "Jumbo" 640x240 40x8 HD44780 compatible, 
+The Screen is a "Jumbo" 640x240 40x8 4008 Hitachi HD44780 compatible, 
 
 There are 2 options: </br>
-A) replace only the backlight of the original screen, </br>
+A) replace the backlight of the original screen, </br>
 with a cellphone backlight and cut to proper size, </br>
+
 B) replace the whole screen with LED or OLED. </br>
 Positive or Negative "Dark Background, White Letters"  </br>
+
+Method a A) is the most economical. </br>
 
 The screen is similar for: </br>
 Akai MPC 3000 </br>
