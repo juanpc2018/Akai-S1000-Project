@@ -12,7 +12,12 @@ Pin 1-63: </br>
 Pin 2-64: </br>
 0.2000" (5.08mm) from bottom PCB edge. </br>
 
-64pin male connector: 64P-6033-0431-0 89 50 </br>
+64pin male "Eurocard" connector: </br>
+64P-6033-0431-0 89 50 </br>
+similar: TE 536052-5 </br>
+https://www.te.com/usa-en/product-536052-5.html </br>
+https://www.te.com/usa-en/product-5536052-5.html </br>
+https://www.te.com/usa-en/product-7-536052-5.html </br>
 32x2 </br>
 0.1000" (2.54mm) x 0.1000" (2.54) </br>
 
