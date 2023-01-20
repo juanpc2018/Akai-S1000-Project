@@ -7,9 +7,11 @@ Default SCSI card has External Connector, No Internal connector, but times chang
 SCSI2SD project & others designed for Amiga, Atari and Macintosh computers, </br>
 works for S1000 to emulate a HardDrive or scsi CD-ROM. </br>
 https://www.gee-jee.net/?m=201906 </br>
-problem of this method: replacing the Floppy Drive with Gotek or HxC,
-and adding a internal SCSI2SD is removing the Digital i/o. </br>
-using external SCSI2SD or drilling a hole in the chassis is required to keep the Digital i/o board. </br> 
+problem of this method: </br>
+replacing Floppy Drive with Gotek or HxC,
+and adding an internal SCSI2SD, is removing the Digital i/o. </br>
+using external SCSI2SD or drilling a holes in the chassis is required to keep the Digital i/o board. </br> 
+other option is to forget about Gotek / HxC and place the SCSI2SD in the floppy bay, to keep the Digital i/o board. </br>
 
 Information about those SCSI connectors is getting hard to find.. </br>
 Found 2: </br>
@@ -25,7 +27,7 @@ if you pull the scsi cable very hard, the force will destroy the connector/card 
 The metallic chassis is Not holding the connector in the original design. </br>
 Using an Amphenol type connector, to secure the connector to bracket and chassis is the proper way. </br>
 The Original SCSI card is designed "to fail" in case of an accident, </br>
-probably CEO decision to buy a cheaper connector. </br>
+probably CEO decision to buy a cheaper connector, one of many. </br>
 
 The SCSI S1000 has MB89352P </br>
 but the goal is to replace that with FPGA. </br>
