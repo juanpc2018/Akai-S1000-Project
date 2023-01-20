@@ -56,9 +56,16 @@ and the usual: </br>
 
 Confirmed compatible: </br>
 Intel T21040-07 </br>
+Fujitsu 814100A-70 </br>
 Oki M514100A-70sj </br>
 Oki M514100AL-70tk </br>
+KM41C4000J-8 </br>
 KM41C4000CJ-8 </br>
+Toshiba TC514100AJL-10 </br>
+Toshiba TC514100ASJ-80 </br>
+Siemens HYB514100BJ-70 </br>
+Siemens HYB514100BJ-85 </br>
+Motorola MC M54100AN80</br>
 
 https://www.firstpr.com.au/rwi/smem/ </br>
 https://www.firstpr.com.au/rwi/smem/8Meg.html </br>
