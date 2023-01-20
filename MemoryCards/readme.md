@@ -4,7 +4,7 @@ The 2MB card and the 8MB card have exactly the same size: </br>
 3.5555" (90.31mm) </br>
 
 Pin 1-2: </br>
-1.40000" (35.56mm) from side PCB Edge. </br>
+1.4000" (35.56mm) from side PCB Edge. </br>
 Pin 63-64: </br>
 0.8000" (20.32mm) from side PCB edge. </br>
 Pin 1-63: </br>
