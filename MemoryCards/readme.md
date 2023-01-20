@@ -7,3 +7,11 @@ Pin 1-2: 1.40000" (35.56mm) fron PCB Edge. </br>
 Pin 63-64: 0.8000" (20.32mm) from PCB edge. </br>
 Pin 1-63: 0.3000" (7.62mm) from PCB edge.  </br>
 Pin 2-64: 0.2000" (5.08mm) from PCB edge.  </br>
+
+Top Holes: </br>
+0.1600" (4.07mm) from PCB edge. </br>
+Diameter: 0.1200" (3.05mm) </br>
+
+Bottom Holes: </br>
+0.2000" (5.08mm) from PCB edge. </br>
+Diameter: 0.1500" (3.81mm) </br>
