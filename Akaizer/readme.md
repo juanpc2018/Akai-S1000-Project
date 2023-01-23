@@ -12,3 +12,5 @@ versions for OSX & Linux, CLi. </br>
 https://akaizer.blogspot.com </br>
 No WayBack archive,. </br>
 https://chilloutwithbeats.com/en/akaizer-intro/ </br>
+
+Later will upload examples of the Time Strech of a Real S1000 with Eprom 2.2 vs 4.3 vs 4.4.
