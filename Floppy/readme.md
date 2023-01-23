@@ -4,7 +4,7 @@ Gotek has 2x available firmwares, FlashFloppy and HxC.  </br>
 https://github.com/keirf/FlashFloppy </br>
 https://hxc2001.com/store/ </br>
 
-but Gotek only read floppy image files. </br>
+but Gotek only Reads floppy image files, </br>
 and can store / emulate 999 floppy disks. </br>
 as long as the USB memory allows. </br>
 
@@ -20,7 +20,7 @@ IF works, will create a floppy image inside a real floppy disk, </br>
 Not Native individual files like a Real Floppy drive. </br>
 
 some USB1.1 floppy drives are Better than others, </br>
-see the video RAID Floppy. </br>
+see the video RAID Floppy: </br>
 https://youtu.be/1hc52_PWeU8 </br>
 
 Kryoflux is a more advanced Hardware version of OmniFloppy or USB1.1 Floppy drives, </br>
