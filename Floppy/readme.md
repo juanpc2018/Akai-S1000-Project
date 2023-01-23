@@ -1,4 +1,5 @@
 The S1000 has a Floppy, most people replace with a Gotek,  </br>
+
 Gotek has 2x available firmwares, FlashFloppy and HxC.  </br>
 
 https://github.com/keirf/FlashFloppy </br>
@@ -27,3 +28,15 @@ Kryoflux is a more advanced Hardware version of OmniFloppy or USB1.1 Floppy driv
 USB2.0 to Real Floppy 34-pin adapter/converter. </br>
 https://webstore.kryoflux.com/catalog/index.php?cPath=1 </br>
 https://www.kryoflux.com/?page=download </br>
+
+The Original Floppy drive in THE Akai S1000 is a High Quality:
+ALPS DFP723F03A 5V 1.2A MADE IN JAPAN </br>
+Location Motor: DC 5V FPP110U03 </br>
+Spinning Platter Motor: BTM-F-660APB3. 5V  0.180A. "9Z21DBN"
+https://www.synthark.org/Component_XRef.html#Alps </br>
+1x4" (3.5" disk): DSHD Floppy disk drive. </br>
+https://www.floppydisk.com/dsdd-dshd </br>
+
+The Floppy drive in the Yamaha V50 is the worse ive seen, absolute crap. </br>
+but this Alps looks very nice. </br>
+havent done a test / shootout vs. others. </br>
