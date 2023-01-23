@@ -9,11 +9,6 @@ The reason is simple: </br>
 there is a project called Akaizer v2.4 for Windows </br>
 to emulate the Time Strech algorithm of the S1000 introduced in EPROM v2.2 </br>
 https://the-akaizer-project.blogspot.com/ </br>
-https://drive.google.com/file/d/1gCJNSGe0BPfxVrWPJ2NzykjbzqH2iBag/view </br>
-there were versions for OSX & Linux. </br>
-https://akaizer.blogspot.com </br>
-No WayBack archive, will upload later. </br>
-https://chilloutwithbeats.com/en/akaizer-intro/ </br>
 
 the problem with Software vs. Real S1000 Hardware, Real EPROM v2.2 </br>
 is the same problem with all software: </br>
