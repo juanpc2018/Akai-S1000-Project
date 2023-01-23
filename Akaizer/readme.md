@@ -1,7 +1,7 @@
 OSX version does Not work in OSX Catalina, </br>
 requires 32-Bit OSX HighSierra 10.13 or older,  </br>
 Sierra 10.12, El Capitan 10.11, Yosemite 10.10, lowest intel version: OSX SnowLeopard 10.6.8 </br>
-using Wine/PlayOnMac/Bottles + Win version could work in OSX Catalina "Untested". </br>
+using Wine/PlayOnMac/Bottles + Win version could work in OSX Catalina "Untested" or latest Linux. </br>
 
 Archived for reference. </br>
 
