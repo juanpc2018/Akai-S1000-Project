@@ -19,3 +19,7 @@ IF works, will create a floppy image, Not Native like the Real Floppy drive. </b
 
 some USB1.1 floppy drives are Better than others, see the video: RAID Floppy. </br>
 https://youtu.be/1hc52_PWeU8 </br>
+
+Kryoflux is a more advanced Hardware version of OmniFloppy or USB1.1 loppy drives, </br>
+USB to Real Floppy drive. </br>
+https://webstore.kryoflux.com/catalog/index.php?cPath=1 </br>
