@@ -22,7 +22,7 @@ Audio Algorithms do Not like to be interrupted. </br>
 L1 cache is Not Big Enough, </br>
 There is something lost, or distorted in the process. </br> 
 
-Digital Audio is a Fast Sample & Hold,  </br>
+Digital Audio is a Serial Sample & Hold,  </br>
 Interrupts create another Sample & Hold on top of that Sample & Hold. </br>
 having Real AD/DA converters add analog flavor/taste/smell to digital.  </br>
 That problem is Not noticieable in Video, because Video goes at 24fps, 30fps, 60fps, 120fps, 240fps. </br>
