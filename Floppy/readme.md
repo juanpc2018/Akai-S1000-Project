@@ -2,9 +2,10 @@ The S1000 has a Floppy, most people replace with a Gotek floppy emulator "34-pin
 Gotek has 2x available firmwares, FlashFloppy and HxC.  </br>
 https://github.com/keirf/FlashFloppy </br>
 https://hxc2001.com/store/ </br>
+https://hxc2001.com/download/floppy_drive_emulator/support.htm </br>
 
-but Gotek is configured to Read floppy image files, </br>
-and store / emulate 999 floppy disks. </br>
+Gotek is configured to Read floppy image files, </br>
+and store / emulate 999 floppy disks, </br>
 as long as the USB memory allows. </br>
 
 if want "the real floppy experience" </br>
