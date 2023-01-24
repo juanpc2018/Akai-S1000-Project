@@ -36,7 +36,10 @@ Spinning Platter Motor: BTM-F-660APB3. 5V  0.180A. "9Z21DBN"
 https://www.synthark.org/Component_XRef.html#Alps </br>
 1x4" (3.5" disk): DSHD Floppy disk drive. </br>
 https://www.floppydisk.com/dsdd-dshd </br>
+http://www.nj7p.org/Computers/Disk%20Subsystems/floppies.html </br>
 
 The Floppy drive in the Yamaha V50 is the worse ive seen, absolute crap. </br>
-but this Alps looks very nice. </br>
-havent done a test / shootout vs. others. </br>
+but this Alps looks very nice, </br>
+havent done tests / shootout vs. others, </br>
+except the "Plastic" USB1.1 Floppy drive. </br>
+Panasonic CF-VFDU03U / Teac FD--05PUB. "Matsushita Made in Malaysia 2007" 5V 500mA </br>
