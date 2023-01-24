@@ -16,7 +16,7 @@ Newer USB2.0 and USB3.0 Floopy drives require different driver, Not compatible w
 
 In Theory USB1.1 floppy drive could be connected to Gotek USB port "Untested." </br> 
 IF works, will create a floppy image inside a real floppy disk, </br>
-Not Native individual files like a Real Floppy drive. </br>
+Not Native files like a Real Floppy drive. </br>
 
 some USB1.1 floppy drives are Better than others, </br>
 see the video RAID Floppy: </br>
