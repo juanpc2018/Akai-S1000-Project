@@ -42,4 +42,4 @@ The Floppy drive in the Yamaha V50 is the worse ive seen, absolute crap. </br>
 but this Alps looks very nice, </br>
 havent done tests / shootout vs. others, </br>
 except the "Plastic" USB1.1 Floppy drive. </br>
-Panasonic CF-VFDU03U / Teac FD--05PUB. "Matsushita Made in Malaysia 2007" 5V 500mA </br>
+Panasonic CF-VFDU03U / Teac FD-05PUB "Matsushita Made in Malaysia 2007" 5V 500mA </br>
