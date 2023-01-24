@@ -23,7 +23,7 @@ see the video RAID Floppy: </br>
 https://youtu.be/1hc52_PWeU8 </br>
 
 Kryoflux is a more advanced Hardware version of OmniFloppy or USB1.1 Floppy drives, </br>
-USB2.0 to Real Floppy 34-pin adapter/converter. </br>
+USB2.0 to Real Floppy 34-pin adapter/converter, "The opposite of Gotek." </br>
 https://webstore.kryoflux.com/catalog/index.php?cPath=1 </br>
 https://www.kryoflux.com/?page=download </br>
 
