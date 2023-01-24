@@ -19,3 +19,27 @@ https://web.archive.org/web/20061207021425/http://www.emccsoft.com:80/devzone/pp
 http://www.scss.com.au/family/andrew/pdas/psion/myprogs/ </br>
 https://archive.org/search?query=+Programming+Psion+Computers </br>
 http://www.scss.com.au/family/andrew/pdas/psion/ </br>
+
+-------
+
+TEL TE7730 </br>
+
+https://www.apogeeweb.net/productdetail/tel-inrevivm-te7751-x44jg7kp </br>
+
+https://static6.arrow.com/aropdfconversion/fdcd9668b5c8d7389b246da3c9d88d12fdd3f8b5/te77537754rev100e.pdf </br>
+
+--------
+
+L7A0218 </br>
+FLR - 6009 </br>
+
+8902 </br>
+
+-------
+
+L7A0109 </br>
+ITP - 6009 </br>
+
+8851 </br>
+
+------
