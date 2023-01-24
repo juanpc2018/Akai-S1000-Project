@@ -42,7 +42,7 @@ havent done tests / shootout vs. others, </br>
 except the "Plastic" USB1.1 Floppy drive. </br>
 Panasonic CF-VFDU03U / Teac FD-05PUB "Matsushita Made in Malaysia 2007" 5V 500mA </br>
 USB1.1 is limited to 12Mbps = 1.5MB/s best case scenario, real speed is 1MB/s or less. </br>
-Floppy 3.5" at 300RPM in-theory has 500kbps = 0,0625 MB/s. </br>
+Floppy 3.5" at 300RPM in-theory has 500kbps = 0,0625 MB/s = to read a 1.44MB floppy requires 23 seconds.</br>
 https://en.wikipedia.org/wiki/USB#USB_1.x </br>
 https://en.wikipedia.org/wiki/Floppy_disk#3.5-inch_floppy_disk </br>
 https://en.wikipedia.org/wiki/Floppy-disk_controller </br>
