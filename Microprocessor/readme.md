@@ -17,3 +17,5 @@ https://www.datasheetarchive.com/pdf/download.php?id=8cdee5c8fcd5f79d81877ca281f
 https://www.datasheetarchive.com/pdf/download.php?id=a233388e25199997f85bb4b315f6528222a4e3&type=O&term=IEU-804 </br>
 https://web.archive.org/web/20061207021425/http://www.emccsoft.com:80/devzone/ppc/ppc.pdf </br>
 http://www.scss.com.au/family/andrew/pdas/psion/myprogs/ </br>
+https://archive.org/search?query=+Programming+Psion+Computers </br>
+http://www.scss.com.au/family/andrew/pdas/psion/ </br>
