@@ -26,6 +26,8 @@ Kryoflux is a more advanced Hardware version of OmniFloppy or USB1.1 Floppy driv
 USB2.0 to Real Floppy 34-pin adapter/converter, "The opposite of Gotek." </br>
 https://webstore.kryoflux.com/catalog/index.php?cPath=1 </br>
 https://www.kryoflux.com/?page=download </br>
+http://www.shlock.co.uk/Utils/OmniFlop/OmniFlop.htm </br>
+http://www.shlock.co.uk/Utils/OmniFlop/OmniFlop64.htm </br>
 
 The Original Floppy drive in The Akai S1000 is a High Quality:
 ALPS DFP723F03A 5V 1.2A MADE IN JAPAN </br>
