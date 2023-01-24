@@ -27,7 +27,7 @@ USB2.0 to Real Floppy 34-pin adapter/converter, "The opposite of Gotek." </br>
 https://webstore.kryoflux.com/catalog/index.php?cPath=1 </br>
 https://www.kryoflux.com/?page=download </br>
 
-The Original Floppy drive in THE Akai S1000 is a High Quality:
+The Original Floppy drive in The Akai S1000 is a High Quality:
 ALPS DFP723F03A 5V 1.2A MADE IN JAPAN </br>
 Location Motor: DC 5V FPP110U03 </br>
 Spinning Platter Motor: BTM-F-660APB3. 5V  0.180A. "9Z21DBN"
@@ -41,8 +41,8 @@ but this Alps looks nice, </br>
 havent done tests / shootout vs. others, </br>
 except the "Plastic" USB1.1 Floppy drive. </br>
 Panasonic CF-VFDU03U / Teac FD-05PUB "Matsushita Made in Malaysia 2007" 5V 500mA </br>
-USB1.1 is limited to 12Mbps = 1.5MB/s best case scenario, real speed is much less. </br>
-Floppy 3.5" in-theory has 500kbps = 0,0625 MB/s. </br>
+USB1.1 is limited to 12Mbps = 1.5MB/s best case scenario, real speed is 1MB/s or less. </br>
+Floppy 3.5" at 300RPM in-theory has 500kbps = 0,0625 MB/s. </br>
 https://en.wikipedia.org/wiki/USB#USB_1.x </br>
 https://en.wikipedia.org/wiki/Floppy_disk#3.5-inch_floppy_disk </br>
 https://en.wikipedia.org/wiki/Floppy-disk_controller </br>
