@@ -38,6 +38,15 @@ https://www.synthark.org/Component_XRef.html#Alps </br>
 https://www.floppydisk.com/dsdd-dshd </br>
 http://www.nj7p.org/Computers/Disk%20Subsystems/floppies.html </br>
 
+Controller:
+NEC D7265C </br>
+https://www.cpu-world.com/Support/7/72.html </br>
+http://www.cpctech.cpc-live.com/docs/upd765a/necfdc.htm </br>
+https://www.alldatasheet.com/datasheet-pdf/pdf/107831/NEC/UPD72065C.html </br>
+https://www.alldatasheet.com/datasheet-pdf/pdf/129527/NEC/UPD765A.html </br>
+https://www.alldatasheet.com/datasheet-pdf/pdf/129526/NEC/UPD765B.html </br>
+https://hxc2001.com/download/datasheet/floppy/thirdparty/FDC/ </br>
+
 The Floppy drive in the Yamaha V50 is the worse ive seen, absolute crap. </br>
 but this Alps looks nice, </br>
 havent done tests / shootout vs. others, </br>
