@@ -1,12 +1,10 @@
-The S1000 has a Floppy, most people replace with a Gotek,  </br>
-
+The S1000 has a Floppy, most people replace with a Gotek floppy emulator "34-pin to USB."  </br>
 Gotek has 2x available firmwares, FlashFloppy and HxC.  </br>
-
 https://github.com/keirf/FlashFloppy </br>
 https://hxc2001.com/store/ </br>
 
-but Gotek only Reads floppy image files, </br>
-and can store / emulate 999 floppy disks. </br>
+but Gotek is configured to Read floppy image files, </br>
+and store / emulate 999 floppy disks. </br>
 as long as the USB memory allows. </br>
 
 if want "the real floppy experience" </br>
@@ -39,7 +37,7 @@ https://www.floppydisk.com/dsdd-dshd </br>
 http://www.nj7p.org/Computers/Disk%20Subsystems/floppies.html </br>
 
 The Floppy drive in the Yamaha V50 is the worse ive seen, absolute crap. </br>
-but this Alps looks very nice, </br>
+but this Alps looks nice, </br>
 havent done tests / shootout vs. others, </br>
 except the "Plastic" USB1.1 Floppy drive. </br>
 Panasonic CF-VFDU03U / Teac FD-05PUB "Matsushita Made in Malaysia 2007" 5V 500mA </br>
