@@ -3,10 +3,10 @@ CPU / Microprocessor </br>
 NEC uPD70216GF-8 V50 </br>
 1984 </br>
 
-similar was used in:  </br>
+similar used in:  </br>
 https://en.wikipedia.org/wiki/Psion_Series_3 </br>
 
-pin compatible, code compatible with 8088 "x86 architecture on Steroids." </br>
+pin compatible, code compatible with 8088 "x86 architecture on Steroids." Lawsuit included. </br>
 https://en.wikipedia.org/wiki/NEC_V20 </br>
 V50 "Embedded V20" Runs at 8MHz, but its connected to a 16MHz XO, internally divided. </br>
 
