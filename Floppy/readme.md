@@ -34,7 +34,7 @@ ALPS DFP723F03A 5V 1.2A MADE IN JAPAN </br>
 Location Motor: DC 5V FPP110U03 </br>
 Spinning Platter Motor: BTM-F-660APB3. 5V  0.180A. "9Z21DBN"
 https://www.synthark.org/Component_XRef.html#Alps </br>
-1x4" (3.5" disk): DSHD Floppy disk drive. </br>
+1x4" (3.5" disk): DS/HD Floppy disk drive. </br>
 https://www.floppydisk.com/dsdd-dshd </br>
 http://www.nj7p.org/Computers/Disk%20Subsystems/floppies.html </br>
 
@@ -48,3 +48,4 @@ Floppy 3.5" in-theory has 500kbps = 0,0625 MB/s. </br>
 https://en.wikipedia.org/wiki/USB#USB_1.x </br>
 https://en.wikipedia.org/wiki/Floppy_disk#3.5-inch_floppy_disk </br>
 https://en.wikipedia.org/wiki/Floppy-disk_controller </br>
+https://www.liquisearch.com/floppy_disk/sizes/sizes_performance_and_capacity </br>
