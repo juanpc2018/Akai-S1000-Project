@@ -1,4 +1,4 @@
-SCSI add-on card for S1000 has External 50pin Centronics and internal 50-pin option. </br>
+SCSI add-on card for S1000 has External 50pin Centronics and internal 50-pin ribbon. </br>
 External SCSI is Not required unless want to add an external SCSI CD-ROM "Obsolete", </br>
 or an external SCSI2SD v5, RaSCSI, BlueSCSI, ZuluSCSI or similar that can load .iso CD-ROM images. </br>
 https://github.com/guinguin-instruments/Akai-Iso-2-SD
@@ -14,11 +14,11 @@ using external SCSI2SD or drilling a holes in the chassis is required to keep th
 other option is to forget about Gotek / HxC and place the SCSI2SD in the floppy bay, to keep the Digital i/o board. </br>
 3rd option is to fit both PCBs in the same floppy bay with a 3D printed bracket. </br>
 
-Information about those SCSI connectors is getting hard to find.. </br>
+Information about SCSI connectors is getting hard to find.. </br>
 Found 2: </br>
 Amphenol and TE </br>
 Amphenol had different models, most were designed for bracket mount,  </br>
-the SCSI Secure Ears / Holders are Not on the connector, but the Bracket. </br>
+SCSI Centronics Secure Ears / Holders are Not on the connector, but the Bracket. </br>
 TE has the connector with Secure Ears in the connector it self. </br>
 The -480 model has Bracket included. </br>
 https://www.connectorpeople.com/Connector/AMPHENOL/5/57-BC50B-AM100-480 </br>
