@@ -6,7 +6,7 @@ x </br>
 220.472mm = 8,68" Aprox.</br>
 x </br>
 1.6000mm = 0,062992125984252" Measured. </br>
-1.6002mm = 0,063" </br>
+1.6002mm = 0,063" Aprox.</br>
 
 4-Layer Board </br>
 but Layer 2-3, seem to be very large planes only for (+) & GND, Unconfirmed, </br>
