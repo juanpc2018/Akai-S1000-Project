@@ -1,0 +1,3818 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!-- saved from url=(0055)http://www.cpctech.cpc-live.com/docs/upd765a/necfdc.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="Keywords" content="NEC,PD765-A,PD765-B,PD765A,PD765B,765,FDC,AMSTRAD,CPC,DISK,HARDWARE,FLOPPY,CONTROLLER,DATASHEET">
+<meta http-equiv="Reply-To" content="amstrad@andercheran.aiind.upv.es">
+<meta name="Description" content="Manufacturers Data sheet for the NEC µPD765A Floppy Disc Controller IC. Information (c) NEC">
+<meta name="Keywords" content="NEC,PD765-A,PD765-B,PD765A,PD765B,765,FDC,AMSTRAD,CPC,DISK,HARDWARE,FLOPPY,CONTROLLER,DATASHEET">
+<meta name="uawww-category" content="docs-hardware-datasheet">
+<title>µPD765A/µPD7265 Floppy Disc Controller</title><!--<base href="http://www.cpctech.org.uk" target="_parent">--><base href="." target="_parent"><!--<base href="http://www.cpctech.org.uk" target="_parent">--><base href="." target="_parent"></head>
+
+<body>
+
+<h1>NEC<br>NEC Electronics Ltd</h1>
+<h1>µPD765A/µPD765B<br>Single/Double Density<br>Floppy Disk Controller</h1>
+
+<h2>Description</h2>
+
+The µPD765A is an LSI floppy disk controller (FDC) chip which
+contains the circuitry and control functions for interfacing a processor
+to 4 floppy disk drives, it is capable of either IBM 3740 single density
+format (FM), or IBM System 34 double density format (MFM) including double-
+sided recording. The µPD765A/B provides control signals which simplify
+the design of an external phase-locked loop and write precompensation circuitry.
+The FDC simplifies and handles most of the burdens associated with implementing
+a floppy disk interface.
+<br><br>
+Hand-shaking signals are provided in the µPD765A/B which make DMA operation
+easy to incorporate with the aid of an external DMA controller chip, such
+as the µPD8257. The FDC will operate in either the DMA or non-DMA mode.
+In the non-DMA mode the FDC generates interrupts to the processor every
+time a data byte is to be transferred. In the DMA mode, the processor
+need only load the command into the FDC and all data transfers occur
+under control of the FDC and DMA controllers.
+<br><br>
+There are 16 commands which the µPD765A/µPD765B will execute. Most of
+these commands require multiple 8-bit bytes to fully specify the operation
+which the processor wishes the FDC to perform. The following commands
+are available:
+<br><br><center><table width="60%">
+<tbody><tr>
+<td width="50%">Read Data</td>
+<td width="50%">Read Deleted Data</td>
+</tr>
+<tr>
+<td>Read ID</td>
+<td>Write Data</td>
+</tr>
+<tr>
+<td>Specify</td>
+<td>Write ID (Format Write)</td>
+</tr>
+<tr>
+<td>Read Diagnostic</td>
+<td>Write Deleted Data</td>
+</tr>
+<tr>
+<td>Scan Equal</td>
+<td>Seek</td>
+</tr>
+<tr>
+<td>Scan High or Equal</td>
+<td>Recalibrate</td>
+</tr>
+<tr>
+<td>Scan Low or Equal</td>
+<td>Sense Interrupt Status</td>
+</tr>
+<tr>
+<td>Version</td>
+<td>Sense Drive Status</td>
+</tr>
+</tbody></table></center><br><br>
+
+<h2>Features</h2>
+
+Address mark detection circuitry is internal to the FDC which simplifies
+the phase-locked loop and read electronics. The track stepping rate,
+head load time, and head unload time are user-programmable. The µPD765A/µPD765B
+offers additional features such as multi-track and multi-side read and
+write commands and single and double-density capabilities.
+<ul>
+<li>FM,MFM control
+</li><li>Variable recording length: 128,256,....8192 bytes/sector
+</li><li>IBM-compatible format (single- and double-sided, single- and double- density)
+</li><li>Multi-Sector and Multi-track transfer capability
+</li><li>Drive up to 4 floppy or micro floppydisk drives
+</li><li>Data scan capability - will scan a single sector or an entire
+cylinder comparing byte-for-byte host memory and disk data
+</li><li>Data transfers in DMA or non-DMA mode
+</li><li>Parallel seek operations on up to four drives
+</li><li>Compatible with µPD8080/85, µPD8086/88, V-series and µPD780 (Z80(R))
+microprocessors
+</li><li>Single-phase clock: 8 Mhz maximum
+</li><li>+5V only
+</li></ul>
+
+
+. z80 is a registered trademark of the Zilog Corporation
+
+<h2>Pin Configuration</h2>
+
+<h1>Ordering Information</h1>
+
+<center>
+<table border="" width="50%">
+<tbody><tr>
+<th bgcolor="#808080">Device Number</th>
+<th bgcolor="#808080">Package Type</th>
+<th bgcolor="#808080">Max Freq. of Operation</th>
+</tr>
+<tr>
+<td>µPD765AC,µPD765AC2</td>
+<td>40-pin plastic DIP</td>
+<td>8 Mhz</td>
+</tr>
+<tr>
+<td>µPD7265C,µPD7265C-2</td>
+<td>40-pin plastic DIP</td>
+<td>8 Mhz</td>
+</tr>
+</tbody></table>
+</center>
+
+
+
+<h2>Pin Identification</h2>
+
+<center>
+<table border="" width="50%">
+<tbody><tr>
+<th bgcolor="#808080">No.</th>
+<th bgcolor="#808080">Symbol</th>
+<th bgcolor="#808080">Function</th>
+</tr>
+<tr>
+<td>1</td>
+<td>RESET</td>
+<td>Reset input</td>
+</tr>
+<tr>
+<td>2</td>
+<td>/RD</td>
+<td>Read control input</td>
+</tr>
+<tr>
+<td>3</td>
+<td>/WR</td>
+<td>Write control input</td>
+</tr>
+<tr>
+<td>4</td>
+<td>/CS</td>
+<td>Chip select input</td>
+</tr>
+<tr>
+<td>5</td>
+<td>A<sub>0</sub></td>
+<td>Data or status select input</td>
+</tr>
+<tr>
+<td>6-13</td>
+<td>DB<sub>0</sub>-DB<sub>7</sub></td>
+<td>Bidirectional data bus</td>
+</tr>
+<tr>
+<td>14</td>
+<td>DRQ</td>
+<td>DMA request output</td>
+</tr>
+<tr>
+<td>15</td>
+<td>/DACK</td>
+<td>DMA acknowledge input</td>
+</tr>
+<tr>
+<td>16</td>
+<td>TC</td>
+<td>Terminal count input</td>
+</tr>
+<tr>
+<td>17</td>
+<td>INDEX</td>
+<td>Index output</td>
+</tr>
+<tr>
+<td>18</td>
+<td>INT</td>
+<td>Interrupt request output</td>
+</tr>
+<tr>
+<td>19</td>
+<td>CLK</td>
+<td>Clock input</td>
+</tr>
+<tr>
+<td>20</td>
+<td>GND</td>
+<td>Ground</td>
+</tr>
+<tr>
+<td>21</td>
+<td>WCLK</td>
+<td>Write clock input</td>
+</tr>
+<tr>
+<td>22</td>
+<td>WINDOW</td>
+<td>Read data window input</td>
+</tr>
+<tr>
+<td>23</td>
+<td>RDATA</td>
+<td>Read data input</td>
+</tr>
+<tr>
+<td>24</td>
+<td>SYNC</td>
+<td>VCO Sync output</td>
+</tr>
+<tr>
+<td>25</td>
+<td>WE</td>
+<td>Write enable output</td>
+</tr>
+<tr>
+<td>26</td>
+<td>MFM</td>
+<td>MFM output</td>
+</tr>
+<tr>
+<td>27</td>
+<td>SIDE</td>
+<td>Head select output</td>
+</tr>
+<tr>
+<td>28,29</td>
+<td>US<sub>1</sub>,US<sub>0</sub></td>
+<td>FDD unit select output</td>
+</tr>
+<tr>
+<td>30</td>
+<td>WDATA</td>
+<td>Write data output</td>
+</tr>
+<tr>
+<td>31,32</td>
+<td>PS<sub>1</sub>,PS<sub>0</sub></td>
+<td>Preshift output</td>
+</tr>
+<tr>
+<td>33</td>
+<td>FLT/TRK0</td>
+<td>Fault/Track zero input</td>
+</tr>
+<tr>
+<td>34</td>
+<td>WRT/2SIDE</td>
+<td>Write protect/two side input</td>
+</tr>
+<tr>
+<td>35</td>
+<td>READY</td>
+<td>Ready input</td>
+</tr>
+<tr>
+<td>36</td>
+<td>HDLD</td>
+<td>Head load output</td>
+</tr>
+<tr>
+<td>37</td>
+<td>FLTR/STEP</td>
+<td>Fault reset/step output</td>
+</tr>
+<tr>
+<td>38</td>
+<td>LCT/DIR</td>
+<td>Low current direction output</td>
+</tr>
+<tr>
+<td>39</td>
+<td>/RW / SEEK</td>
+<td>Read/write/seek output</td>
+</tr>
+<tr>
+<td>40</td>
+<td>Vcc</td>
+<td>DC power (+5V)</td>
+</tr>
+</tbody></table>
+</center>
+
+<h2>Pin Functions</h2>
+
+<h3>RESET (Reset)</h3>
+
+The RESET input places the FDC in the idle state. It resets the output
+lines to the FDD to 0 (low), except PS0, 1 and WDATA (undefined), INT and DRQ
+also go low; DB0-7 goes to an input state. It does not affect SRT, HUT or HLT
+in the Specify command. If the RDY input is held high during reset, the FDC will 
+generate an interrupt with 1.024ms. To clear this interrupt, use the Sense Interrupt
+Status Command.
+
+<h3>/RD (Read Strobe)</h3>
+
+The RD input allows the transfer of data from the FDC to the data bus when
+low and either /CS or /DACK is asserted.
+
+<h3>/WR (Write Strobe)</h3>
+
+The /WR input allows the transfer of data to the FDC from the data bus
+when low. Disabled when /CS is high.
+
+<h3>A<sub>0</sub> (Data/Status Select)</h3>
+
+The A<sub>0</sub> input selects the data register (A<sub>0</sub>=1) or status
+register (A<sub>0</sub>=0) contents to be accessed through the data bus.
+
+<h3>/CS (Chip Select)</h3>
+
+The FDC is selected when /CS is low, enabling /RD and /WR.
+
+<h3>DB<sub>0</sub>-DB<sub>7</sub> (Data Bus)</h3>
+
+DB<sub>0</sub>-DB<sub>7</sub> are a bidirectional 8-bit data bus. Disabled when
+/CS is high.
+
+<h3>DRQ (DMA Request)</h3>
+
+The FDC asserts the DRQ output high to request a DMA transfer
+
+<h3>/DACK (DMA Acknowledge)</h3>
+
+When the /DACK input is low, a DMA cycle is active and the controller
+is performing a DMA transfer.
+
+<h3>TC (Terminal Count)</h3>
+
+When the TC input is high, it indicates the termination of a DMA transfer.
+It terminates data transfer during Read/Write/Scan commands in DMA or
+interrupt code.
+
+<h3>INDEX (Index)</h3>
+
+The INDEX Input goes high at the beginning of a disk track.
+
+<h3>INT (Interrupt)</h3>
+
+The INT output is FDC's interrupt request. In Non-DMA mode, the signal
+is output for each byte. In DMA mode, it is output at the termination
+of a command operation.
+
+<h3>CLK (Clock)</h3>
+
+CLK is the input for the FDC's single-phase, TTL-level squarewave clock;
+8 Mhz or 4 Mhz (Requires a pull-up resistor).
+
+<h3>WCLK (Write Clock)</h3>
+
+The WCLK input sets the data write rate to the FDD.It is 500Khz for FM,
+1Mhz for MFM drives,for 8Mhz operation of the FDC; 250KhzFM or 500Khz
+MFM for 4Mhz FDC operation.
+<br><br>
+This signal must be input for read and write cycles. WCLK's rising edge
+must be synchronised with CLK's rising edge, except for the µPD765B.
+
+<h3>WINDOW (Read Data Window)</h3>
+
+The WINDOW input is generated by the phase-locked loop (PLL). It is used
+to sample data from the FDD and in distinguishing between clock and data
+bits in the FDC.
+
+<h3>RDATA (Read Data)</h3>
+
+The RDATA input is the read data from the FDD, containing clock and data
+bits. To avoid a deadlock situation, input RDATA and WINDOW together.
+
+<h3>WDATA (Write Data)</h3>
+
+WDATA is the serial clock and data output to the FDD.
+
+<h3>WE (Write Enable)</h3>
+
+The WE output enables write data into the FDD.
+
+<h3>SYNC (VCO Sync)</h3>
+
+The SYNC output inhibits the VCO in the PLL when low, enables it when high.
+
+<h3>MFM (MFM Mode)</h3>
+
+The MFM output shows the VCO's operation mode. It is high for MFM, low for
+MF.
+
+<h3>SIDE (Head Select)</h3>
+
+Head 1 is selected when the SIDE ouput is 1 (high), head 0 is selected when SIDE is 0 (low).
+
+<h3>US<sub>0</sub>,US<sub>1</sub> (Unit Select 0,1)</h3>
+
+The US<sub>0</sub> and US<sub>1</sub> outputs select up to 4 floppy
+disk drive units an external decoder.
+
+<h3>PS<sub>0</sub>,PS<sub>1</sub> (Preshift 0,1)</h3>
+
+The PS<sub>1</sub> and PS<sub>0</sub> outputs are the write precompensation request signals
+for MFM mode. They determine early, late, and normal times for WDATA shifting.
+
+<br><br><table border="" width="50%">
+<tbody><tr>
+<th bgcolor="#808080"><b>PS0</b></th>
+<th bgcolor="#808080"><b>PS1</b></th>
+<th bgcolor="#808080"><b>Shift (MFM WDATA)</b></th>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>Normal</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>Late</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>Early</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>-</td>
+</tr>
+</tbody></table>
+
+<h3>READY (Ready)</h3>
+
+The READY input indicates that the FDD is ready to receive data.
+
+<h3>HDLD (Head Load)</h3>
+
+The HDLD output is the command which causes the read/write head in
+the FDD to contact the diskette.
+
+<h3>FLT/TRK0 (Fault/Track 0)</h3>
+
+In the read/write mode, the FLT input detects FDD fault conditions.
+In the seek mode, TRK0 indicates track 0 head position.
+
+<h3>WPRT/2SIDE (Write Protect/Two Side)</h3>
+
+In the read/write mode, the WPRT input senses write protected status
+(at the drive or media). In the seek mode, 2SIDE senses two-side media.
+
+<h3>FLTR/STEP (Fault Reset/Step)</h3>
+
+In the read/write mode, the FLTR output resets the fault flip-flop
+in the FDD. In the seek mode, STEP outputs step pulses to move the head
+to another cylinder. A fault reset pulse is issued at the beginning or
+each Read or each Write command prior to the HDLD signal.
+
+<h3>LCT/DIR (Low Current/Direction</h3>
+
+In the read/write mode, the LCT output indicates that the R/W head is
+position at cylinder 42 or greater. In the seek mode, the DIR output 
+determines the direction the head will move in when it receives a step
+pulse. If DIR is 0, seeks are performed in the outward direction;
+DIR is 1, seeks are performed in the inward direction.
+
+<h3>/RW / SEEK (Read/Write/Seek)</h3>
+
+The /RW / SEEK output specifies the read/write mode when low, and the
+seek mode when high
+
+<h3>GND (Ground)</h3>
+
+Ground.
+
+<h3>Vcc (+5V)</h3>
+
++5v power supply.
+
+<h2>Block Diagram</h2>
+
+<h2>Absolute Maximum Ratings</h2>
+
+<h2>DC characteristics</h2>
+
+<h2>Capacitance</h2>
+
+<h2>DIFFERENCES BETWEEN µPD765A AND µPD765B</h2>
+
+The µPD765B is a functionally enhanced version of the µPD765A. Differences
+are explained below.
+
+<h3>Overrun bit (OR)</h3>
+
+In µPD765A, when executing a read- or write-type command (except READ ID
+and SCAN types), the result status OR bit is not set if there is an overrun on 
+the final byte of a sector. An improvement in the µPD765B allows it to
+set the OR bit in any situation.
+
+<h3>DRQ Reset</h3>
+
+When an overrun occurs, the µPD765A needs /DACK input to reset DRQ. If
+/DACK is not available, an external DMA controller continues to operate
+even after the FDC enters the R-Phase (Result Phase), and stored result
+status may be transferred accidentally as ordinary data.
+<br><br>
+On the other hand, the µPD765B resets DRQ automatically just before the R-Phase
+entry and independant of the /DACK input. See AC Characteristics for DRQ
+reset timing.
+
+<h3>Clock Synchronisation</h3>
+
+The µPD765B does not require synchronisation between the CLK and WCLK
+inputs.
+
+<h3>Version Command</h3>
+
+The version command distinguishes the µPD765B from other devices. The ST0
+response to the Version command is:
+
+<table border="">
+<tbody><tr>
+<th bgcolor="#808080">Part No.</th>
+<th bgcolor="#808080">ST0 value</th>
+</tr>
+<tr>
+<td>µPD765A</td>
+<td>80H</td>
+</tr>
+<tr>
+<td>µPD765B</td>
+<td>90H</td>
+</tr>
+</tbody></table>
+
+<h2>AC Characteristics</h2>
+
+
+
+
+<h1>Timing waveforms</h1>
+
+<h1>Internal Registers</h1>
+
+The µPD765A/µPD765B contains two registers which may be accessed by the
+main system processor; a status register and a data register. The 8-bit
+main status register contains the status information of the FDC, and may be
+accessed at any time. The 8-bit data register (which actually consists of
+four registers, ST0-ST3, in a stack with only one register presented to the
+data bus at a time), stores data, commands, parameters, and FDD status
+information. Data bytes are read out of, or written into the, the data
+register in order to program or obtain results after a particular command
+(table 3). Only the status register may be read and used to facilitate the
+transfer of data between the processor and µPD765A/µPD765B.
+<br><br>
+The relationship between the status/data registers and the signals
+/RD,/WR and A<sub>0</sub> are shown in table 1.
+<br><br><center>
+<b>Table 1. Status/Data Register Addressing</b>
+<table border="" width="50%">
+<tbody><tr>
+<th bgcolor="#808080"><b>A<sub>0</sub></b></th>
+<th bgcolor="#808080"><b>/RD</b></th>
+<th bgcolor="#808080"><b>/WR</b></th>
+<th bgcolor="#808080"><b>Function</b></th>
+</tr>
+
+<tr>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>Read Main Status Register</td>
+</tr>
+
+<tr>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>Illegal</td>
+</tr>
+
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>Illegal</td>
+</tr>
+
+<tr>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>Illegal</td>
+</tr>
+
+<tr>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>Read from Data Register</td>
+</tr>
+
+<tr>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>Write into Data Register</td>
+</tr>
+</tbody></table></center><br><br>
+
+
+
+The bits in the main status register are defined in table 2.
+
+<br><br><center>
+<b>Table 2. Main Status Register</b>
+<table border="" width="60%">
+<tbody><tr>
+<th bgcolor="#808080" colspan="2"><b>Pin</b></th>
+<th bgcolor="#808080" rowspan="2"><b>Function</b></th>
+</tr>
+<tr>
+<th bgcolor="#808080"><b>No.</b></th>
+<th bgcolor="#808080"><b>Name</b></th>
+</tr>
+
+<tr>
+<td>DB<sub>0</sub></td>
+<td>D<sub>0</sub>B<br>(FDD 0 Busy)</td>
+<td>FDD number 0 is in the Seek mode. If any of the D<sub>n</sub>B bits
+is set FDC will not accept read or write command.</td>
+</tr>
+
+<tr>
+<td>DB<sub>1</sub></td>
+<td>D<sub>1</sub>B<br>(FDD 1 Busy)</td>
+<td>FDD number 1 is in the Seek mode. If any of the D<sub>n</sub>B bits
+is set FDC will not accept read or write command.</td>
+</tr>
+
+<tr>
+<td>DB<sub>2</sub></td>
+<td>D<sub>2</sub>B<br>(FDD 2 Busy)</td>
+<td>FDD number 2 is in the Seek mode. If any of the D<sub>n</sub>B bits
+is set FDC will not accept read or write command.</td>
+</tr>
+
+<tr>
+<td>DB<sub>3</sub></td>
+<td>D<sub>3</sub>B<br>(FDD 3 Busy)</td>
+<td>FDD number 3 is in the Seek mode. If any of the D<sub>n</sub>B bits
+is set FDC will not accept read or write command.</td>
+</tr>
+
+<tr>
+<td>DB<sub>4</sub></td>
+<td>CB<br>(FDC Busy)</td>
+<td>A read or write command is in process. FDC will not accept any
+other commands</td>
+</tr>
+
+<tr>
+<td>DB<sub>5</sub></td>
+<td>EXM<br>(Execution Mode)</td>
+<td>This bit is set only during execution phase in non-DMA mode. When DB<sub>5</sub>
+goes low, execution phase has ended and result phase has started. It operates only
+during non-DMA mode of operation.</td>
+</tr>
+
+<tr>
+<td>DB<sub>6</sub></td>
+<td>DIO<br>(Data Input/Output)</td>
+<td>Indicates direction of data transfer between FDC and Data Register. If DIO = "1" then transfer is from Data Register to the processor. If DIO = "0", then transfer is from the processor to the data register.</td>
+</tr>
+
+<tr>
+<td>DB<sub>7</sub></td>
+<td>RQM (Request for Master)</td>
+<td>Indicates Data Register is ready to send or receive data to or from the processor. Both bits DIO and RQM should be used to perform the handshaking functions of "ready" and "direction" to the processor.</td>
+</tr>
+
+</tbody></table></center><br><br>
+
+
+
+The DIO and RQM bits in the status register indicate when data is ready and in which direction data will be transferred
+on the data bus. See figure 1.
+
+<center>
+<b>Figure 1. DIO and RQM</b>
+</center>
+
+<br><br>
+<center><b>TABLE 3. STATUS REGISTER IDENTIFICATION</b></center>
+
+<br><br>
+<center><b>STATUS REGISTER 0</b></center>
+<table border="" width="100%">
+<tbody><tr>
+<th bgcolor="#808080" colspan="2"><b>Pin</b></th>
+<th bgcolor="#808080" rowspan="2"><b>Function</b></th>
+</tr>
+<tr>
+<th bgcolor="#808080"><b>No.</b></th>
+<th bgcolor="#808080"><b>Name</b></th>
+</tr>
+
+
+<tr>
+<td rowspan="5">D<sub>7</sub>,D<sub>6</sub></td>
+<td rowspan="5">IC<br>(Interrupt Code)</td>
+</tr>
+
+<tr>
+<td>D<sub>7</sub>=0 and D<sub>6</sub>=0; Normal Termination of Command (NT), Command was completed and properly executed.
+</td>
+</tr>
+
+<tr>
+<td>D<sub>7</sub>=0 and D<sub>6</sub>=1; Abnormal Termination of Command (AT), Execution of Command was started, but was not
+successfully completed.
+</td>
+</tr>
+
+<tr>
+<td>D<sub>7</sub>=1 and D<sub>6</sub>=0; Invalid Command issued (IC), Command which was issued was never started.
+</td>
+</tr>
+
+<tr>
+<td>D<sub>7</sub>=1 and D<sub>6</sub>=1; Abnormal Termination because during command execution the ready signal from the FDD changed
+state.
+</td>
+</tr>
+
+
+<tr>
+<td>D<sub>5</sub></td>
+<td>SE<br>(Seek End)</td><td>When the FDC completes the SEEK command, this flag is set to 1 (high).</td>
+</tr>
+<tr>
+<td>D<sub>4</sub></td>
+<td>EC<br>(Equipment Check)</td><td>If a fault signal is received from the FDD, or if the Track 0 signal fails to occur after 77 Step Pulses (Recalibrate Command) then this flag is set.</td>
+</tr>
+<tr>
+<td>D<sub>3</sub></td>
+<td>NR<br>(Not Ready)</td><td>When the FDD is in the not-ready state and a read or write command is issued, this flag is set. If a read or write command is issued to Side 1 of a single sided drive then this flag is set.</td>
+</tr>
+<tr>
+<td>D<sub>2</sub></td>
+<td>HD<br>(Head Address)</td><td>This flag is used to indicate the state of the head at interrupt.</td>
+</tr>
+<tr>
+<td>D<sub>1</sub></td>
+<td>US<sub>1</sub><br>(Unit Select 1)</td>
+<td rowspan="2">These flags are used to indicate the drive unit number at interrupt.</td>
+</tr>
+<tr>
+<td>D<sub>0</sub></td>
+<td>US<sub>0</sub><br>(Unit Select 0)</td><td></td>
+</tr>
+</tbody></table><br><br>
+
+<br><br>
+<center><b>STATUS REGISTER 1</b></center>
+
+td&gt;<table border="" width="100%">
+
+<tbody><tr>
+<th bgcolor="#808080" colspan="2"><b>Pin</b></th>
+<th bgcolor="#808080" rowspan="2"><b>Function</b></th>
+</tr>
+<tr>
+<th bgcolor="#808080"><b>No.</b></th>
+<th bgcolor="#808080"><b>Name</b></th>
+</tr>
+<tr>
+<td>D<sub>7</sub></td>
+<td>EN<br>(End of Cylinder)</td><td>When the FDC tries to access a sector beyond the final Sector of a Cylinder, this flag is set.</td>
+</tr>
+<tr>
+<td>D<sub>6</sub></td><td>Not used. This bit is always 0 (low).</td>
+</tr>
+<tr>
+<td>D<sub>5</sub></td>
+<td>DE<br>(Data Error)</td><td>When the FDC detects a CRC(1) error in either the ID field or the data field, this flag is set.</td>
+</tr>
+<tr>
+<td>D<sub>4</sub></td>
+<td>OR<br>(Overrun)</td><td>If the FDC is not serviced by the main systems during data transfers within a certain time interval, this flag is set.</td>
+</tr>
+<tr>
+<td>D<sub>3</sub></td>
+<td></td><td>Not used. This bit always 0 (low).</td>
+</tr>
+<tr>
+<td rowspan="4">D<sub>2</sub></td>
+<td rowspan="4">ND<br>(No Data)</td></tr>
+
+<tr>
+<td>During execution of READ DATA, Read Deleted Data, Write Data,WRITE DELETED DATA or SCAN Command, if the
+FDC cannot find the Sector specified in the IDR(2) register, then this flag is set.
+</td>
+</tr>
+
+<tr>
+<td>During executing the READ ID Command, if the FDC cannot read the ID field
+without an error, then this flag is set.
+</td>
+</tr>
+
+<tr>
+<td>During execution of the READ Diagnostic Command, if the starting sector cannot be found then this flag is set.
+</td>
+</tr>
+
+<tr>
+<td>D<sub>1</sub></td>
+<td>NW<br>(Not Writeable)</td><td>During execution of WRITE DATA, 
+WRITE DELETED DATA or Write ID Command, if the FDC detects a write protect signal from the FDD, then this bit is set.</td>
+</tr>
+<tr>
+<td>D<sub>0</sub></td>
+<td>MA<br>(Missing Address Mark)</td>
+
+<td>This bit is set if the FDC does not detect the IDAM before 2 index pulses.
+It is also set if the FDC cannot find the DAM or DDAM after the IDAM is found,
+MD bit of ST2 is also set at this time.
+</td>
+</tr>
+</tbody></table><br><br>
+
+
+<br><br>
+<center><b>STATUS REGISTER 2</b></center>
+<table border="" width="100%">
+<tbody><tr>
+<th bgcolor="#808080" colspan="2"><b>Pin</b></th>
+<th bgcolor="#808080" rowspan="2"><b>Function</b></th>
+</tr>
+<tr>
+<th bgcolor="#808080"><b>No.</b></th>
+<th bgcolor="#808080"><b>Name</b></th>
+</tr>
+
+<tr>
+<td>D<sub>7</sub></td><td></td><td>Not used. This bit is always 0 (low).</td>
+</tr>
+<tr>
+<td>D<sub>6</sub></td>
+<td>CM<br>(Control Mark)</td><td>During execution of the Read Data or Scan Command, 
+if the FDC encounters a Sector which contains a Deleted Data Address Mark, 
+this flag is set. Also set if DAM found during Read Deleted Data</td>
+</tr>
+<tr>
+<td>D<sub>5</sub></td>
+<td>DD<br>(Data Error in Data Field)</td><td>If the FDC detects a CRC error in the data field then this flag is set.</td>
+</tr>
+<tr>
+<td>D<sub>4</sub></td>
+<td>WC<br>(Wrong Cylinder)</td><td>This bit is related with the ND bit, and when the contents of C(3) on the
+medium is different from that stored in the IDR, this flag is set.</td>
+</tr>
+<tr>
+<td>D<sub>3</sub></td>
+<td>SH<br>(Scan Equal Hit)</td><td>During execution of the Scan Command, if the condition of the "equal" is satisfied, then this flag is set.</td>
+</tr>
+<tr>
+<td>D<sub>2</sub></td>
+<td>SN<br>(Scan Not Satisfied)</td><td>During execution of the Scan Command, if the FDC cannot find a sector on the cylinder which meets the condition, then this flag is set.</td>
+</tr>
+<tr>
+<td>D<sub>1</sub></td>
+<td>BC<br>(Bad Cylinder)</td><td>This bit is related with the ND bit, 
+ when the contents of C on the mdeium is different from that stored in the IDR and the contents of C is &amp;FF, then this flag is set.</td>
+</tr>
+<tr>
+<td>D<sub>0</sub></td>
+<td>MD<br>(Missing Address Mark in Data Field)</td><td>
+When data is read from the medium, if the FDC cannot find a Data Address Mark or Deleted Data Address Mark, then this flag is set.</td>
+</tr>
+</tbody></table><br><br>
+
+
+
+<br><br>
+<center><b>STATUS REGISTER 3</b></center>
+<table border="" width="100%">
+<tbody><tr>
+<th bgcolor="#808080" colspan="2"><b>Pin</b></th>
+<th bgcolor="#808080" rowspan="2"><b>Function</b></th>
+</tr>
+<tr>
+<th bgcolor="#808080"><b>No.</b></th>
+<th bgcolor="#808080"><b>Name</b></th>
+</tr>
+
+<tr>
+<td>D<sub>7</sub></td>
+<td>FT<br>(Fault)</td><td>This bit is used tto indicate the status of
+the Fault signal from the FDD.</td>
+</tr>
+<tr>
+<td>D<sub>6</sub></td>
+<td>WP<br>(Write Protected)</td><td>This bit is used to indicate the
+status of the Write Protected signal from the FDD.</td>
+</tr>
+<tr>
+<td>D<sub>5</sub></td>
+<td>RY<br>(Ready)</td><td>This bit is used to indicate the status of the Ready signal
+from the FDD.</td>
+</tr>
+<tr>
+<td>D<sub>4</sub></td>
+<td>T0<br>(Track 0)</td><td>This bit is used to indicate the status of the Track 0 signal
+from the FDD.</td>
+</tr>
+<tr>
+<td>D<sub>3</sub></td>
+<td>TS<br>(Two Side)</td><td>This bit is used to indicate the status of the Two Side signal
+from the FDD.</td>
+</tr>
+<tr>
+<td>D<sub>2</sub></td>
+<td>HD<br>(Head Address)</td><td>This bit is used to indicate the status of the Side Select signal
+to the FDD.</td>
+</tr>
+<tr>
+<td>D<sub>1</sub></td>
+<td>US<sub>1</sub><br>(Unit Select 1)</td><td>This bit is used to indicate the status of the Unit Select 1 signal
+to the FDD.</td>
+</tr>
+<tr>
+<td>D<sub>0</sub></td>
+<td>US<sub>0</sub><br>(Unit Select 0)</td><td>This bit is used to indicate the status of the Unit Select 0 signal
+to the FDD.</td>
+</tr>
+</tbody></table>
+
+<h3>Note</h3>
+<ul>
+<li>CRC = Cyclic Redundancy Check
+</li><li>IDR = Internal Data Register
+</li><li>Cylinder (C) is described more fully in the Command Symbol Description
+</li></ul>
+
+<h2>Command Sequence</h2>
+
+The µPD765A/µPD765B is capable of performing 15 different commands. Each
+command is initiated by a multibyte transfer from the processor, and the
+result after execution of the command may also be a multibyte transfer
+back to the processor. Because of this multibyte interchange of information
+between the µPD765A/µPD765B and the processor, it is convienient to consider
+each command as consisting of three phases:
+
+<table width="100%">
+<tbody><tr>
+<td>Command Phase</td><td>The FDC receives all information required to perform a particular
+operation from the processor.</td>
+</tr><tr>
+<td>Execution Phase</td><td>The FDC performs the operation it was instructed to do.
+</td></tr>
+<tr>
+<td>Result Phase</td><td>After completion of the operation, status and other housekeeping
+information are made available to the processor.
+</td></tr></tbody></table><br><br>
+
+Table 4 shows the required preset parameters and results for each command. Most
+commands require 9 command bytes and return 7 bytes during the result phase.
+The "W" to the left of each byte indicates a command phase byte to
+be written, and an "R" indicates a result byte. The definitions of
+other abbreviations used in table are given in the Command Symbol Description table.
+
+
+
+
+<br><br>
+<center><b>Command Symbol Description</b>
+<table border="" width="80%">
+<tbody><tr>
+<th bgcolor="#808080"><b>Name</b></th>
+<th bgcolor="#808080"><b>Function</b></th>
+</tr>
+
+<tr>
+<td>A<sub>0</sub><br>(Address Line 0)</td>
+<td>A<sub>0</sub> controls selection of Main Status Register (A<sub>0</sub>=0) or Data Register (A<sub>0</sub>=1)</td>
+</tr>
+
+<tr>
+<td>C<br> (Cylinder Number)</td>
+<td>C stands for the current/selected Cylinder (track) numbers 0 through 76 of the medium</td>
+</tr>
+
+<tr>
+<td>D<br>(Data)</td>
+<td>D stands for the data pattern which is going to be written into a Sector during a WRITE ID operation</td>
+</tr>
+
+<tr>
+<td>D<sub>7</sub>--D<sub>0</sub><br>(Data bus)</td>
+<td>8-bit Data Bus, where D<sub>7</sub> stands for the most significant bit, and D<sub>0</sub> stands for a least significant bit.</td>
+</tr>
+
+<tr>
+<td>DTL<br>(Data Length)</td>
+<td>When N is defined as 00, DTL stands for the data length which users are going to read
+out or write into the sector.</td>
+</tr>
+				
+<tr>
+<td>EOT<br>(End Of Track)</td>
+<td>EOT stands for the final Sector number on a Cylinder. During read or write operations, FDC will stop 
+data transfer after a sector number equal to EOT.</td>
+</tr>
+
+<tr>
+<td>GPL<br>(Gap Length)</td>
+<td>GPL stands for the length of Gap 3. During Read/Write operations this value determines 
+the number of bytes that VCO sync will stay low after two CRC bytes. During Format
+command it determines the size of gap 3.</td>
+</tr>
+
+<tr>
+<td>H<br>(Head Address)</td>
+<td>H stands for logical head number 0 or 1, as specified in the ID field</td>
+</tr>
+
+<tr>
+<td>HD<br>(Head)</td>
+<td>HD stands for a the physical head number 0 or 1 and controls the polarity of pin 27. (H=HD in all command words.)
+</td>
+</tr>
+
+<tr>
+<td>HLT<br>(Head Load Time)</td>
+<td>HLT stands for the head load time in the FDD (2 to 254ms in 2ms increments)</td>
+</tr>
+
+<tr>
+<td>HUT<br>(Head Unload Time)</td>
+<td>HUT stands for the head unload time after a read or write operation has occured (16
+to 240ms in 16ms increments)</td>
+</tr>
+
+<tr>
+<td>MF<br>(FM or MFM Mode)</td>
+<td>If MF is low, FM mode is selected and if
+it is high, MFM mode is selected.
+</td>
+</tr>
+
+<tr>
+<td>MT<br>(Multi-track)</td>
+<td>If MT is high, a multi-track operation is
+to be performed. If MT=1 after finishing read/write operation on side 0, FDC
+will automatically start searching for sector 1 on side 1.
+</td>
+</tr>
+				
+<tr>
+<td>N<br>(Number)</td>
+<td>N stands for the number of data bytes written in a sector
+</td>
+</tr>
+				
+<tr>
+<td>NCN<br>(New Cylinder Number)</td>
+<td>NCN stands for a new Cylinder Number which is going to be reached as a result of the
+Seek operation; Desired Position of head.
+</td>
+</tr>
+				
+<tr>
+<td>ND<br>(Non-DMA Mode)</td>
+<td>ND stands for operation in the Non-DMA mode</td>
+</tr>
+
+<tr>
+<td>PCN<br>(Present Cylinder Number)</td>
+<td>PCN stands for the Cylinder number at the completion of Sense Interrupt Status Command.
+Position of head at present time.
+</td>
+</tr>
+				
+<tr>
+<td>R<br>(Record)</td>
+<td>R stands for the Sector Number which will be read or written.</td>
+</tr>
+
+<tr>
+<td>R/W<br>(Read/Write)</td>
+<td>R/W stands for either Read (R) or Write (W) signal.</td>
+</tr>
+
+<tr>
+<td>SC<br>(Sector)</td>
+<td>SC indicates the number of sectors per track</td>
+</tr>
+
+<tr>
+<td>SK<br>(Skip)</td>
+<td>SK stands for Skip Deleted Data Address Mark</td>
+</tr>
+
+<tr>
+<td>SRT<br>(Step Rate Time)</td>
+<td>SRT stands for the Stepping Rate for the FDD
+				(1 to 16ms in 1ms increments). The same 
+				Stepping Rate applies to all drives
+				(F=1ms, E=2ms, etc).
+</td>
+</tr>
+
+<tr>
+<td>ST0-ST3<br>(Status 0-3)</td>
+<td>ST0-ST3 stand for one of four registers which
+store the status information after a command
+has been executed. This information is
+available during the result phase after 
+command execution. These registers should
+not be confused with the Main Status Register
+(selected by A<sub>0</sub>=0). ST0-ST3 may be read only
+after a command has been executed and contains
+information relevant to that particular command.
+</td>
+</tr>
+
+
+<tr>
+<td>STP</td>
+<td>During a scan operation, if STP=1 the
+				data in contiguous sectors is compared 
+				byte-by-byte with data sent from the processor
+				(or DMA) and if STP=2 then alternate sectors
+				are read and compared.
+</td>
+</tr>
+<tr>
+<td>US<sub>0</sub>,US<sub>1</sub><br>(Unit Select)</td>
+<td>DS stands for a select drive number 0 or -3</td>
+</tr>
+
+
+</tbody></table></center>
+
+<center>
+<b>Table 4. Instruction Set (Notes 1,2)</b>
+</center>
+  
+<br><br><table border="" width="100%">
+
+<tbody><tr>
+<th colspan="12" bgcolor="#a0a0a0"><b>READ DATA</b></th>
+</tr>
+
+<tr>
+<th bgcolor="#808080" rowspan="2" width="10%"><b>Phase</b></th>
+<th bgcolor="#808080" rowspan="2" width="10%"><b>R/W</b></th>
+<th bgcolor="#808080" colspan="8" width="50%"><b>Instruction Code</b></th>
+<td bgcolor="#808080" rowspan="2" width="30%"><b>Remarks</b>
+</td></tr>
+
+<tr>
+<th bgcolor="#808080"><b>D<sub>7</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>6</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>5</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>4</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>3</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>2</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>1</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>0</sub></b></th>
+</tr>
+
+
+<tr>
+<td rowspan="9">Command</td>
+<td>W</td>
+<td>MT</td>
+<td>MF</td>
+<td>SK</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>Command Codes</td>
+</tr>
+
+<tr>
+<td>W</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>HD</td>
+<td>US<sub>1</sub></td>
+<td>US<sub>0</sub></td>
+<td>(Note 3)</td>
+</tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>C</center></td>
+<td rowspan="4">Sector ID Information prior to command execution. The 4 bytes are
+compared against header on floppy disk</td>
+</tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>H</center></td>
+</tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>R</center></td>
+</tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>N</center></td>
+</tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>EOT</center></td>
+<td rowspan="3">
+</td></tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>GPL</center></td>
+</tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>DTL</center></td>
+</tr>
+
+
+<tr>
+<td>Execution</td>
+<td colspan="9"></td>
+<td>Data transfer between the FDD and main system</td>
+</tr>
+
+<tr>
+<td rowspan="7">Result</td>
+<td>R</td>
+<td colspan="8"><center>ST0</center></td>
+<td rowspan="3">Status information after command execution</td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>ST1</center></td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>ST2</center></td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>C</center></td>
+<td rowspan="4">Sector ID information after command execution</td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>H</center></td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>R</center></td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>N</center></td>
+</tr>
+
+</tbody></table>
+
+<br><br><table border="" width="100%">
+
+<tbody><tr>
+<th colspan="12" bgcolor="#a0a0a0" width="100%"><b>READ DELETED DATA</b></th>
+</tr>
+<tr>
+<th bgcolor="#808080" rowspan="2" width="10%"><b>Phase</b></th>
+<th bgcolor="#808080" rowspan="2" width="10%"><b>R/W</b></th>
+<th bgcolor="#808080" colspan="8" width="50%"><b>Instruction Code</b></th>
+<td bgcolor="#808080" rowspan="2" width="30%"><b>Remarks</b>
+</td></tr>
+
+<tr>
+<th bgcolor="#808080"><b>D<sub>7</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>6</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>5</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>4</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>3</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>2</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>1</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>0</sub></b></th>
+</tr>
+
+<tr>
+<td rowspan="9">Command</td>
+<td>W</td>
+<td>MT</td>
+<td>MF</td>
+<td>SK</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td rowspan="2">Command Codes</td>
+</tr>
+
+<tr>
+<td>W</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>HD</td>
+<td>US<sub>1</sub></td>
+<td>US<sub>0</sub></td>
+</tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>C</center></td>
+<td rowspan="4">Sector ID Information prior to command execution.
+The 4 bytes are compared against header on floppy disk.</td>
+</tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>H</center></td>
+</tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>R</center></td>
+</tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>N</center></td>
+</tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>EOT</center></td>
+<td rowspan="3">
+</td></tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>GPL</center></td>
+</tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>DTL</center></td>
+</tr>
+
+
+<tr>
+<td>Execution</td>
+<td colspan="9"></td>
+<td>Data transfer between the FDD and main system</td>
+</tr>
+
+<tr>
+<td rowspan="7">Result</td>
+<td>R</td>
+<td colspan="8"><center>ST0</center></td>
+<td rowspan="3">Status information after command execution</td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>ST1</center></td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>ST2</center></td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>C</center></td>
+<td rowspan="4">Sector ID information after command execution</td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>H</center></td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>R</center></td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>N</center></td>
+</tr>
+
+</tbody></table>
+
+<br><br><table border="" width="100%">
+
+<tbody><tr>
+<th colspan="12" bgcolor="#a0a0a0"><b>WRITE DATA</b></th>
+</tr>
+<tr>
+<th bgcolor="#808080" rowspan="2" width="10%"><b>Phase</b></th>
+<th bgcolor="#808080" rowspan="2" width="10%"><b>R/W</b></th>
+<th bgcolor="#808080" colspan="8" width="50%"><b>Instruction Code</b></th>
+<td bgcolor="#808080" rowspan="2" width="30%"><b>Remarks</b>
+</td></tr>
+
+<tr>
+<th bgcolor="#808080"><b>D<sub>7</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>6</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>5</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>4</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>3</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>2</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>1</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>0</sub></b></th>
+</tr>
+
+<tr>
+<td rowspan="9">Command</td>
+<td>W</td>
+<td>MT</td>
+<td>MF</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td rowspan="2">Command Codes</td>
+</tr>
+
+<tr>
+<td>W</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>HD</td>
+<td>US<sub>1</sub></td>
+<td>US<sub>0</sub></td>
+</tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>C</center></td>
+<td rowspan="4">Sector ID Information prior to command execution.
+The 4 bytes are compared against header on floppy disk.</td>
+</tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>H</center></td>
+</tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>R</center></td>
+</tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>N</center></td>
+</tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>EOT</center></td>
+<td rowspan="3">
+</td></tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>GPL</center></td>
+</tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>DTL</center></td>
+</tr>
+
+
+<tr>
+<td>Execution</td>
+<td colspan="9"></td>
+<td>Data transfer between the FDD and main system</td>
+</tr>
+<tr>
+<td rowspan="7">Result</td>
+<td>R</td>
+<td colspan="8"><center>ST0</center></td>
+<td rowspan="3">Status information after command execution</td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>ST1</center></td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>ST2</center></td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>C</center></td>
+<td rowspan="4">Sector ID information after command execution</td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>H</center></td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>R</center></td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>N</center></td>
+</tr>
+
+</tbody></table>
+
+<br><br><table border="" width="100%">
+
+<tbody><tr>
+<th colspan="12" bgcolor="#a0a0a0"><b>WRITE DELETED DATA</b></th>
+</tr>
+<tr>
+<th bgcolor="#808080" rowspan="2" width="10%"><b>Phase</b></th>
+<th bgcolor="#808080" rowspan="2" width="10%"><b>R/W</b></th>
+<th bgcolor="#808080" colspan="8" width="50%"><b>Instruction Code</b></th>
+<td bgcolor="#808080" rowspan="2" width="30%"><b>Remarks</b>
+</td></tr>
+<tr>
+<th bgcolor="#808080"><b>D<sub>7</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>6</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>5</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>4</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>3</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>2</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>1</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>0</sub></b></th>
+</tr>
+
+<tr>
+<td rowspan="9">Command</td>
+<td>W</td>
+<td>MT</td>
+<td>MF</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td rowspan="2">Command Codes</td>
+</tr>
+
+<tr>
+<td>W</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>HD</td>
+<td>US<sub>1</sub></td>
+<td>US<sub>0</sub></td>
+</tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>C</center></td>
+<td rowspan="4">Sector ID Information prior to command execution. The
+4 bytes are compared against header on floppy disk.</td>
+</tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>H</center></td>
+</tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>R</center></td>
+</tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>N</center></td>
+</tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>EOT</center></td>
+<td rowspan="3">
+</td></tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>GPL</center></td>
+</tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>DTL</center></td>
+</tr>
+
+
+<tr>
+<td>Execution</td>
+<td colspan="9"></td>
+<td>Data transfer between the FDD and main system</td>
+</tr>
+
+<tr>
+<td rowspan="7">Result</td>
+<td>R</td>
+<td colspan="8"><center>ST0</center></td>
+<td rowspan="3">Status information after command execution</td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>ST1</center></td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>ST2</center></td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>C</center></td>
+<td rowspan="4">Sector ID information after command execution</td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>H</center></td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>R</center></td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>N</center></td>
+</tr>
+
+
+</tbody></table>
+
+<br><br><table border="" width="100%">
+
+
+<tbody><tr>
+<th colspan="12" bgcolor="#a0a0a0"><b>READ DIAGNOSTIC</b></th>
+</tr>
+<tr>
+<th bgcolor="#808080" rowspan="2" width="10%"><b>Phase</b></th>
+<th bgcolor="#808080" rowspan="2" width="10%"><b>R/W</b></th>
+<th bgcolor="#808080" colspan="8" width="50%"><b>Instruction Code</b></th>
+<td bgcolor="#808080" rowspan="2" width="30%"><b>Remarks</b>
+</td></tr>
+
+<tr>
+<th bgcolor="#808080"><b>D<sub>7</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>6</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>5</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>4</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>3</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>2</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>1</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>0</sub></b></th>
+</tr>
+<tr>
+<td rowspan="9">Command</td>
+<td>W</td>
+<td>0</td>
+<td>MF</td>
+<td>SK</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td rowspan="2">Command Codes</td>
+</tr>
+
+<tr>
+<td>W</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>HD</td>
+<td>US<sub>1</sub></td>
+<td>US<sub>0</sub></td>
+</tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>C</center></td>
+<td rowspan="4">Sector ID Information prior to command execution</td>
+</tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>H</center></td>
+</tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>R</center></td>
+</tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>N</center></td>
+</tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>EOT</center></td>
+<td rowspan="3">
+</td></tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>GPL</center></td>
+</tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>DTL</center></td>
+</tr>
+
+<tr>
+<td>Execution</td>
+<td colspan="9"></td>
+<td>Data transfer between the FDD and main system. FDC reads all
+data fields from index hole to EOT.</td>
+</tr>
+
+
+<tr>
+<td rowspan="7">Result</td>
+<td>R</td>
+<td colspan="8"><center>ST0</center></td>
+<td rowspan="3">Status information after command execution</td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>ST1</center></td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>ST2</center></td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>C</center></td>
+<td rowspan="4">Sector ID information after command execution</td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>H</center></td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>R</center></td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>N</center></td>
+</tr>
+</tbody></table>
+
+<br><br><table border="" width="100%">
+
+<tbody><tr>
+<th colspan="12" bgcolor="#a0a0a0"><b>READ ID</b></th>
+</tr>
+<tr>
+<th bgcolor="#808080" rowspan="2" width="10%"><b>Phase</b></th>
+<th bgcolor="#808080" rowspan="2" width="10%"><b>R/W</b></th>
+<th bgcolor="#808080" colspan="8" width="50%"><b>Instruction Code</b></th>
+<td bgcolor="#808080" rowspan="2" width="30%"><b>Remarks</b>
+</td></tr>
+
+<tr>
+<th bgcolor="#808080"><b>D<sub>7</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>6</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>5</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>4</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>3</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>2</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>1</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>0</sub></b></th>
+</tr>
+<tr>
+<td rowspan="2">Command</td>
+<td>W</td>
+<td>0</td>
+<td>MF</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td rowspan="2">Command Codes</td>
+</tr>
+
+<tr>
+<td>W</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>HD</td>
+<td>US<sub>1</sub></td>
+<td>US<sub>0</sub></td>
+</tr>
+
+<tr>
+<td>Execution</td>
+<td colspan="9"></td>
+<td>The first correct ID information on the cylinder is stored in data register</td>
+</tr>
+
+
+<tr>
+<td rowspan="7">Result</td>
+<td>R</td>
+<td colspan="8"><center>ST0</center></td>
+<td rowspan="3">Status information after command execution</td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>ST1</center></td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>ST2</center></td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>C</center></td>
+<td rowspan="4">Sector ID information during Execution Phase</td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>H</center></td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>R</center></td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>N</center></td>
+</tr>
+</tbody></table>
+
+<br><br><table border="" width="100%">
+
+<tbody><tr>
+<th colspan="12" bgcolor="#a0a0a0"><b>WRITE ID (Format Write)</b></th>
+</tr>
+<tr>
+<th bgcolor="#808080" rowspan="2" width="10%"><b>Phase</b></th>
+<th bgcolor="#808080" rowspan="2" width="10%"><b>R/W</b></th>
+<th bgcolor="#808080" colspan="8" width="50%"><b>Instruction Code</b></th>
+<td bgcolor="#808080" rowspan="2" width="30%"><b>Remarks</b>
+</td></tr>
+
+<tr>
+<th bgcolor="#808080"><b>D<sub>7</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>6</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>5</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>4</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>3</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>2</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>1</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>0</sub></b></th>
+</tr>
+<tr>
+<td rowspan="6">Command</td>
+<td>W</td>
+<td>0</td>
+<td>MF</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td rowspan="2">Command Codes</td>
+</tr>
+
+<tr>
+<td>W</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>HD</td>
+<td>US<sub>1</sub></td>
+<td>US<sub>0</sub></td>
+</tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>N</center></td>
+<td>Bytes/sector</td>
+</tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>SC</center></td>
+<td>Sectors/track</td>
+</tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>GPL</center></td>
+<td>Gap 3</td>
+</tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>D</center></td>
+<td>Filler Byte</td>
+</tr>
+
+<tr>
+<td>Execution</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>FDC formats an entire track</td>
+</tr>
+
+
+<tr>
+<td rowspan="7">Result</td>
+<td>R</td>
+<td colspan="8"><center>ST0</center></td>
+<td rowspan="3">Status information after command execution</td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>ST1</center></td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>ST2</center></td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>C</center></td>
+<td rowspan="4">In this case the ID information has no meaning</td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>H</center></td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>R</center></td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>N</center></td>
+</tr>
+</tbody></table>
+
+
+<br><br>
+<table border="" width="100%">
+
+<tbody><tr>
+<th colspan="12" bgcolor="#a0a0a0"><b>SCAN EQUAL</b></th>
+</tr>
+<tr>
+<th bgcolor="#808080" rowspan="2" width="10%"><b>Phase</b></th>
+<th bgcolor="#808080" rowspan="2" width="10%"><b>R/W</b></th>
+<th bgcolor="#808080" colspan="8" width="50%"><b>Instruction Code</b></th>
+<td bgcolor="#808080" rowspan="2" width="30%"><b>Remarks</b>
+</td></tr>
+
+<tr>
+<th bgcolor="#808080"><b>D<sub>7</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>6</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>5</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>4</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>3</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>2</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>1</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>0</sub></b></th>
+</tr>
+<tr>
+<td rowspan="9">Command</td>
+<td>W</td>
+<td>MT</td>
+<td>MF</td>
+<td>SK</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td rowspan="2">Command Codes</td>
+</tr>
+
+<tr>
+<td>W</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>HD</td>
+<td>US<sub>1</sub></td>
+<td>US<sub>0</sub></td>
+</tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>C</center></td>
+<td rowspan="4">Sector ID Information prior to command execution</td>
+</tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>H</center></td>
+</tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>R</center></td>
+</tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>N</center></td>
+</tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>EOT</center></td>
+<td></td>
+</tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>GPL</center></td>
+<td></td>
+</tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>STP</center></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Execution</td>
+<td colspan="9"></td>
+<td>Data compared between the FDD and main system</td>
+</tr>
+
+
+<tr>
+<td rowspan="7">Result</td>
+<td>R</td>
+<td colspan="8"><center>ST0</center></td>
+<td rowspan="3">Status information after command execution</td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>ST1</center></td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>ST2</center></td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>C</center></td>
+<td rowspan="4">Sector ID information after command execution</td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>H</center></td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>R</center></td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>N</center></td>
+</tr>
+</tbody></table>
+
+<br><br>
+<table border="" width="100%">
+
+<tbody><tr>
+<th colspan="12" bgcolor="#a0a0a0"><b>SCAN LOW OR EQUAL</b></th>
+</tr>
+<tr>
+<th bgcolor="#808080" rowspan="2" width="10%"><b>Phase</b></th>
+<th bgcolor="#808080" rowspan="2" width="10%"><b>R/W</b></th>
+<th bgcolor="#808080" colspan="8" width="50%"><b>Instruction Code</b></th>
+<td bgcolor="#808080" rowspan="2" width="30%"><b>Remarks</b>
+</td></tr>
+
+<tr>
+<th bgcolor="#808080"><b>D<sub>7</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>6</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>5</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>4</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>3</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>2</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>1</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>0</sub></b></th>
+</tr>
+<tr>
+<td rowspan="9">Command</td>
+<td>W</td>
+<td>MT</td>
+<td>MF</td>
+<td>SK</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td rowspan="2">Command Codes</td>
+</tr>
+
+<tr>
+<td>W</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>HD</td>
+<td>US<sub>1</sub></td>
+<td>US<sub>0</sub></td>
+</tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>C</center></td>
+<td rowspan="4">Sector ID Information prior to command execution</td>
+</tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>H</center></td>
+</tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>R</center></td>
+</tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>N</center></td>
+</tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>EOT</center></td>
+<td></td>
+</tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>GPL</center></td>
+<td></td>
+</tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>STP</center></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Execution</td>
+<td colspan="9"></td>
+<td>Data compared between the FDD and main system</td>
+</tr>
+
+
+<tr>
+<td rowspan="7">Result</td>
+<td>R</td>
+<td colspan="8"><center>ST0</center></td>
+<td rowspan="3">Status information after command execution</td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>ST1</center></td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>ST2</center></td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>C</center></td>
+<td rowspan="4">Sector ID information after command execution</td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>H</center></td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>R</center></td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>N</center></td>
+</tr>
+</tbody></table>
+
+<br><br>
+<table border="" width="100%">
+
+<tbody><tr>
+<th colspan="12" bgcolor="#a0a0a0"><b>SCAN HIGH OR EQUAL</b></th>
+</tr>
+<tr>
+<th bgcolor="#808080" rowspan="2" width="10%"><b>Phase</b></th>
+<th bgcolor="#808080" rowspan="2" width="10%"><b>R/W</b></th>
+<th bgcolor="#808080" colspan="8" width="50%"><b>Instruction Code</b></th>
+<td bgcolor="#808080" rowspan="2" width="30%"><b>Remarks</b>
+</td></tr>
+
+<tr>
+<th bgcolor="#808080"><b>D<sub>7</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>6</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>5</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>4</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>3</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>2</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>1</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>0</sub></b></th>
+</tr>
+<tr>
+<td rowspan="9">Command</td>
+<td>W</td>
+<td>MT</td>
+<td>MF</td>
+<td>SK</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td rowspan="2">Command Codes</td>
+</tr>
+
+<tr>
+<td>W</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>HD</td>
+<td>US<sub>1</sub></td>
+<td>US<sub>0</sub></td>
+</tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>C</center></td>
+<td rowspan="4">Sector ID Information prior to command execution</td>
+</tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>H</center></td>
+</tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>R</center></td>
+</tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>N</center></td>
+</tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>EOT</center></td>
+<td></td>
+</tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>GPL</center></td>
+<td></td>
+</tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>STP</center></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Execution</td>
+<td colspan="9"></td>
+<td>Data compared between the FDD and main system</td>
+</tr>
+
+
+<tr>
+<td rowspan="7">Result</td>
+<td>R</td>
+<td colspan="8"><center>ST0</center></td>
+<td rowspan="3">Status information after command execution</td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>ST1</center></td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>ST2</center></td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>C</center></td>
+<td rowspan="4">Sector ID information after command execution</td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>H</center></td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>R</center></td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>N</center></td>
+</tr>
+</tbody></table>
+
+<br><br><table border="" width="100%">
+
+<tbody><tr>
+<th colspan="12" bgcolor="#a0a0a0"><b>RECALIBRATE</b></th>
+</tr>
+<tr>
+<th bgcolor="#808080" rowspan="2" width="10%"><b>Phase</b></th>
+<th bgcolor="#808080" rowspan="2" width="10%"><b>R/W</b></th>
+<th bgcolor="#808080" colspan="8" width="50%"><b>Instruction Code</b></th>
+<td bgcolor="#808080" rowspan="2" width="30%"><b>Remarks</b>
+</td></tr>
+
+<tr>
+<th bgcolor="#808080"><b>D<sub>7</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>6</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>5</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>4</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>3</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>2</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>1</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>0</sub></b></th>
+</tr>
+<tr>
+<td rowspan="2">Command</td>
+<td>W</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td rowspan="2">Command Codes</td>
+</tr>
+
+<tr>
+<td>W</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>US<sub>1</sub></td>
+<td>US<sub>0</sub></td>
+</tr>
+
+<tr>
+<td>Execution</td>
+<td colspan="9"></td>
+<td>Head retracked to track 0</td>
+</tr>
+</tbody></table>
+<br><br><table border="" width="100%">
+
+<tbody><tr>
+<th colspan="12" bgcolor="#a0a0a0"><b>SENSE INTERRUPT STATUS</b></th>
+</tr>
+<tr>
+<th bgcolor="#808080" rowspan="2" width="10%"><b>Phase</b></th>
+<th bgcolor="#808080" rowspan="2" width="10%"><b>R/W</b></th>
+<th bgcolor="#808080" colspan="8" width="50%"><b>Instruction Code</b></th>
+<td bgcolor="#808080" rowspan="2" width="30%"><b>Remarks</b>
+</td></tr>
+
+<tr>
+<th bgcolor="#808080"><b>D<sub>7</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>6</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>5</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>4</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>3</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>2</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>1</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>0</sub></b></th>
+</tr>
+<tr>
+<td>Command</td>
+<td>W</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>Command Codes</td>
+</tr>
+
+<tr>
+<td rowspan="2">Result</td>
+<td>R</td>
+<td colspan="8"><center>ST0</center></td>
+<td rowspan="2">Status information about the FDC at the end of seek operation</td>
+</tr>
+
+<tr>
+<td>R</td>
+<td colspan="8"><center>PCN</center></td>
+</tr>
+
+</tbody></table>
+<br><br><table border="" width="100%">
+
+<tbody><tr>
+<th colspan="12" bgcolor="#a0a0a0"><b>SPECIFY</b></th>
+</tr>
+<tr>
+<th bgcolor="#808080" rowspan="2" width="10%"><b>Phase</b></th>
+<th bgcolor="#808080" rowspan="2" width="10%"><b>R/W</b></th>
+<th bgcolor="#808080" colspan="8" width="50%"><b>Instruction Code</b></th>
+<td bgcolor="#808080" rowspan="2" width="30%"><b>Remarks</b>
+</td></tr>
+
+<tr>
+<th bgcolor="#808080"><b>D<sub>7</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>6</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>5</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>4</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>3</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>2</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>1</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>0</sub></b></th>
+</tr>
+<tr>
+<td rowspan="3">Command</td>
+<td>W</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td rowspan="3">Command Codes</td>
+</tr>
+
+<tr>
+<td>W</td>
+<td colspan="4"><center>SRT</center></td>
+<td colspan="4"><center>HUT</center></td>
+</tr>
+
+<tr>
+<td>W</td>
+<td colspan="7"><center>HLT</center></td>
+<td>ND</td>
+</tr>
+</tbody></table><br><br><table border="" width="100%">
+
+<tbody><tr>
+<th colspan="12" bgcolor="#a0a0a0"><b>SENSE DRIVE STATUS</b></th>
+</tr>
+<tr>
+<th bgcolor="#808080" rowspan="2" width="10%"><b>Phase</b></th>
+<th bgcolor="#808080" rowspan="2" width="10%"><b>R/W</b></th>
+<th bgcolor="#808080" colspan="8" width="50%"><b>Instruction Code</b></th>
+<td bgcolor="#808080" rowspan="2" width="30%"><b>Remarks</b>
+</td></tr>
+
+<tr>
+<th bgcolor="#808080"><b>D<sub>7</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>6</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>5</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>4</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>3</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>2</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>1</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>0</sub></b></th>
+</tr>
+<tr>
+<td rowspan="2">Command</td>
+<td>W</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td rowspan="2">Command Codes</td>
+</tr>
+
+<tr>
+<td>W</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>HD</td>
+<td>US<sub>1</sub></td>
+<td>US<sub>0</sub></td>
+</tr>
+
+<tr>
+<td>Result</td>
+<td>R</td>
+<td colspan="8"><center>ST3</center></td>
+<td>Status information about FDD</td>
+</tr>
+
+</tbody></table><br><br>
+
+<br><br><table border="" width="100%">
+
+<tbody><tr>
+<th colspan="12" bgcolor="#a0a0a0"><b>VERSION</b></th>
+</tr>
+<tr>
+<th bgcolor="#808080" rowspan="2" width="10%"><b>Phase</b></th>
+<th bgcolor="#808080" rowspan="2" width="10%"><b>R/W</b></th>
+<th bgcolor="#808080" colspan="8" width="50%"><b>Instruction Code</b></th>
+<td bgcolor="#808080" rowspan="2" width="30%"><b>Remarks</b>
+</td></tr>
+
+<tr>
+<th bgcolor="#808080"><b>D<sub>7</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>6</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>5</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>4</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>3</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>2</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>1</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>0</sub></b></th>
+</tr>
+<tr>
+<td rowspan="2">Command</td>
+<td>W</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>Command Codes</td>
+</tr>
+<tr>
+<td>Result</td>
+<td>R</td>
+<td colspan="8"><center>ST0</center></td>
+<td>90H indicates 765B<br>80H indicates 765A/A-2</td>
+</tr>
+
+</tbody></table><br><br>
+
+
+<table border="" width="100%">
+<tbody><tr>
+<th colspan="12" bgcolor="#a0a0a0"><b>SEEK</b></th>
+</tr>
+<tr>
+<th bgcolor="#808080" rowspan="2" width="10%"><b>Phase</b></th>
+<th bgcolor="#808080" rowspan="2" width="10%"><b>R/W</b></th>
+<th bgcolor="#808080" colspan="8" width="50%"><b>Instruction Code</b></th>
+<td bgcolor="#808080" rowspan="2" width="30%"><b>Remarks</b>
+</td></tr>
+
+<tr>
+<th bgcolor="#808080"><b>D<sub>7</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>6</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>5</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>4</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>3</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>2</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>1</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>0</sub></b></th>
+</tr>
+<tr>
+<td rowspan="3">Command</td>
+<td>W</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td rowspan="3">Command Codes</td>
+</tr>
+
+<tr>
+<td>W</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>HD</td>
+<td>US<sub>1</sub></td>
+<td>US<sub>0</sub></td>
+</tr>
+
+<tr>
+<td>W</td>
+<td colspan="8"><center>NCN</center></td>
+</tr>
+
+<tr>
+<td>Execution</td>
+<td colspan="9"></td>
+<td>Head is positioned over proper cylinder on diskette</td>
+</tr>
+
+
+</tbody></table><br><br><table border="" width="100%">
+<tbody><tr>
+<th colspan="12" bgcolor="#a0a0a0"><b>INVALID</b></th>
+</tr>
+<tr>
+<th bgcolor="#808080" rowspan="2" width="10%"><b>Phase</b></th>
+<th bgcolor="#808080" rowspan="2" width="10%"><b>R/W</b></th>
+<th bgcolor="#808080" colspan="8" width="50%"><b>Instruction Code</b></th>
+<td bgcolor="#808080" rowspan="2" width="30%"><b>Remarks</b>
+</td></tr>
+
+<tr>
+<th bgcolor="#808080"><b>D<sub>7</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>6</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>5</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>4</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>3</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>2</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>1</sub></b></th>
+<th bgcolor="#808080"><b>D<sub>0</sub></b></th>
+</tr>
+<tr>
+<td>Command</td>
+<td>W</td>
+<td colspan="8"><center>Invalid Codes</center></td>
+<td>Invalid command codes (NoOp - FDC goes into standby state)</td>
+</tr>
+
+<tr>
+<td>Result</td>
+<td>R</td>
+
+<td colspan="8"><center>ST0</center></td>
+<td>ST0=80H</td>
+</tr>
+
+</tbody></table><br><br <h4="">Note:
+<ul>
+<li>Symbols used in this table are described at the end of this section.
+</li><li>A<sub>0</sub> should equal 1 for all operations.
+</li><li>X = Don't care, usually made to equal 0.
+</li></ul>
+
+<h2>System Configuration</h2>
+
+Figure 2 shows an example of a system using a µPD765A/B.
+
+<center>
+<b>Figure 2 System Configuration</b>
+</center>
+
+
+<h2>Processor Interface</h2>
+
+During command or result phases the main status register (described earlier)
+must be read by the processor before each byte of information is written
+into or read from the data register. After each byte of data read or
+written to the data register, the CPU should wait for 12µs before
+reading main status register, bits D6 and D7 in the main status
+register must be in a 0 and 1 state, respectively, before each byte of
+the command word may be written into the µPD765A/µPD765. Many of the commands require
+multiple bytes and, as a result the main status register must be read prior
+to each byte transfer to the µPD765A/µPD765. On the other hand, during the result
+phase, D6 and D7 in the main status register must both be 1's. (D6=1 and
+D7=1) before reading each byte from the data register. Note that this reading
+of the main status register before each byte transfer to the µPD765A/µPD765 is required
+only in the command and result phases, and <i>not</i> during the execution phase.
+<br><br>
+During the Execution Phase, the Main Status Register need not be read. If
+the µPD765A/µPD765 is in the Non-DMA mode, then the receipt of each data byte (if 
+µPD765A/µPD765 is reading data from FDD) is indicated by an interrupt signal on pin 18
+(INT=1). The generation of a Read signal (/RD=0) will reset the interrupt
+as well as output the data onto the data bus. For example, if the processor
+cannot handle interrupts fast enough (every 13µs for MFM mode and 27µus for the FM mode) then it may
+poll the Main Status Register and bit D7 (RQM) functions as
+the interrupt signal. If a Write Command is in process then the /WR signal
+performs the reset to the interrupt signal.
+<br><br>
+Note that in the non-DMA mode it is necessaey to examine the main status register to determine the cause of the interrupt
+,since it could be a data interrupt or a command termination interupt, either
+normal or abnormal.
+<br><br>
+If the µPD765A/µPD765 is in the DMA mode, no interrupts are generated during the
+execution phase. The µPD765A/µPD765 generates DRQ's (DMA Requests) when each byte
+of data is available. The DMA controller responds to this request with
+both a /DACK=0 (DMA Acknowledge) and a /RD=0 (Read Signal). When the
+DMA Acknowledge signal goes low (/DACK=0) then the DMA Request is cleared
+(DRQ=0). If a write command has been programmed then a /WR signal will
+appear instead of /RD. After the execution phase has been completed
+(Terminal Count has occured) or the EOT sector read/written, then an interrupt will occur (INT=1). This
+signifies the beginning of the Result Phase. When the first byte of data
+is read during the Result Phase, the Interrupt is automatically cleared (INT=0).
+<br><br>
+The /RD or /WR signals should be asserted while /DACK is true. The /CS signal
+is used in conjunction with /RD and /WR as a gating function during programmed
+I/O operations. /CS has no effect during DMA operations. If the non-DMA mode
+is chosen, the /DACK signal should be pulled up to Vcc.
+<br><br>
+It is important to note that during the Result Phase all bytes shown
+in the command table (table 4) must be read. The Read Data Command, for example, has
+seven bytes of data in the Result Phase. All seven bytes must be read in
+order to sucessfully complete the Read Data Command. The µPD765A/µPD765 will not accept
+a new command until all seven bytes have been read. Other commands may require
+fewer bytes to be read during the Result Phase.
+<br><br>
+The µPD765A/µPD765 contains five Status Registers. The Main Status Register mentioned
+above may be read by the processor at any time. The other four status registers
+(ST0,ST1,ST2 and ST3) are only available only during the Result Phase, and may be
+read only after sucessfully completing a command. The particular command that
+has been executed determines how many of the Status Registers will be read.
+<br><br>
+The bytes of data which are sent to the µPD765A/µPD765 to form the Command Phase
+and are read out of the µPD765A/µPD765 in the Result Phase, must occur in the order
+shown in table 4. That is, the Command Code must be sent first and
+the other bytes sent in the prescribed sequence. No foreshortening of the
+Command or Result Phases are allowed. After the last byte of data in the Command
+Phase is sent to the µPD765A/µPD765 the Execution Phase automatically starts. In a 
+similar fashion, when the last byte of data is read out in the Result Phase,
+the command is automatically ended and the µPD765A/µPD765 is ready for a new command.
+
+<h2>Polling</h2>
+
+After reset has been sent to the µPD765A/µPD765, the unit select
+Lines US0 and US1 will automatically go into a polling mode. In between
+commands (and between step pulses in the seek command) the µPD765A/µPD765 polls
+all four FDDs looking for a change in the Ready Line from any of the drives.
+If the Ready line changes state (usually due to a door opening or closing)
+then the µPD765A/µPD765 will generate an interrupt. When Status Register 0 (ST0)
+is read (after Sense Interrupt Status is issued), Not Ready (NR) will be
+indicated. The polling of the Ready line by the µPD765A/µPD765 continues continously
+between commands thus notifying tthe processor which drives are on or 
+off line. Each drive is polled every 1.024ms except during the Read/Write
+commands. When used with a 4MHz clock for interfacing to minifloppies, the
+polling rate is 2.048ms. See figure 3.
+<br><br>
+<b>Figure 3. Polling Feature</b>
+
+<h3>Read Data</h3>
+
+A set of nine (9) byte words are required to place the FDC into the Read
+Data Mode. After the Read Data command has been issued the FDC loads the head
+(if it is in the unloaded state), waits the specified head settling time
+(defined in the Specify Command), and begins reading ID Address Marks and
+ID fields. When the current sector number (R) stored in the ID Register
+(IDR) compares with the sector number read off the diskette, then the FDC
+outputs data (from the data field) byte-by-byte to the main system via
+the data bus.
+<br><br>
+After completion of the read operation from the current sector, the Sector
+Number is incremented by one, and the data from the next sector is read and
+output on the data bus. This continuous read function is called a Multi-Sector
+Read Operation. The Read Data Command may be terminated by the receipt
+of a Terminal Count signal. TC should be issued at the same time that the
+/DACK for the last byte of data is sent. Upon receipt of this signal, the FDC stops
+outputting data to the processor, but will continue to read data from
+the current sector, check CRC (Cyclic Redundancy Count) bytes, and then at
+the end of the sector terminate the Read Data Command. The amount of data which
+can be handled with a single command to the FDC depends upon MT (multi-track),
+MF (MFM/FM), and N (number of bytes/sector). Table 5 shows the transfer capacity.
+<br><br>
+The "multi-track" function (MT) allows the FDC to read data from both
+sides of the diskette. For a particular cylinder, data will be transferred
+starting at Sector 1, Side 0 and completing at Sector L, side 1 (Sector L =
+last sector on the side). Note, this function pertains to only one cylinder
+(the same track) on each side of the diskette.
+<br><br>
+When N=0, then DTL defines the data length which the FDC must treat as a 
+sector. If DTL is smaller than the actual data length in a sector, the data
+beyond DTL in the sector  is not sent to the Data Bus. The FDC reads (internally)
+the complete sector performing the CRC check and, depending upon the manner
+of command termination, may perform a Multi-Sector Read Operation. When N
+is non-zero, then DTL has no meaning and should be set to ffh.
+<br><br>
+<center><b>Table 5. Transfer Capacity</b>
+<table border="" width="60%">
+<tbody><tr>
+<th bgcolor="#808080"><b>Multi-Track MT</b></th>
+<th bgcolor="#808080"><b>MFM/FM</b></th>
+<th bgcolor="#808080"><b>Bytes/Sector N</b></th>
+<th bgcolor="#808080"><b>Maximum Transfer Capacity (Bytes/Sector)(Number of Sectors)</b></th>
+<th bgcolor="#808080"><b>Final Sector Read from Diskette</b></th>
+</tr>
+
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>(128)(26)=3,328</td>
+<td rowspan="2">26 at Side 0 or 26 at Side 1</td>
+</tr>
+
+<tr>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>(256)(26)=6,656</td>
+</tr>
+
+<tr>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>(128)(52)=6,656</td>
+<td rowspan="2">26 at Side 1</td>
+</tr>
+
+<tr>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>(256)(52)=13,312</td>
+</tr>
+
+<tr>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>(256)(15)=3,840</td>
+<td rowspan="2">15 at Side 0 or 15 at Side 1</td>
+</tr>
+
+<tr>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>(512)(15)=7,680</td>
+</tr>
+
+<tr>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>(256)(30)=7,680</td>
+<td rowspan="2">15 at Side 1</td>
+</tr>
+
+<tr>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>(512)(30)=15,360</td>
+</tr>
+
+<tr>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>(512)(8)=4,096</td>
+<td rowspan="2">8 at Side 0 or 8 at Side 1</td>
+</tr>
+
+<tr>
+<td>0</td>
+<td>1</td>
+<td>3</td>
+<td>(1024)(8)=8,192</td>
+</tr>
+
+<tr>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+<td>(512)(16)=8,192</td>
+<td rowspan="2">8 at Side 1</td>
+</tr>
+
+<tr>
+<td>1</td>
+<td>1</td>
+<td>3</td>
+<td>(1024)(16)=16,384</td>
+</tr>
+</tbody></table></center><br><br>
+
+At the completion of the Read Data Command, the head is not unloaded until
+after Head Unload Time Interval (specified in the Specify Command) has elapsed.
+If the processor issues another command before the head unloads then the head
+settling time may be saved between subsequent reads. This time out is
+particularly valuable when a diskette is copied from one drive to another.
+<br><br>
+If the FDC detects the Index Hole twice without finding the right sector,
+(indicated in "R"), then the FDC sets the ND (No Data) flag in Status Register
+1 to a 1 (high), and terminates the Read Data Command. (Status Register 0
+also has bits 7 and 6 set to 0 and 1 respectively).
+<br><br>
+After reading the ID and Data Fields in each sector, the FDC checks the
+CRC bytes. If an error is detected, (incorrect CRC in ID field), the FDC
+sets the DE (Data Error) flag in Status register 1 to a 1 (high), and if a
+CRC error occurs in the Data Field the FDC also sets the DD (Data Error
+in Data Field) flag in Status Register 2 to a 1 (high), and terminates
+the Read Data Command. (Status Register 0 also has bits 7 and 6 set to 0 and
+1 respectively.)
+<br><br>
+If the FDC reads a Deleted Data Address Mark off the diskette, and SK bit
+(bit D5 in the first Command Word) is not set (SK=0), then the FDC sets the
+CM (Control Mark) flag in Status Register 2 to a 1 (high), and terminates
+the Read Data Command, after reading all the data in the Sector. If SK=1,
+the FDC skips the sector with the Deleted Data Address Mark and reads the
+next sector. The CRC bits in the deleted data field are not checked when SK=1.
+<br><br>
+During disk data transfers between the FDC and the processor, via the data
+bus, the FDC must be serviced by the processor every 27µs in the FM mode,
+and every 13µs in the MFM mode, or the FDC sets the OR (Over Run) flag
+in Status Register 1 to a 1 (high), and terminates the Read Data Command.
+<br><br>
+If the processor terminates a read (or write) operation in the FDC, then
+the ID information in the Result Phase is dependant upon the state of the MT
+bit and the EOT byte. Table 2 shows the values for C,H,R and N, when the processor
+terminates the Command.
+
+<h3>Functional Description of Commands</h3>
+
+<h3>Write Data</h3>
+
+A set of nine (9) bytes are required to set the FDC into the Write Data Mode.
+After the Write Data command has been issued the FDC loads the head (if it
+is in the unloaded state), waits the specified head settling time (defined
+in the Specify Command), and begins reading ID Fields. When all four
+bytes loaded during the command (C,H,R,N) match the four bytes of the ID
+field from the diskette, the FDC takes data from the processor byte-by-byte
+via the data bus and outputs it to the FDD. See table 6.
+<br><br>
+<center><b>Table 6: Command Description</b>
+<table border="" width="50%">
+<tbody><tr>
+<th bgcolor="#808080" rowspan="2"><b>MT</b></th>
+<th bgcolor="#808080" rowspan="2"><b>EOT</b></th>
+<th bgcolor="#808080" rowspan="2"><b>Final Sector Transfered to Processor</b></th>
+<th bgcolor="#808080" colspan="4"><b>ID Information at Result Phase</b></th>
+</tr>
+
+<tr>
+<th bgcolor="#808080"><b>C</b></th>
+<th bgcolor="#808080"><b>H</b></th>
+<th bgcolor="#808080"><b>R</b></th>
+<th bgcolor="#808080"><b>N</b></th>
+</tr>
+
+<tr>
+<td rowspan="12">0</td>
+<td>1a</td>
+<td>Sector 1 to 25 at Side 0</td>
+<td rowspan="3">NC</td>
+<td rowspan="3">NC</td>
+<td rowspan="3">R+1</td>
+<td rowspan="3">NC</td>
+</tr>
+
+<tr>
+<td>0f</td>
+<td>Sector 1 to 24 at Side 0</td>
+</tr>
+
+<tr>
+<td>08</td>
+<td>Sector 1 to 7 at Side 0</td>
+</tr>
+
+<tr>
+<td>1a</td>
+<td>Sector 26 at Side 0</td>
+<td rowspan="3">C+1</td>
+<td rowspan="3">NC</td>
+<td rowspan="3">R=01</td>
+<td rowspan="3">NC</td>
+</tr>
+
+<tr>
+<td>0f</td>
+<td>Sector 15 at Side 0</td>
+</tr>
+
+<tr>
+<td>08</td>
+<td>Sector 8 at Side 0</td>
+</tr>
+
+<tr>
+<td>1a</td>
+<td>Sector 1 to 25 at Side 1</td>
+<td rowspan="3">NC</td>
+<td rowspan="3">NC</td>
+<td rowspan="3">R+1</td>
+<td rowspan="3">NC</td>
+</tr>
+
+<tr>
+<td>0f</td>
+<td>Sector 1 to 14 at Side 1</td>
+</tr>
+
+<tr>
+<td>08</td>
+<td>Sector 1 to 7 at Side 1</td>
+</tr>
+
+<tr>
+<td>1a</td>
+<td>Sector 26 at Side 1</td>
+<td rowspan="3">C+1</td>
+<td rowspan="3">NC</td>
+<td rowspan="3">R=01</td>
+<td rowspan="3">NC</td>
+</tr>
+
+<tr>
+<td>0f</td>
+<td>Sector 15 at Side 1</td>
+</tr>
+
+<tr>
+<td>08</td>
+<td>Sector 8 at Side 1</td>
+</tr>
+
+
+<tr>
+<td rowspan="12">1</td>
+<td>1a</td>
+<td>Sector 1 to 25 at Side 0</td>
+<td rowspan="3">NC</td>
+<td rowspan="3">NC</td>
+<td rowspan="3">R+1</td>
+<td rowspan="3">NC</td>
+</tr>
+
+    
+<tr>
+<td>0f</td>
+<td>Sector 1 to 14 at Side 0</td>
+</tr>
+
+<tr>
+<td>08</td>
+<td>Sector 1 to 7 at Side 0</td>
+</tr>
+
+<tr>
+<td>1a</td>
+<td>Sector 26 at Side 0</td>
+<td rowspan="3">NC</td>
+<td rowspan="3">LSB</td>
+<td rowspan="3">R=01</td>
+<td rowspan="3">NC</td>
+</tr>
+
+<tr>
+<td>0f</td>
+<td>Sector 15 at side 0</td>
+</tr>
+
+<tr>
+<td>08</td>
+<td>Sector 8 at side 0</td>
+</tr>
+
+<tr>
+<td>1a</td>
+<td>Sector 1 to 25 at Side 1</td>
+<td rowspan="3">NC</td>
+<td rowspan="3">NC</td>
+<td rowspan="3">R+1</td>
+<td rowspan="3">NC</td>
+</tr>
+
+<tr>
+<td>0f</td>
+<td>Sector 1 to 14 at Side 1</td>
+</tr>
+
+<tr>
+<td>08</td>
+<td>Sector 1 to 7 at Side 1</td>
+</tr>
+
+<tr>
+<td>1a</td>
+<td>Sector 26 at Side 1</td>
+<td rowspan="3">C+1</td>
+<td rowspan="3">LSB</td>
+<td rowspan="3">R=01</td>
+<td rowspan="3">NC</td>
+</tr>
+
+<tr>
+<td>0f</td>
+<td>Sector 15 at Side 1</td>
+</tr>
+
+<tr>
+<td>08</td>
+<td>Sector 7 at side 1</td>
+</tr>
+
+
+</tbody></table>
+
+NC (No change): The same value as the one at the beginning of
+          command execution<br>
+LSB (Least Significant Bit): The least significant bit of H
+          is complemented.
+</center>
+<br><br>
+After writing data into the current sector, the Sector Number stored in R
+is incremented by one, and the next data field is written into. The FDC
+continues this Multi-Sector Write Operation until the issuance of a 
+Terminal Count signal. If a Terminal Count Signal is sent to the FDC
+it continues writing into the current sector to complete the data field.
+If the Terminal Count signal is received while a data field is being written
+then the remainder of the data field is filled with zeros.
+<br><br>
+The FDC reads the ID field of each sector and checks the CRC bytes. If the
+FDC detects a read error (CRC error) in one of the ID fields, it sets
+the DE (Data Error) flag of Status Register 1 to a 1 (high), and terminates
+the Write Data Command. (Status Register 0 also has bits 7 and 6 set to 0 and
+1 respectively).
+<br><br>
+The Write Command operates in much the same manner as the Read Command.
+The following items are the same, and one should refer to the Read Data Command for details:
+<ul>
+<li>Transfer Capacity
+</li><li>EN (End of cylinder flag)
+</li><li>ND (No data) flag
+</li><li>Head Unload Time Interval
+</li><li>ID Information when processor terminates command (see table 2)
+</li><li>Definition of DTL when N=0 and when N&lt;&gt;0
+</li></ul>
+In the Write Data mode, data transfers between the processor and FDC, via the data bus, must
+occur every 27µs in the FM mode and every 13µs in the MFM mode. If the time
+interval between data transfers is longer than this then the FDC sets the
+OR (Over Run) flag in Status Register 1 to a 1 (high), and terminates the
+Write Data Command. (Status register 0 also has bits 7 and 6 set to 0 and 1
+respectively).
+
+<h3>Write Deleted Data</h3>
+
+This command is the same as the Write Data Command except a Deleted Data
+Address Mark is written at the beginning of the Data Field instead of the
+normal Data Address Mark.
+
+<h3>Read Deleted Data</h3>
+
+This command is the same as the Read Data Command except that when the
+FDC detects a Data Address Mark at the beginning of a Data Field (and SK=0
+(low)), It will read all the data in the sector and set the CM flag in
+Status Register 2 to a 1 (high), and then terminate the command. If SK=1,
+then the FDC skips the sector with the Data Address Mark and reads the next
+sector.
+
+<h3>Read a Track</h3>
+
+This command is similar to Read Data command except that this is a continuous
+read operation where the entire data field from each of the sectors is read.
+Immediatly after encountering the index hole, the FDC starts reading all
+data fields on the track as continuous blocks of data. If the FDC finds
+an error in the ID or DATA CRC check bytes, it continues to read data from
+the track. The FDC compares the ID information read from each sector with
+the value stored in the IDR, and sets the ND flag of Status Register 1 to
+a 1 (high) if there is no comparison. Multi-track or skip operations are
+not allowed with this command.
+<br><br>
+This command terminates when the number of sectors read is equal to EOT.
+If the
+FDC does not find an ID address mark on the diskette after it senses
+the index hole for the second time, then it sets the MA (missing address
+mark) flag in Status Register 1 to a 1 (high), and terminates the command.
+(Status Register 0 has bits 7 and 6 set to 0 and 1 respectively).
+
+<h3>Read ID</h3>
+
+The Read ID command is used to give the present position of the recording
+head. The FDC stores the values from the first ID Field it is able to read.
+If no proper ID Address Mark is found on the diskette, before the index hole
+is encountered for the second time then the MA (Missing Address Mark) flag in
+Status Register 1 is set to a 1 (high), and if no data is found then the ND
+(No Data) flag is set in Status Register 1 to a 1 (high). The command is then
+terminated with bits 7 and 6 in status register 0 set to 0 and 1, respectively.
+During this command there is no data transfer between FDC and CPU except during
+the result phase.
+
+<h3>Format a Track</h3>
+
+The Format a Track Command allows an entire track to be formatted. After the index
+hole is detected, Data is written on the Diskette: Gaps, Address Marks, ID
+Fields and Data Fields, all per the IBM System 34 (Double Density) or
+System 3740 (Single Density) format, are recorded. The particular format
+which will be written is controlled by the values programmed into N (Number
+of bytes/sector), SC (Sectors/cylinder), GPL (Gap Length) and D (Data Pattern)
+which are supplied by the processor during the Command Phase. The Data Field
+is filled with the byte of data stored in D. The ID Field for each sector
+is supplied by the processor; that is, four data requests per sector are
+made by the FDC for C (Cylinder Number), H (Head Number), R (Sector Number)
+and N (Number of bytes/sector). This allows the diskette to be formatted with
+non-sequential sector numbers, if desired.
+<br><br>
+The processor must send new values for C,H,R
+and N to the µPD765A/µPD765 for each sector on the track. If the
+FDC is set for the DMA mode, it will issue four DMA requests per sector.
+If it is set for the interrupt mode, it will issue four interrupts per sector
+and the processor must supply C,H,R and N loads for each sector. The contents of the R
+register is incremented by one after each sector is formatted, thus, the
+R register contains a value of R when it is read during the Result Phase.
+This incrementing and formatting continues for the whole track until the
+FDC encounters the index hole for the second time, whereupon it terminates
+the command.
+<br><br>
+If a fault signal is received from the FDD at the end of a write operation,
+then the FDC sets the EC flag of Status Register 0 to a 1 (high), and
+terminates the command after setting bits 7 and 6 of Status Register 0 to a 0
+and 1 respectively. Also the loss of the ready signal at the beginning of
+a command execution phase causes bits 7 and 6 of status register 0 to be set
+to 0 and 1, respectively..
+<br><br>
+Table 7 shows the relationship between N, SC and GPL for various sector sizes:
+
+<br><br>
+<b>TO BE DONE</b>
+
+<br><br>
+<center><b>Table 7: Sector Size</b>
+<table border="" width="50%">
+<tbody><tr>
+<th bgcolor="#808080"><b>FORMAT</b></th>
+<th bgcolor="#808080"><b>SECTOR SIZE</b></th>
+<th bgcolor="#808080"><b>N</b></th>
+<th bgcolor="#808080"><b>SC</b></th>
+<th bgcolor="#808080"><b>GPL(1)</b></th>
+<th bgcolor="#808080"><b>GPL(2,3)</b></th>
+<th bgcolor="#808080"><b>REMARKS</b></th>
+</tr>
+
+<tr>
+<td colspan="7">8" Standard Floppy</td>
+</tr>
+
+<tr>
+<td rowspan="3">FM Mode</td>
+<td>128 bytes/sector</td>
+<td>0</td>
+<td>1Ah</td>
+<td>07h</td>
+<td>1Bh</td>
+<td>IBM Diskette 1</td>
+</tr>
+
+<tr>
+<td>256</td>
+<td>1</td>
+<td>0Fh</td>
+<td>0Eh</td>
+<td>2Ah</td>
+<td rowspan="2">IBM Diskette 2</td>
+</tr>
+
+<tr>
+<td>512</td>
+<td>2</td>
+<td>08</td>
+<td>1Bh</td>
+<td>3Ah</td>
+</tr>
+
+<tr>
+<td rowspan="3">FM Mode</td>
+<td>1024</td>
+<td>3</td>
+<td>4</td>
+<td>-</td>
+<td>-</td>
+<td rowspan="3"></td>
+</tr>
+
+<tr>
+<td>2048</td>
+<td>4</td>
+<td>2</td>
+<td>-</td>
+<td>-</td>
+</tr>
+
+<tr>
+<td>4096</td>
+<td>5</td>
+<td>1</td>
+<td>-</td>
+<td>-</td>
+</tr>
+
+<tr>
+<td rowspan="6">MFM Mode</td>
+<td>256</td>
+<td>1</td>
+<td>1Ah</td>
+<td>0Eh</td>
+<td>36h</td>
+<td rowspan="2">IBM Diskette 2D</td>
+</tr>
+
+<tr>
+<td>512</td>
+<td>2</td>
+<td>0Fh</td>
+<td>1Bh</td>
+<td>54h</td>
+</tr>
+
+<tr>
+<td>1024</td>
+<td>3</td>
+<td>08</td>
+<td>35h</td>
+<td>74h</td>
+<td rowspan="4">IBM Diskette 2D</td>
+</tr>
+
+<tr>
+<td>2048</td>
+<td>4</td>
+<td>4</td>
+<td>-</td>
+<td>-</td>
+</tr>
+
+<tr>
+<td>4096</td>
+<td>5</td>
+<td>2</td>
+<td>-</td>
+<td>-</td>
+</tr>
+
+<tr>
+<td>8192</td>
+<td>6</td>
+<td>1</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody></table>
+¹Suggested values of GPL in Read or Write Commands to avoid splice
+         point between data field and ID field of contiguous sections.
+         <br>
+²Suggested values of GPL in format command.
+</center>
+
+<h3>Scan Commands</h3>
+
+The Scan commands allow data which is being read from the diskette to be
+compared against data which is being supplied from the main system. The FDC compares the data
+on a byte-by-byte basis, and looks for a sector of data which meets the
+conditions of D<sub>Fdd</sub>=D<sub>Processor</sub>, D<sub>Fdd</sub>&lt;=D<sub>Processor</sub>
+ or D<sub>Fdd</sub>&gt;=D<sub>Processor</sub>.
+The hexidecimal byte of FF either from memory or from FDD can be used as 
+a mask byte because it always meets the condition of the comparison.
+One's complement arithmetic is used for comparison (FF = largest number, 00 =
+smallest number). After a whole sector of data is compared, if the conditions
+are not met, the sector number is incremented (R+STP -&gt; R), and the scan
+operation is continued. The scan operation continues until one of the following
+conditions occur; the conditions for scan are met (equal, low or high), 
+the last sector on the track is reached (EOT), or the terminal count signal
+is received.
+<br><br>
+If the conditions for scan are met, then the FDC sets the SH (Scan Hit) flag
+of Status Register 2 to a 1 (high), and terminates the Scan Command. If 
+the conditions for scan are not met between the the starting sector (as
+specified by R) and the last sector on the cylinder (EOT), then the FDC
+sets the SN (Scan Not Satisfied) flag of Status Register 2 to a 1 (high),
+and terminates the Scan Command. The receipt of a terminal count signal
+from the processor or DMA Controller during the scan operation will cause
+the FDC to complete the comparison of the particular byte which is in process,
+and then to terminate the command. Table 8 shows the status of bits SH and SN 
+under various conditions of Scan.
+
+<br><br>
+<center><b>Table 8 6. Scan Conditions</b>
+<table border="" width="50%">
+
+<tbody><tr>
+<th bgcolor="#808080" rowspan="2"><b>Command</b></th>
+<th bgcolor="#808080" colspan="2"><b>Status Register 2</b></th>
+<th bgcolor="#808080" rowspan="2"><b>Comments</b></th>
+</tr>
+
+<tr>
+<th bgcolor="#808080"><b>Bit 2 = SN</b></th>
+<th bgcolor="#808080"><b>Bit 3 = SH</b></th>
+</tr>
+
+<tr>
+<td rowspan="2">Scan Equal</td>
+<td>0</td>
+<td>1</td>
+<td>D<sub>Fdd</sub>=D<sub>Processor</sub></td>
+</tr>
+
+<tr>
+<td>1</td>
+<td>0</td>
+<td>D<sub>Fdd</sub>&lt;&gt;D<sub>Processor</sub></td>
+</tr>
+
+<tr>
+<td rowspan="3">Scan Low or Equal</td>
+<td>0</td>
+<td>1</td>
+<td>D<sub>Fdd</sub>=D<sub>Processor</sub></td>
+</tr>
+
+<tr>
+<td>0</td>
+<td>0</td>
+<td>D<sub>Fdd</sub>&lt;D<sub>Processor</sub></td>
+</tr>
+
+<tr>
+<td>1</td>
+<td>0</td>
+<td>D<sub>Fdd</sub>&gt;D<sub>Processor</sub> (not &lt;=)</td>
+</tr>
+
+<tr>
+<td rowspan="3">Scan High or Equal</td>
+<td>0</td>
+<td>1</td>
+<td>D<sub>Fdd</sub>=D<sub>Processor</sub></td>
+</tr>
+
+<tr>
+<td>0</td>
+<td>0</td>
+<td>D<sub>Fdd</sub>&gt;D<sub>Processor</sub></td>
+</tr>
+
+<tr>
+<td>1</td>
+<td>0</td>
+<td>D<sub>Fdd</sub>&lt;D<sub>Processor</sub> (not &gt;=)</td>
+</tr>
+</tbody></table></center><br><br>
+		
+If the FDC encounters a Deleted Data Address Mark on one of the sectors
+(and SK=0), then it regards the sector as the last sector on the cylinder,
+sets CM (Control Mark) flag of Status Register 2 to a 1 (high) and terminates
+the command. If SK=1, the FDC skips the sector with the Deleted Address Mark,
+and reads the next sector. In the second case (SK=1), the FDC sets the
+CM (Control Mark) flag of Status Register 2 to a 1 (high) in order to show
+that a Deleted Sector had been encountered.
+<br><br>
+When either the STP (contiguous sectors=01, or alternate sectors=02
+sectors are read) or the MT (Multi-Track) are programmed, it is necessary to
+remember that the last sector on the track must be read. For example, if
+STP=02, MT=0, the sectors are numbered sequentially 1 through 26, and the
+scan command is started at sector 21; the following will happen. Sectors 21,23 and 25
+will be read, then the next sector (26) will be skipped and the index hole
+will be encountered before the EOT value of 26 can be read. This will result
+in an abnormal termination of the command. If the EOT had been set at 25,
+or the scanning started at sector 20, then the Scan Command would be completed
+in a normal manner.
+<br><br>
+During the Scan Command, data is supplied by either the processor or DMA
+Controller for comparison against the data read from the diskette. In order
+to avoid having the OR (Over Run) flag set in Status Register 1, it is necessary
+to have the data available in less than 27µs (FM mode) or 13µs (MFM mode).
+If an Overrun occurs the FDC ends the command with bits 7 and 6 of status register 0 set to
+0 and 1 respectively.
+
+<h3>Seek</h3>
+
+The read/write head within the FDD is moved from cylinder to cylinder under
+control of the Seek Command. FDC has four independant present cylinder registers for each drive.
+They are cleared only after the Recalibrate command. The FDC compares the PCN (Present Cylinder 
+Number) which is the current head position with the NCN (New Cylinder Number),
+and if there is a difference, performs the following operations:
+<br><br>
+PCN&lt;NCN: Direction signal to FDD set to a 1 (high) and Step Pulses are
+issued (Step In).
+<br><br>
+PCN&gt;NCN: Direction signal to FDD set to a 0 (low), and Step Pulses are
+issued (Step Out).
+<br><br>
+The rate at which Step Pulses are issued is controlled by SRT (Stepping Rate
+Time) in the Specify command. After each Step Pulse is ussued NCN is
+compared against PCN, and when NCN=PCN, then the SE (Seek End) flag is set
+in Status Register 0 to a 1 (high), and the command is terminated. At this
+point FDC interrupt goes high. Bits D0B-D3B in the main status register
+are set during the seek operation and are cleared by the Sense Interrupt
+Status command.
+<br><br>
+During the Command Phase of the Seek operation the FDC is in the FDC busy
+state, but during the Execution Phase it is in the non-busy state. While
+the FDC is in the non-busy state, another Seek Command may be issued, and
+in this manner parallel seek operations may be done on up to four Drives at
+once. No other command can be issued for as long as the FDC is in the process
+of sending step pulses to any drive.
+<br><br>
+If an FDD is in a not ready state at the beginning of the command execution
+phase or during the seek operation, then the NR (not ready) flag is set
+in Status Register 0 to a 1 (high), and the command is terminated after
+bits 7 and 6 of status register 0 are set to 0 and 1, respectively.
+<br><br>
+If the time to write three bytes of Seek command exceeds 150µs, the timing
+between the first two step pulses may be shorter than set in the Specify command 
+by as much as 1ms.
+<h3>Recalibrate</h3>
+
+The function of this command is to retract the read/write head within the
+FDD to the track 0 position. The FDC clears the contents of the PCN counter, and
+checks the status of the Track 0 signal from the FDD. As long as the Track
+0 signal is low, the Direction signal remains 0 (low) and Step Pulses are
+issued. When the track 0 signal goes high, he SE (seek end) flag in
+Status Register 0 is set to a 1 (high) and the command is terminated. If the
+Track 0 signal is still low after 77 Step Pulses have been issued, the FDC
+sets the SE (seek end) and EC (equipment check) flags of Status Register 0
+to both 1s (highs), and terminates the command after bits 7 and 6 of status
+register 0 are set to 0 and 1, respectively.
+<br><br>
+The ability to overlapping recalibrate commands to multiple FDDs, and the loss
+of the ready signal, as described in the seek Command, also applies to the
+recalibrate command. If the diskette has more than 77 tracks, then
+Recalibrate command should be issued twice, in order to position the
+read/write head to track 0.
+
+<h3>Sense Interrupt Status</h3>
+
+An Interrupt signal is generated by the FDC for one of the following
+reasons:
+<ul>
+<li>Upon entering the Result Phase of:
+<ul>
+	<li>Read Data command
+	</li><li>Read a Track command
+	</li><li>Read ID Command
+	</li><li>Read Deleted Data Command
+	</li><li>Write Data Command
+	</li><li>Format a Cylinder Command
+	</li><li>Write Deleted Data Command.
+	</li><li>Scan Commands
+</li></ul>
+</li><li>Ready line of FDD changes state
+</li><li>End of Seek or Recalibrate Command
+</li><li>During Execution Phase in the NON-DMA mode.
+</li></ul>
+Interrupts caused by reasons 1 and 4 above occur during normal command
+operations and are easily decernible by the processor. During an execution
+phase in DMA mode, DB5 in the main status register is high. Upon entering
+the result phase this bit gets cleared. Reasons 1 and 4 do not require
+Sense Interrupt Status Commands. The interrupt is cleared by reading/writing
+data to the FDC. Interrupts caused by reasons 2 and 3 above may be uniquely identified with the aid
+of the Sense Interrupt Status Command. This command when issued resets the
+interrupt signal and, via bits 5,6 and 7 of the Status Register 0 identifies
+the cause of the interrupt. See table 9.
+<br><br>
+<center><b>Table 9. Interrupt Status</b>
+<table border="" width="50%">
+<tbody><tr>
+<th bgcolor="#808080"><b>SEEK END</b></th>
+<th bgcolor="#808080" colspan="2"><b>INTERRUPT CODE</b></th>
+<th bgcolor="#808080" rowspan="2"><b>CAUSE</b></th>
+</tr>
+
+<tr>
+<th bgcolor="#808080"><b>BIT 5</b></th>
+<th bgcolor="#808080"><b>BIT 6</b></th>
+<th bgcolor="#808080"><b>BIT 7</b></th>
+</tr>
+
+<tr>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>Ready Line Changed state, either polarity</td>
+</tr>
+
+<tr>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>Normal Termination of Seek or Recalibrate Command</td>
+</tr>
+
+<tr>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>Abnormal Termination of Seek or Recalibration command</td>
+</tr>
+</tbody></table></center><br><br>
+The Sense Interrupt Status command is used in conjunction with the Seek
+and Recalibrate commands which have no result phase. When the disk drive
+has reached the desired head position the µPD765A/µPD765 will
+set the interrupt line true. The host CPU must then issue a Sense Interrupt
+Status command to determine the actual cause of the interrupt, which could
+be seek end or a change in ready status from one of the drives. A graphic
+example is given in figure 4.
+<br><br>
+<b>Figure 4. Seek, Recalibrate and Sense Interrupt Status</b>
+<h3>Specify</h3>
+
+The Specify Command sets the initial values for each of the three internal
+timers. The HUT (Head Unload Time) defines the time from the end of the
+Execution Phase of one of the Read/Write Commands to the head unload state.
+The Timer is programmable from 16 to 240ms in increments of 16 ms (01=16 ms,
+02=32 ms.....0F=240ms). The SRT (Step Rate Time) defines the time interval
+between adjacent step pulses. This timer is programmable from 1 to 16ms in
+increments of 1 ms (F = 1ms, E = 2ms, D=3ms, etc). The HLT (Head Load Time)
+defines the time between when the Head Load signal goes high and the
+Read/Write operation starts. This timer is programmable from 2 to 254 ms
+in increments of 2ms (01=2ms, 02=4ms, 03=6ms ..... FE=254 ms).
+<br><br>
+The time intervals mentioned above are a direction function of the clock
+(CLK on pin 19). Times indicated above are for an 8 Mhz clock, if the clock
+was reduced to a 4Mhz (mini-floppy application) then all time intervals
+are increased by a factor of 2.
+<br><br>
+The choice of DMA or NON-DMA operation is made by the ND (NON-DMA) bit. When
+this bit is high (ND=1) the NON-DMA mode is selected, and when ND=0 the
+DMA mode is selected.
+
+<h3>Sense Drive Status</h3>
+
+This command may be used by the processor whenever it wishes to obtain the
+status of the FDDs. Status Register 3 contains the Drive Status information stored
+internally in FDC registers.
+
+<h3>Invalid</h3>
+
+If an invalid command is sent to the FDC (a command not defined above), then
+the FDC will terminate the command after bits 7 and 6 of status register 0
+are set to 1 and 0, respectively. No interrupt is generated by the µPD765A/µPD765
+during this condition. Bit 6 and Bit 7 (DIO and RQM) in the Main Status
+Register are both 1 (high) indicating to the processor that the µPD765A/µPD765 is
+in the Result Phase and the contents of Status Register (ST0) must be read.
+When the processor reads Status Register 0 it will find a 80H indicating
+an invalid command was received.
+<br><br>
+A Sense Interrupt Status Command must be sent after a Seek or Recalibrate
+interrupt, otherwise the FDC will consider the next command to be an Invalid
+Command.
+<br><br>
+In some applications the user may wish to use this command as a No-Op command,
+to place the FDC in a standby or no operation state.
+
+<h2>Data Format</h2>
+
+Figure 5 shows the data transfer format for the µPD765A and µPD2765 in
+various modes.
+
+<center>
+<b>Figure 5 Data Format (Sheet 1 of 2)</b>
+</center>
+
+<center>
+<b>Figure 5 Data Format (Sheet 2 of 2)</b>
+
+
+
+
+
+</center></body></html>
