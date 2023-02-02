@@ -46,23 +46,24 @@ etc... </br>
 #3. Nobody on internet has the 4x EPROMS </br>
 IC09, IC10, IC11, IC12, Only 2x EPROMS IC09, IC10. </br>
 S1000 Operating system can be upgraded just replacing 2x EPROMS IC9 & IC10, </br>
-is Unknown what the other 2x EPROM do or how was replaced in S1100. </br>
-i Have removed all Eproms i have from a S1000 and will Extract with XGecu TL866ii plus, </br>
-but i have an older version of the board, came with v2.1 Eproms. </br>
+is unknown what the other 2x EPROM do or how was replaced in S1100. </br>
+removed all Eproms i have from a S1000 and Extract with XGecu TL866ii plus, </br>
+S1000 was manufactured between 1988 to 1993, the board i have came with v2.1 Eproms. </br>
 Unknown if later revisions of the S1000 have a different IC11 & IC12. </br>
-some machines allow to split the code different versions, and work ok. </br>
-for example: Chauvet Q-Scan 250 </br>
-#4. The S1000 Service Manual is very Basic, only has DC offset "Class A/B" calibration procedure for the AD/DA boards. </br>
-does Not even tell what voltage to measure in the SMPS & Linear PSUs, you have to unscrew the PSU to know its a 5v 6A. </br>
+some machines allow to split the code in different versions and work ok. </br>
+example: Chauvet Q-Scan 250 </br>
+#4. The S1000 Service Manual is very Basic, only has DC offset "Class A/B" calibration procedure for the AD/DA boards, </br>
+does Not even tell what voltage to measure in the SMPS & Linear PSUs, you have to unscrew the PSU to know its a 5v 6A, </br>
 take photos of the linear regulators to know the voltages for the Analog circuit. </br>
-the Original Back Panel PSU / Trnasformer / Flyback or what ever it is... is Unknown. </br>
+the Original Back Panel PSU / Transformer / Flyback or what ever it is... is Unknown. </br>
 
-The Project RoadMap. </br>
+The Project RoadMap: </br>
 1. Collect all information. </br>
 2. Recreate all boards in KiCAd or similar, Target3001!, etc... </br>
-3. Reduce Size, Replace all CMOS logic with FPGA. </br> mini Akai S1000, similar to PiAmiga and A1500 Amiga cases. 
+3. Reduce Size, Replace all CMOS logic with FPGA. </br> 
+mini Akai S1000, similar to PiAmiga and A1500 Amiga cases. </br>
 4. design a complete SMT version. </br>
-5. replace hard to find components with easier to find components, like screen, </br>
+5. replace hard to find components with easy to find components, like the screen, </br>
    similar to Gotek that allows different screen types. </br>
 6. improve air flow design with thermal camera.
 
@@ -70,10 +71,10 @@ The project started long ago.. but Not Open Source, and incomplete. </br>
 Example: someone in Australia is making 32MB RAM boards for S1000 </br>
 https://www.firstpr.com.au/rwi/smem/  </br>
 S1000 allows 4x 8MB or 1x 32MB. </br>
-There were many 3rd party 8MB developers back in the day, </br>
+There were many 3rd party 8MB developers in the 90s, </br>
 most used different chipset, some had resistor networks, capacitors, others Not, </br>
 some had electrolitics, others tantalum, some branded, some generic. </br>
-i have Generic 4-layer PCB, </br>
+i have a 8MB Generic 4-layer PCB, </br>
 16x Ti TMS44100DJ PCP 4063 IN -80 + 2x 74HC541 + 2x 74AC541 + 3x Res Net 4-101GB. </br> 
 
 32MB of RAM is plenty for a single instrument. </br>
@@ -91,11 +92,11 @@ http://ntonyx.com/sf_f.htm </br>
 https://ia601004.us.archive.org/4/items/soundfonts_201910/8mbgm_enhanced18.sf2 </br>
 https://archive.org/download/500-soundfonts-full-gm-sets </br>
 
-The 8x Akai S-series CD-ROMs, the last one has different GM versions. </br>
-havent tested vs. the more popular GM.sf2 on the net. </br>
+The 8x Akai S-series CD-ROMs, the 8th has different GM versions, </br>
+havent tested vs. popular GM.sf2 on the net. </br>
 
 Some people Remember Old Games MIDI music in a certain way, others in other way, different Guitars, MT-32, FM, CZ-101 </br>
-There are many DOOM, Sierra & Prince of Persia Game tests online. </br>
+There are many DOOM, Sierra & Prince of Persia Sound Tests online. </br>
 
 Software that allows to Read & Write & "Translate" different formats. </br>
 https://sourceforge.net/projects/akaiutil/files/ </br>
