@@ -20,10 +20,53 @@ Board has a 16-Bit 8088 type CPU with 7 "0-6" 64-Pin Nubus like connectors, </br
 upto 32MB Sound/Sample Memory add-on card(s) SIMM, similar to 72-Pin RAM. </br>
 Built-In MIDI i/o connectors, Floppy controller, 640x240 LCD HD44780 type Screen, </br>
 optional add-on cards: Digital Audio i/o board, SCSI controller board. </br>
-4x UV-C Eresable EPROMS 27C512, 2x Unknown purpose, </br>
+IC9, IC10, IC11, IC12 UV-C Eraseable EPROMS 27C512, "2x Unknown purpose", </br>
 XO: </br>
 2x 16MHz, </br>
 1x 33.8688MHz TD3080/TD11000 </br> 
+
+IC1 NEC µD70216GP-8 V50 1984 CPU / MCU </br>
+IC2 TEL TE7730 Super i/o </br>
+IC3 L7A0218 / FLR-6009 / 8902 Unknown, </br>
+IC4 L7A0109 / ITP-6009 / 8851 Unknown. </br>
+IC5 LC7981 LCD Screen </br>
+IC6 NEC D7265C Floppy </br>
+IC7 NEC D71065G Floppy </br>
+IC8 NEC MB89255A Parallel io </br>
+IC13 Sony CXK5816PN-12L SRAM </br>
+IC14 MN41464A-08 </br>
+IC15 " </br>
+IC16 " </br>
+IC17 " </br>
+IC18 74ac158e </br>
+IC19 " </br>
+IC20 74hc138p </br>
+IC33 74ac139e </br>
+IC34 74ac541e </br>
+IC35 " </br>
+IC40 74ac00e </br>
+IC41 74ac32e </br>
+IC42 74hc10p </br>
+IC48 78M12 </br>
+IC49 79M12 </br>
+IC50 MN41464A </br>
+IC51 " </br>
+IC52 " </br>
+IC53 " </br>
+IC54 74ac139e </br>
+IC55 74hc32p </br>
+P108 34-Pin Floppy Controller </br>
+P109 26-Pin Front Panel </br>
+P110 50-Pin Ribbon </br>
+P112 10-Pin Front Panel </br>
+P114 Back-Light </br>
+P117 </br>
+P118 4-Pin Floppy Power connector. </br>
+P119 </br>
+P111 5vdc 6A </br>
+P115 12-0-12 AC Power Input </br>
+J101 MIDI In/Out/Thru </br>
+IC47 9L T520D </br>
 
 Scanning The Bottom Layer-4 on a Cheap scanner with RGB-LED + Monochromatic CCD </br>
 Scanner moves Vertical, Scans Horizontal PCB traces flawless, </br>
