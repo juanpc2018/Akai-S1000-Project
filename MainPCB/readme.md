@@ -50,6 +50,8 @@ IC26 74hc139p </br>
 IC27 74hc74p </br>
 IC28 74hc595p </br>
 IC29 74hc595p </br>
+IC30 74hc573p </br>
+IC31 74hc573p </br>
 IC33 74ac139e </br>
 IC34 74ac541e </br>
 IC35 " </br>
