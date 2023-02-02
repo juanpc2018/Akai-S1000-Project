@@ -1,0 +1,983 @@
+PSIONICS FILE - RESOURCE.FMT
+============================
+Format of Resource files
+Last modified 2000-11-06
+========================
+
+Resource files are uses to hold information for a program which does not
+need to be held in the program itself. Two reasons for doing this are:
+- the contents of the resource file do not take up process memory when
+  not being used;
+- the resource file can be changed on a per-language basis without changing
+  the rest of the program.
+
+Although text-based data is the usual sort of information stored in a resource
+file, any binary data can be stored.
+
+All resource files have an index table that lists the file offsets for each
+resource in the file. The number of resources present can be calculated from
+the length of the index table.
+
+The file header of a resource file is:
+
+  Offset  0 (word): offset of index table
+  Offset  2 (word): length in bytes of index table
+
+A resource file may be standard or compressed. To differentiate between them,
+the index table offset will be equal to 4 for compressed files, and >4 for
+standard files. The format of the index table differs between standard and
+compressed resource files.
+
+Resource Identifiers
+--------------------
+Resources are identified by number. Negative numbers refer to the system
+resources. System resources are always available to OPL programs. To access
+User resource data, use positive numbers. Resource identifiers count from 1 up
+for user resources and -1 down for system resources. Zero is not allowed.
+
+OPL Code to Load User Resource File
+-----------------------------------
+REM Can call this multiple times during program execution.
+PROC amLdRsc%:( rscname$ )             REM load resource
+  LOCAL name$( 130 ), LOlib%, rsc%, usrrsc%
+  usrrsc% = UADD( PEEKW( $14 ), 8 )
+  REM NOTE: It is possible to replace the currently loaded system resources
+  REM       with data from a new file! Use the following instead:
+  REM usrrsc% = UADD( PEEKW( $14 ), 6 )
+  REM Note that this only affects this program.
+  rsc% = FINDLIB( LOlib%, "olib.dyl" )
+  IF rsc% :RAISE rsc% :ENDIF
+  rsc% = PEEKW( usrrsc% ) :REM hwimman.rcb
+  IF rsc% <> 0
+    ENTERSEND0( rsc%, 0 ) :REM 0=O_DESTROY
+    POKEW usrrsc%, 0 :REM hwimman.rcb
+  ENDIF
+  IF rscname$ <> ""
+    name$ = LEFT$( rscname$, 129 ) + CHR$( 0 )
+    rsc% = NEWOBJH( LOlib%, 12 ) :REM 12=C_RSCFILE
+    IF rsc% = 0 OR ENTERSEND0( rsc%, 1, #UADD( ADDR( name$ ), 1 ) )
+      RETURN 1
+    ENDIF
+    POKEW usrrsc%, rsc% :REM hwimman.rcb
+  ENDIF
+ENDP
+
+OPL Code to Read Resource Data
+------------------------------
+REM This will only work for resource data entries <= 255 bytes long. Any
+REM longer and they will corrupt memory!
+PROC rscData$:( id% )
+  LOCAL data$( 255 ), addr%
+  addr% = ADDR( data$ )
+  POKEB addr%, SEND( PEEKW( $14 ), 7, #id%, #UADD( addr%, 1 ) )
+  RETURN data$
+ENDP
+
+Standard Resource Files
+-----------------------
+Standard resource files typically have their resources first, followed by the
+index table to ensure the index table is at an offset >4. Standard resource
+files can have their index table before the resources, but there must be a
+minimum one byte gap between the file header and the start of the index table
+to ensure the index table does not start at offset 4.
+
+The index table is an array of words, giving the offsets of each resource in
+order. By convention resources are numbered from 1 upwards. If the table holds
+T entries, there are T-1 resources (1 to T-1); entry N is the offset of the
+end of resource N-1 as well as the offset of resource N, and entry T is the
+offset of resource T-1, and so should equal offset 0 of the file.
+
+For example, if a standard resource file contains two resources of length A and
+B respectively, the file contains:
+
+    Offset 0 (word)    : A+B+4 (offset to index table)
+    Offset 2 (word)    : 6     (length in bytes of index table)
+    Offset 4 to A+3    : value of resource 1
+    Offset A+4 to A+B+3: value of resource 2
+    Offset A+B+4 (word): 4     (offset to resource 1)
+    Offset A+B+6 (word): A+4   (offset to resource 2)
+    Offset A+B+8 (word): A+B+4 (offset to end of file)
+
+Compressed Resource Files
+-------------------------
+Compressed resource files have their index table immediately following the
+header, with the resource data after the index table. This means that
+compressed resource files will always have an index table offset of 4.
+
+The index table is an array of words, arranged in pairs for each resource in
+the file, followed by a trailing word. If the table holds T words, there are
+(T-1)/2 resources (1 to (T-1)/2). Each of the pairs is first the offset in the
+file of the resource, followed by the *decompressed* length of the resource. If
+bit 15 of the length is set (length AND $8000), then the resource is stored
+*uncompressed*. The trailing word is the offset to the end of the file.
+
+For example, if a compressed resource file contains two resources of length A
+and B respectively, the file contains:
+
+    Offset  0 (word)     : 4      (offset to index table)
+    Offset  2 (word)     : 10     (length in bytes of index table)
+    Offset  4 (word)     : 14     (offset to resource 1)
+    Offset  6 (word)     : X      (decompressed length of resource 1)
+    Offset  8 (word)     : A+14   (offset to resource 2)
+    Offset 10 (word)     : Y      (decompressed length of resource 2)
+    Offset 12 (word)     : A+B+14 (offset to end of file)
+    Offset 14 to A+13    : value of resource 1
+    Offset A+14 to A+B+13: value of resource 2
+
+The compression used is static Huffman coding. This coding is tailored to
+western european languages, English in particular, and is most likely
+non-optimal for other languages. The lowercase versions of the eight most
+common English letters (ETAONRIS) are all 5 bits in length (in fact E is only
+4 bits long). These would make up more than half of all English text letters.
+Note that lesser used characters have codes 14 bits long!
+
+Since the Huffman coding has been optimised for English language text, it is
+generally unsuitable for binary data, although there is no reason why it
+couldn't be used. The main obstacle is that binary data tends not to compress
+well, and due to the way the resource decompression routines work, it is
+sometimes not possible to compress data. In such cases, the data must be stored
+uncompressed. This is explained further below.
+
+------------------
+Huffman Code Table
+------------------
+
+The complete code table is shown below. The decoding table is stored in the file
+"ROM::R_.HFT". Following the table is an OPL program to generate this table,
+although *not* in ASCII order. Note that the fact the Huffman decoding table is
+stored in a file makes it possible that different tables could be tailored to
+different languages, although compressed resource files would not be portable
+between machines with different decoding tables.
+
+  ASCII Character Huffman Code
+  ----- --------- --------------
+     0                        11
+     1                    110010
+     2                   0100100
+     3                  10001100
+     4                   1101100
+     5                  01010000
+     6                  01010010
+     7                  10010001
+     8                  01011101
+     9                  10011001
+    10                  00010001
+    11                 100010000
+    12                  11000110
+    13                 000010000
+    14                 011001001
+    15                 011010010
+    16                 010001001
+    17                 101100110
+    18                 111111101
+    19                0010101100
+    20                  10011101
+    21                   0111101
+    22                 100011101
+    23                 000011101
+    24                  01101101
+    25                 011111101
+    26                0101111000
+    27                   0010010
+    28                1011000101
+    29                0101001100
+    30              011100011000
+    31                 001111000
+    32                      1110
+    33      !          101001001
+    34      "           11111000
+    35      #         1001100110
+    36      $        10101010001
+    37      %           01110000
+    38      &        01100011000
+    39      '        11011101101
+    40      (          000011001
+    41      )          001101001
+    42      *         0001100110
+    43      +        00000011000
+    44      ,          111010001
+    45      -           00001001
+    46      .          101111101
+    47      /          100101001
+    48      0          001001100
+    49      1         1000101001
+    50      2        11101111000
+    51      3         1101010001
+    52      4         0011000101
+    53      5         1111010010
+    54      6         0000101001
+    55      7       011001000101
+    56      8      1001011011001
+    57      9         1111001001
+    58      :           01000110
+    59      ;        00101010001
+    60      <       111111011001
+    61      =         0111010010
+    62      >       011111011001
+    63      ?         1111101101
+    64      @          011010001
+    65      A           00101100
+    66      B         1101001100
+    67      C           11010000
+    68      D           10010000
+    69      E           11100110
+    70      F           11101001
+    71      G         1101000101
+    72      H         0111001001
+    73      I           11011101
+    74      J       100100011000
+    75      K         0111101101
+    76      L          001010001
+    77      M           10101001
+    78      N           10000110
+    79      O          110101100
+    80      P           11001100
+    81      Q        01011101101
+    82      R           00101101
+    83      S            0111001
+    84      T           11110000
+    85      U          001001001
+    86      V       000100011000
+    87      W          101101001
+    88      X        10011101101
+    89      Y       111000011000
+    90      Z      0001011011001
+    91      [         0001000101
+    92      \        00011101101
+    93      ]      1001000011000
+    94      ^     11100011011001
+    95      _     01100011011001
+    96      `     10100011011001
+    97      a              10100
+    98      b           00001100
+    99      c             100101
+   100      d             000100
+   101      e               1010
+   102      f            1011000
+   103      g            0111000
+   104      h            0100110
+   105      i              01000
+   106      j      0001000011000
+   107      k           10011000
+   108      l              10101
+   109      m             110001
+   110      n              11100
+   111      o              00010
+   112      p             001101
+   113      q       101111011001
+   114      r              00001
+   115      s              10110
+   116      t              00000
+   117      u            0110000
+   118      v           00000110
+   119      w            0000101
+   120      x           10101101
+   121      y            1100100
+   122      z         1001111101
+   123      {       111010101100
+   124      |     00100011011001
+   125      }     11000011011001
+   126      ~     01000011011001
+   127           10000011011001
+   128      Ä        01101111000
+   129      Å     00000011011001
+   130      Ç       001111011001
+   131      É     11111101011001
+   132      Ñ     01111101011001
+   133      Ö     10111101011001
+   134      Ü       110111011001
+   135      á      1110000011000
+   136      à       010111011001
+   137      â     00111101011001
+   138      ä       011000011000
+   139      ã      1110011011001
+   140      å      0110011011001
+   141      ç     11011101011001
+   142      é     01011101011001
+   143      è     10011101011001
+   144      ê       011010101100
+   145      '     00011101011001
+   146      '      0110000011000
+   147      "      1010011011001
+   148      "     11101101011001
+   149      ï     01101101011001
+   150      ñ     10101101011001
+   151      ó     00101101011001
+   152      ò       100111011001
+   153      ô     11001101011001
+   154      ö     01001101011001
+   155      õ     10001101011001
+   156      ú     00001101011001
+   157      ù     11110101011001
+   158      û     01110101011001
+   159      ü     10110101011001
+   160              000111011001
+   161      °     00110101011001
+   162      ¢     11010101011001
+   163      £     01010101011001
+   164      §     10010101011001
+   165      •     00010101011001
+   166      ¶     11100101011001
+   167      ß     01100101011001
+   168      ®     10100101011001
+   169      ©     00100101011001
+   170      ™     11000101011001
+   171      ´     01000101011001
+   172      ¨     10000101011001
+   173      ≠      1010000011000
+   174      Æ       101000011000
+   175      Ø     00000101011001
+   176      ∞     11111001011001
+   177      ±      0010011011001
+   178      ≤       111011011001
+   179      ≥     01111001011001
+   180      ¥         0101000101
+   181      µ          111000101
+   182      ∂      0010000011000
+   183      ∑     10111001011001
+   184      ∏       111001000101
+   185      π     00111001011001
+   186      ∫     11011001011001
+   187      ª     01011001011001
+   188      º     10011001011001
+   189      Ω     00011001011001
+   190      æ     11101001011001
+   191      ø     01101001011001
+   192      ¿     10101001011001
+   193      ¡     00101001011001
+   194      ¬     11001001011001
+   195      √     01001001011001
+   196      ƒ     10001001011001
+   197      ≈     00001001011001
+   198      ∆     11110001011001
+   199      «     01110001011001
+   200      »       011011011001
+   201      …     10110001011001
+   202            00110001011001
+   203      À     11010001011001
+   204      Ã     01010001011001
+   205      Õ     10010001011001
+   206      Œ     00010001011001
+   207      œ     11100001011001
+   208      –       101011011001
+   209      —     01100001011001
+   210      “     10100001011001
+   211      ”     00100001011001
+   212      ‘     11000001011001
+   213      ’     01000001011001
+   214      ÷     10000001011001
+   215      ◊     00000001011001
+   216      ÿ     11111100011001
+   217      Ÿ     01111100011001
+   218      ⁄     10111100011001
+   219      €     00111100011001
+   220      ‹     11011100011001
+   221      ›     01011100011001
+   222      ﬁ     10011100011001
+   223      ﬂ     00011100011001
+   224      ‡       101010101100
+   225      ·       001010101100
+   226      ‚     11101100011001
+   227      „     01101100011001
+   228      ‰     10101100011001
+   229      Â     00101100011001
+   230      Ê     11001100011001
+   231      Á     01001100011001
+   232      Ë     10001100011001
+   233      È     00001100011001
+   234      Í     11110100011001
+   235      Î     01110100011001
+   236      Ï     10110100011001
+   237      Ì     00110100011001
+   238      Ó     11010100011001
+   239      Ô     01010100011001
+   240              01001000101
+   241      Ò     10010100011001
+   242      Ú     00010100011001
+   243      Û     11100100011001
+   244      Ù     01100100011001
+   245      ı     10100100011001
+   246      ˆ     00100100011001
+   247      ˜     11000100011001
+   248      ¯     01000100011001
+   249      ˘     10000100011001
+   250      ˙        10100011000
+   251      ˚     00000100011001
+   252      ¸         0001111101
+   253      ˝       111100011000
+   254      ˛          110001001
+   255      ˇ            1111001
+
+This OPL program will generate the above table:
+
+-----8<-------------------------------------------------------------------------
+
+PROC main:
+  GLOBAL table%( 512 )
+  LOCAL ret%, h%, code$( 255 )
+  
+  CACHE 2000, 2000
+  
+  ret% = IOOPEN( h%, "ROM::R_.HFT", $400 )
+  IF ret% < 0 :RAISE ret% :ENDIF
+  IOREAD( h%, ADDR( table%() ), 764 )
+  IOCLOSE( h% )
+  
+  code$ = "0"
+  WHILE 1
+    ret% = test%:( code$ )
+    IF ret% >= 0
+      output:( ret%, code$ )
+      WHILE RIGHT$( code$, 1 ) = "1"
+        code$ = LEFT$( code$, LEN( code$ ) - 1 )
+      ENDWH
+      IF code$ = ""
+        PRINT "Done"
+        GET
+        STOP
+      ENDIF
+      code$ = LEFT$( code$, LEN( code$ ) - 1 ) + "1"
+    ELSE
+      code$ = code$ + "0"
+    ENDIF
+  ENDWH
+ENDP
+
+REM test if the given bit code sequence can decode to a byte
+PROC test%:( code$ )
+  LOCAL i%, p%
+  i% = 1
+  p% = 1
+  WHILE i% <= LEN( code$ )
+    IF MID$( code$, i%, 1 ) = "1"
+      IF table%( p% ) AND $4000
+        p% = p% + 1
+        CONTINUE
+      ENDIF
+      IF table%( p% ) AND $8000
+        RETURN table%( p% ) AND $3FFF
+      ELSE
+        p% = table%( p% ) / 2 + 1
+      ENDIF
+    ELSE
+      IF table%( p% ) AND $4000
+        RETURN table%( p% ) AND $3FFF
+      ELSE
+        p% = p% + 1
+      ENDIF
+    ENDIF
+    i% = i% + 1
+  ENDWH
+  RETURN -1
+ENDP
+
+REM output a line of the table
+PROC output:( ch%, code$ )
+  LOCAL i%
+  i% = ch%
+  PRINT GEN$( i%, -6 );"      ";
+  IF i% < 32 OR i% = 255
+    i% = 32
+  ENDIF
+  PRINT CHR$( i% );
+  i% = LEN( code$ )
+  PRINT REPT$( " ", 19 - i% );
+  WHILE i% > 0
+    PRINT MID$( code$, i%, 1 );
+    i% = i% - 1
+  ENDWH
+  PRINT
+ENDP
+
+-----8<-------------------------------------------------------------------------
+
+----------------
+Huffman Encoding
+----------------
+
+The codes are all bit-packed into the stored bytes, least significant bit
+first. For example, compressing the text "This item is not available\0" (note
+the trailing zero byte, as in C language strings). The codes are (look them up
+in the table):
+
+T  11110000        h  0100110         i  01000           s 10110
+   1110            i  01000           t  00000           e 1010
+m  110001             1110            i  01000           s 10110
+   1110            n  11100           o  00010           t 00000
+   1110            a  10100           v  00000110        a 10100
+i  01000           l  10101           a  10100           b 00001100
+l  10101           e  1010           \0  11
+
+They are shown below packed into bytes. It's a little difficult to read as the
+bits pack in right-to-left, but the bytes are left-to-right:
+
+11110000   | 0-0100110  | 0110-0100  | 000-1110-1 | 0-00000-01 | 10001-101
+TTTTTTTT   | i hhhhhhh  | ssss iiii  | iii      s | e ttttt ii | mmmmm eee
+
+000-1110-1 | 0-10110-01 | 11100-111  | 000-00010  | 00-1110-00 | 00110-101
+iii      m |   sssss ii | nnnnn      | ttt ooooo  | aa      tt | vvvvv aaa
+
+10100-000  | 101-01000  | 0-10100-10 | 1-0000110  | 1010-1010  | 000000-11
+aaaaa vvv  | lll iiiii  | b aaaaa ll | l bbbbbbb  | eeee llll  |        \0
+
+Note that the last byte has six unused bits. The data is listed below with the
+hyphens removed and converted to hex:
+
+11110000 00100110 01100100 00011101 00000001 10001101
+   F0       26       64       1D       01       8D
+
+00011101 01011001 11100111 00000010 00111000 00110101
+   1D       59       E7       02       38       35
+
+10100000 10101000 01010010 10000110 10101010 00000011
+   A0       A8       52       86       AA       03
+
+This is resource number 3 in an English Series 3a system resource file
+(ROM::S_.RSC). Looking at the file with a hex editor confirms the encoding.
+At hex offset 314 the data bytes are:
+
+F0 26 64 1D 01 8D 1D 59 E7 02 38 35 A0 A8 52 86 AA 03
+
+The compressed length is 18 bytes, compared with 27 for the original message,
+a saving of 33%.
+
+The encoding is complicated by the fact that the Psion reads the compressed
+data into the buffer where the decompressed data is going to end up. The data
+is 'right-justified' towards the end of the buffer. Although this is not
+usually a problem (the fact the data is compressed leaves some 'working
+space'), it is possible that there will not be enough room for both the decoded
+data and the compressed data at the same time. When encoding, you will need to
+monitor the 'spare bits' required after each encoding step, and then make sure
+that there will be enough space for the maximum number of required bits. If it
+turns out there is not enough space, the data must be stored uncompressed.
+
+
+=================================
+Format of Standard Resource Items
+Last Modified 2000-11-04
+=================================
+
+Resource files are typically used to hold language-dependent data. This
+includes:
+
+o Text messages
+o Choice list items
+o Action (command) lists
+o Dialog boxes
+o Online help
+o Menus
+
+Text messages
+-------------
+These are stored as zero-terminated strings, exactly suitable for use in a
+C language program. OPL programs need to count the number of characters before
+the zero to determine the length of the string, and remove the trailing zero.
+Note that while C-strings can be almost any length, OPL strings are limited to
+255 characters.
+
+Text messages available in the system resource file are listed at the end of
+this file.
+
+For example, the resource data for the text message for "Hello, world!" is:
+
+48 65 6C 6C 6F 2C 20 77 6F 72 6C 64 21 00
+
+Choice list items
+-----------------
+These are for use with choice lists.
+
+Choice list items available in the system resource file are listed at the end
+of this file.
+
+Choice list items are formatted as:
+
+    Offset  0 (byte): count of the number of choice list items
+    Offset  1       : choice list items
+
+Each item in the resource is formatted as:
+
+    Offset  0 (byte)    : length of text in bytes, including trailing zero
+    Offset  1 (c-string): choice list item text
+
+For example, the resource data for the choice list "No,Yes" is:
+
+02          (item count)
+03          (length of "No" including trailing zero)
+4E 5F 00    ("No")
+04          (length of "Yes" including trailing zero)
+59 65 73 00 ("Yes")
+
+Or: 02 03 4E 5F 00 04 59 65 73 00
+
+Action (command) lists
+----------------------
+These are intended to be used in dialog boxes. They list paired text string and
+keycode items.
+
+Action (command) lists available in the system resource file are listed at the
+end of this file.
+
+Action (command) lists are formatted as:
+
+    Offset  0 (byte): count of keycode/text pairs
+    Offset  1       : keycode/text pairs
+
+Each pair is formatted as:
+
+    Offset  0 (byte)    : length in bytes of the keycode and text data
+    Offset  1 (word)    : keycode
+    Offset  3 (c-string): text data
+
+For example, the dialog buttons "No" and "Yes" with keycode -%n and %y
+respectively would have the following resource data:
+
+02          (item count)
+05          (length of -%n/"No" pair)
+92 FF       (-%n keycode)
+4E 5F 00    ("No")
+06          (length of %y/"Yes" pair)
+79 00       (%y keycode)
+59 65 73 00 ("Yes")
+
+Or: 02 05 92 FF 4E 5F 00 06 79 00 59 65 73 00
+
+Dialog boxes
+------------
+Suitable for use by C language programs, OPL programs are better off building
+dialog boxes using the usual commands, but reading the text strings from the
+above mentioned text message resources. Dialog buttons can be built from the
+above mentioned choice list item resources.
+
+Online help
+-----------
+These are a little complicated. See below.
+
+Menus
+-----
+Suitable for use by C language programs, OPL programs are better off building
+their menus from the above mentioned action command lists.
+
+
+===============================
+Format of Online Help resources
+Last modified 2000-11-04
+===============================
+
+Psion Series 3a and later computers have a built-in help system that can
+display online help stored in resource files.
+
+There are two types of help resources:
+
+1. Help Text
+2. Help Index
+
+Help is always displayed in the following format:
+
+/-----------------\
+| Help: Help Title|
++-----------------+
+| Help Text lines |
+| go here         |
+|-Help Index lines|
+|-appear here     |
+\-----------------/
+
+The Help Title line is in bold with a line separating it from the rest of
+the help. The Help Text lines are shown in a non-bold font. The help system
+puts a little triangle pointing to the right to the left of these lines to
+let you know what line you are pointing to.
+
+The Help Index lines (with a dash to the left of them in the above diagram)
+are displayed in a bold font and are highlighted by the help system when you
+select their line. If you press Enter on them, the help system will open a
+*new* window and take you to the related Help page.
+
+If any Help Index lines are present, the help system will always add two
+extra lines at the bottom: "Using Help" and "Index". These are the same
+throughout the help system.
+
+Be careful when using the Help Index to link to other entries. If you have
+a circular reference, the user could possibly keep on selecting the help
+pages in the cycle until your process runs out of memory!
+
+Typical Help Layout
+-------------------
+The standard help system for an application has the first page as an index
+only (with no text lines). Each help topic referred to by the index is
+usually only Help Text lines, with no further index links.
+
+Help Text Resource
+------------------
+This describes the contents of each page of help.
+
+    Offset 0 (word)    : resource number of the associated Help Index Resource
+                         (this field is zero if there is no index)
+    Offset 2 to A+2    : Help Title - A characters long, zero terminated
+    Offset A+3 (byte)  : count of lines (C) in following Help Text, zero if no
+                         Help Text is present
+    Offset A+4 to A+B+4: Help Text - B bytes long. There must be *exactly* C
+                         lines present, each line being zero terminated.
+                         This field is not present if the Count field (C) is
+                         zero
+
+The resource will be A+B+4 bytes long if C>0, if C=0 it will be A+4 bytes long.
+
+Help Index Resource
+-------------------
+This contains a list of the resource numbers of Help Text Resources whose titles
+should be shown underneath the text lines of the referring Help Text Resource.
+Whew! The example at the end of this file should make things a little clearer.
+
+    Offset 0 (byte)    : count of the number of following resource numbers (N)
+    Offset 1 (word)    : resource number of the first linked Help Text Resource
+    Offset 3 (word)    : resource number of the second linked Help Text Resource
+    :
+    Offset N*2-1 (word): resource number of the *last* linked Help Text Resource
+
+The resource will be N*2+1 bytes long, where N is the number of linked Help Text
+Resources.
+
+Example
+=======
+
+/------------\                      /--------------\           /--------------\
+|Help: MyProg|           ,--------> |Help: Heading1|   ,-----> |Help: Heading2|
++------------+           |          +--------------+   |       +--------------+
+| Sample help|           |          | Sample text  |   |       | Sample text  |
+| for MyProg.|           |          | for Heading1.|   |       | for Heading2.|
+|-Heading1   | ----------'          \--------------/   |       \--------------/
+|-Heading2   | ----------------------------------------'
+|-Using Help |
+|-Index      |
+\------------/
+
+This help file will require four resources:
+
+1. Help Text Resource for the "MyProg" page.
+2. Help Text Resource for the "Heading1" page.
+3. Help Text Resource for the "Heading2" page.
+4. Help Index Resource for the bottom of the "MyProg" page.
+
+A hex dump of each resource follows, assuming that they are resources 1 through
+4 respectively in the file:
+
+1. "MyProg" page
+----------------
+
+04004D7950726F67000253616D706C652068656C7000666F72204D7950726F672E00
+\__/\____________/ |\______________________/\______________________/
+  |    "MyProg"    |     "Sample help"            "for MyProg."
+  |                |
+  |                `-----> Number of lines following, each line is
+  |                        zero-terminated (i.e. 2 lines)
+  `--> Resource number of the Help Index Resource (i.e. resource 4)
+
+2. "Heading1" page
+------------------
+
+000048656164696E6731000253616D706C207465787400666F722048656164696E67312E00
+\__/\________________/ |\____________________/\__________________________/
+  |     "Heading1"     |    "Sample text"            "for Heading1."
+  |                    |
+  |                    `-----> Number of lines following, each line is
+  |                            zero-terminated (i.e. 2 lines)
+  `--> Zero - no index to display
+
+3. "Heading2" page
+------------------
+
+000048656164696E6732000253616D706C207465787400666F722048656164696E67322E00
+\__/\________________/ |\____________________/\__________________________/
+  |     "Heading2"     |     "Sample text"           "for Heading2."
+  |                    |
+  |                    `-----> Number of lines following, each line is
+  |                            zero terminated (i.e. 2 lines)
+  `--> Zero - no index to display
+
+4. Help Index Resource
+----------------------
+
+0202000300
+ |\__/\__/
+ |  |   |
+ |  |   `--> Resource number of the second linked help page (i.e. resource 3,
+ |  |        the "Heading2" page)
+ |  `------> Resource number of the first linked help page (i.e. resource 2,
+ |           the "Heading1" page)
+ `---------> Count of the number of linked pages (i.e. 2)
+
+
+===================================================
+Resource Data Available in the System Resource File
+Last modified 2000-11-04
+===================================================
+
+DISCLAIMER: The information for resources -1 through to -179 came from the
+            Series 3a emulator. The information for resources -180 through to
+            -191 came from a Series 3mx. Using resource IDs greater than -179
+            causes the emulator to crash and presumably a Series 3a to panic.
+            Using resource IDs greater than -191 causes the Series 3mx to
+            panic. All text messages are UK English. No doubt they are
+            different in other languages :-).
+
+Text messages
+-------------
+ID   Text
+---- ----
+-1   +-*/<,>.  NSWE
+-2   %s
+-3   This item is not available
+-4   This item cannot be changed
+-5   Busy
+-6   Scanning
+-7   Printing to %s
+-8   (page %u)
+-9   Copied
+-10  Saving as "%s"
+-11  Loading "%s"
+-12  Merging in "%s"
+-13  Nothing to bring
+-14  Not found
+-15  Nothing to find
+-16  Compressing "%s"
+-17  Cannot compress on Flash
+-18  Incorrect password
+-19  Password not confirmed
+-20  Out of range - reset to limit
+-21  Number is not valid
+-22  Invalid margins. Reset?
+-23  Undiallable character
+-24  Value out of range: %s = %s
+-25  Maximum number of characters reached
+-26  Press Tab to change this item
+-27  Help: %s
+-28  Replace the application disk
+-29  Name
+-30  Disk
+-31  Disk
+-32  File list reset
+-33  Internal
+-34  Path is %s
+-35  Choose a directory
+-36  Choose a filename
+-37  Directory already exists
+-38  File already exists: overwrite?
+-39  Max
+-40  Min
+-41  Decimal places
+-42  Significant digits
+-43  Set "Evaluate" format
+-44  Nothing to evaluate
+-45  Too long to evaluate
+-46  Xon/xoff
+-47  Enter header details
+-48  Enter footer details
+-49   (cm)
+-50   (inches)
+-51   Absent!
+-52   Unformatted!
+-53   Unrecognised!
+-54  , %luK free
+-55  Unknown
+-56  Floppy
+-57  Hard
+-58  Flash
+-59  Ram
+-60  Rom
+-61  Protected
+-62  (Tagged files)
+-63  (No files)
+-64  (No disk)
+-65  (Unformatted)
+-66  (Unrecognised)
+-67  Sound in use - please retry
+-125 General
+-126 9,
+-127 (skipping page %u)
+-128 Diagnostics: %d (%u)
+-129 Calendar %Y
+-130 page
+-131 pages
+-132 Busy, cannot print yet
+-133 Show margins
+-134 Hide margins
+-135 Opening "%s"
+-136 Print preview
+-149 SYS$AL01
+-150 Silent
+-151 Sound disabled
+-152 ROM::WORD.APP
+-153 Press Esc to exit application
+-154 "%s" created
+-155 "%s" opened
+-156 "%s" saved
+-157 "%s" compressed
+-158 "%s" merged in
+-159 Saving "%s"
+-160 Reopening "%s"
+-161 Converting "%s"
+-162 Not changed
+-163 Not saved, continue anyway?
+-164 Confirm the loss of all changes
+-165 ('Yes' discards all changes)
+-166 Nothing to print
+-167 Nothing to insert
+-168 Nothing to copy
+-169 Revert to saved?
+-170 Shift
+-171  (only)
+-172 Change password
+-187 Infrared is disabled
+-189 Infrared
+
+Action (command) lists
+----------------------
+ID  Idx Keycode Text
+--- --- ------- ----
+-68 1     13    Enter
+-68 2     27    Esc
+-68 3      8    Del
+-68 4     32    Space
+-68 5    256    (up arrow)
+-68 6    257    (down arrow)
+-68 7    258    (right arrow)
+-68 8    259    (left arrow)
+-68 9      9    Tab
+-68 10   290    Menu
+-69 1   -110    No
+-69 2    121    Yes
+-70 1     27    Continue
+-71 1     27    Abandon
+-72 1     13    Append
+-73 1     27    Cancel
+-73 2    290    Free input
+-73 3      9    Dial
+-73 4     13    Dial out
+-74 1      8    Clear
+-74 2      9    Redial
+
+Choice lists
+------------
+ID   Text
+---- ----
+-75  No,Yes
+-76  Off,On
+-77  Inches,Centimetres
+-78  Parallel,Serial,File
+-79  19200,9600,4800,2400,1200,600,300
+-80  5,6,7,8
+-81  1,2
+-82  None,Even,Odd
+-83  Fixed,Scientific,General,Hexadecimal
+-84  Radians,Degrees
+-86  A4,Custom,Executive,Legal,Letter,Monarch,DL
+-87  Portrait,Landscape
+-88  Normal,Superscript,Subscript
+-89  Left,Right,Centered,Justified,Two column,Three column
+-90  1 2 3,I II III,i ii iii
+-137 Margins off,Margins on
+-138 Facing pages,1 page,2 pages,3 pages,4 pages
+-144 Parallel,Serial,File,Fax
+-148 Rings,Chimes,Fanfare,Soft bells,Church bell
+-188 High,Low
+-190 300,600,1200,2400,4800,9600,19200,38400,57600,115200
