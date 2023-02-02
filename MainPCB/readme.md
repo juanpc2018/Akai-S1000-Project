@@ -20,7 +20,6 @@ Board has a 16-Bit 8088 type CPU with 7 "0-6" 64-Pin Nubus like connectors, </br
 upto 32MB Sound/Sample Memory add-on card(s) SIMM, similar to 72-Pin RAM. </br>
 Built-In MIDI i/o connectors, Floppy controller, 640x240 LCD HD44780 type Screen, </br>
 optional add-on cards: Digital Audio i/o board, SCSI controller board. </br>
-IC9, IC10, IC11, IC12 UV-C Eraseable EPROMS 27C512, "2x Unknown purpose", </br>
 XO: </br>
 2x 16MHz, </br>
 1x 33.8688MHz TD3080/TD11000 </br> 
@@ -33,6 +32,7 @@ IC5 LC7981 LCD Screen </br>
 IC6 NEC D7265C Floppy </br>
 IC7 NEC D71065G Floppy </br>
 IC8 NEC MB89255A Parallel io </br>
+IC9, IC10, IC11, IC12 UV-C Eraseable EPROMS 27C512 "2x Unknown purpose", </br>
 IC13 Sony CXK5816PN-12L SRAM </br>
 IC14 MN41464A-08 </br>
 IC15 " </br>
