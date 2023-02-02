@@ -1,3 +1,4 @@
+L6009A5010 / 384736J1 GCMK-204X 94V-0
 Dimensions: </br>
 365.25mm = 14,37992125984252" Measured. </br>
 365.252mm = 14,38" Aprox.</br>
