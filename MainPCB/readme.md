@@ -87,7 +87,6 @@ P119 </br>
 P111 5vdc 6A </br>
 P115 12-0-12 AC Power Input </br>
 J101 MIDI In/Out/Thru </br>
-IC47 9L T520D </br>
 
 Scanning The Bottom Layer-4 on a Cheap scanner with RGB-LED + Monochromatic CCD </br>
 Scanner moves Vertical, Scans Horizontal PCB traces flawless, </br>
