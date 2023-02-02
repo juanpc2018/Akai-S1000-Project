@@ -27,3 +27,6 @@ That a Strange desin, Analog PCB should be +15/-15vdc, or best case Scenario +18
 but dropped voltage goes somewhere, something seems to require +10/-10vdc, maybe Headphone output. </br>
 
 Analog Audio PCB i/o board is appart, connected with a 50-pin ribbon cable, and another 3-pin for +12/-12dc.</br>  
+
+The +12/-12 Linear Voltage Regulators, Diode Bridge, AC-AC Transformer can be Replaced with: </br>
+2x SMPS MeanWell RS-25-12 or similar + 2x large >2200µF 25v. </br>
