@@ -96,7 +96,7 @@ probably PCB scanning requires a White Source + RGB CCD sensor "The opposite tec
 
 Weird things: </br>
 cutting traces on Layer-4 to install more than 2MB sample memory. </br>
-Headphone output pcb is on the Back of the Chasis, over the Regulators Heatsink,</br>
+Headphone output pcb is on the Back of the Chasis, over the Linear Regulators Heatsink,</br>
 but MainPCB connector is on the Front of the case, with a long cable. </br>
 Crazy design / Things to improve. </br>
 
