@@ -1,7 +1,12 @@
 Dimensions: </br>
-365.25mm = 14,37992125984252" </br>
+365.25mm = 14,37992125984252" Measured. </br>
+365.252mm = 14,38" Guessed. </br>
 x </br>
-220.50mm = 8,681102362204724" </br>
+220.50mm = 8,681102362204724" Measured. </br>
+220.472mm = 8,68" Does Not make sense.</br>
+x </br>
+1.6000mm = 0,062992125984252" Measured. </br>
+1,6002mm = 0,063" </br>
 
 4-Layer Board </br>
 but Layer 2-3, seem to be very large planes only for (+) & GND, Unconfirmed, </br>
