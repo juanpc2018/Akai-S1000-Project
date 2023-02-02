@@ -52,6 +52,7 @@ IC28 74hc595p </br>
 IC29 74hc595p </br>
 IC30 74hc573p </br>
 IC31 74hc573p </br>
+IC32 74act573e </br>
 IC33 74ac139e </br>
 IC34 74ac541e </br>
 IC35 " </br>
@@ -66,6 +67,7 @@ IC43 74hc04p </br>
 IC44 74hc00p </br>
 IC45 74hc32p </br>
 IC46 74hc08p </br>
+IC47 9L T520D </br>
 IC48 78M12 </br>
 IC49 79M12 </br>
 IC50 MN41464A </br>
