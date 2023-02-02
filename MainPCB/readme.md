@@ -12,6 +12,7 @@ Board is like a 8088 type CPU with 64-Pin Nubus like connectors, 8-Bit Super i/o
 soldered Async SIMM CPU RAM, upto 32MB add-on card(s) SIMM SampleRAM, similar to 72-Pin RAM. </br>
 Built-In MIDI i/o connectors, Floppy controller, 640x240 LCD HD44780 type Screen, </br>
 optional add-on cards: Digital Audio i/o board, SCSI controller board. </br>
+4x EPROMS, 2x Unknown purpose. </br>
 
 Scanning The Bottom Layer-4 on a Cheap scanner with RGB-LED + Monochromatic CCD </br>
 Scanner moves Vertical, Scans Horizontal PCB traces flawless, </br>
@@ -25,10 +26,10 @@ Headphone output pcb is on the Back of the Chasis, over the Regulators Heatsink,
 but MainPCB connector is on the Front of the case, with a long cable. </br>
 Crazy design / Things to improve. </br>
 
-The linear Regulators +12/-12vdc on the Top Left of the MainPCB, </br>
+The linear Regulators +12/-12vdc on the MainPCB, </br>
 seems to be an independent circuit, but some traces go somewhere, Voltage Drop & Current limited with Diodes. </br>
-Analog PCB should be +15/-15vdc, or best case Scenario +18/-18vdc, </br>
-but dropped voltage goes somewhere, something require +10/-10vdc, maybe Headphone output circuit on the ther side of the MainPCB. </br>
+Analog PCB should be +15/-15vdc, or best case +18/-18vdc, </br>
+dropped voltage goes somewhere, something requires +10/-10vdc, probably Headphone output circuit on the ther side of the MainPCB. </br>
 
 Analog Audio PCB i/o PCB is appart, connected with a 50-pin ribbon cable, and another 3-pin for +12/-12dc.</br>  
 
