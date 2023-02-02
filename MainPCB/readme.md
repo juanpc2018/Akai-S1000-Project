@@ -12,7 +12,7 @@ Board is like a 8088 type CPU with 64-Pin Nubus like connectors, 8-Bit Super i/o
 soldered Async SIMM CPU RAM, upto 32MB add-on card(s) SIMM SampleRAM, similar to 72-Pin RAM. </br>
 Built-In MIDI i/o connectors, Floppy controller, 640x240 LCD HD44780 type Screen, </br>
 optional add-on cards: Digital Audio i/o board, SCSI controller board. </br>
-4x EPROMS, 2x Unknown purpose. </br>
+4x UV-C Eresable EPROMS, 2x Unknown purpose. </br>
 
 Scanning The Bottom Layer-4 on a Cheap scanner with RGB-LED + Monochromatic CCD </br>
 Scanner moves Vertical, Scans Horizontal PCB traces flawless, </br>
