@@ -3,7 +3,7 @@ Dimensions: </br>
 365.252mm = 14,38" Guessed. </br>
 x </br>
 220.50mm = 8,681102362204724" Measured. </br>
-220.472mm = 8,68" </br>
+220.472mm = 8,68" Aprox.</br>
 x </br>
 1.6000mm = 0,062992125984252" Measured. </br>
 1,6002mm = 0,063" </br>
