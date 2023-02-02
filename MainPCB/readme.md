@@ -20,7 +20,10 @@ Board has a 16-Bit 8088 type CPU with 7 "0-6" 64-Pin Nubus like connectors, </br
 upto 32MB Sound/Sample Memory add-on card(s) SIMM, similar to 72-Pin RAM. </br>
 Built-In MIDI i/o connectors, Floppy controller, 640x240 LCD HD44780 type Screen, </br>
 optional add-on cards: Digital Audio i/o board, SCSI controller board. </br>
-4x UV-C Eresable EPROMS, 2x Unknown purpose. </br>
+4x UV-C Eresable EPROMS 27C512, 2x Unknown purpose, </br>
+XO: </br>
+2x 16MHz, </br>
+1x 33.8688MHz TD3080/TD11000 </br> 
 
 Scanning The Bottom Layer-4 on a Cheap scanner with RGB-LED + Monochromatic CCD </br>
 Scanner moves Vertical, Scans Horizontal PCB traces flawless, </br>
