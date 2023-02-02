@@ -1,0 +1,762 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MN41464A-18 PDF Datasheet Download - Package DIP-18 ORIGINAL MN41464A-18 New original parts - ABC Semiconductor</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="MN41464A-18 PDF,datasheet for MN41464A-18,download pdf datasheet of MN41464A-18.">
+<meta name="description" content="MN41464A-18 Datasheet. Download the pdf datasheet for MN41464A-18 Package DIP-18 ORIGINAL MN41464A-18 New original parts.">
+<link href="/favicon.ico" rel="icon" type="image/x-icon" />
+<link href="/old/css/privacy.min.css" rel="stylesheet">
+<link href="/old/css/main.css" rel="stylesheet">
+</head>
+<style>
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    html { font-family: sans-serif; line-height: 1.15; -webkit-text-size-adjust: 100%; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+    article, aside, figcaption, figure, footer, header, hgroup, main, nav, section { display: block; }
+
+    body { margin: 0; font-size: 14px; font-family: "Microsoft YaHei", Arial, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; font-weight: 400; line-height: 1.5; color: #212529; text-align: left; background-color: #fff; }
+
+    hr { box-sizing: content-box; height: 0; overflow: visible; }
+
+    h1, h2, h3, h4, h5, h6 { margin-top: 0; margin-bottom: 0.5rem; }
+
+    p { margin-top: 0; margin-bottom: 1rem; }
+
+    ol, ul, dl { margin-top: 0; margin-bottom: 1rem; }
+
+    ol ol, ul ul, ol ul, ul ol { margin-bottom: 0; }
+
+    dt { font-weight: 700; }
+
+    dd { margin-bottom: .5rem; margin-left: 0; }
+
+    b, strong { font-weight: bolder; }
+
+    small { font-size: 80%; }
+
+    .m-0 { margin: 0 !important; }
+
+    .mt-0, .my-0 { margin-top: 0 !important; }
+
+    .mr-0, .mx-0 { margin-right: 0 !important; }
+
+    .mb-0, .my-0 { margin-bottom: 0 !important; }
+
+    .ml-0, .mx-0 { margin-left: 0 !important; }
+
+    .m-1 { margin: 0.25rem !important; }
+
+    .mt-1, .my-1 { margin-top: 0.25rem !important; }
+
+    .mr-1, .mx-1 { margin-right: 0.25rem !important; }
+
+    .mb-1, .my-1 { margin-bottom: 0.25rem !important; }
+
+    .ml-1, .mx-1 { margin-left: 0.25rem !important; }
+
+    .m-2 { margin: 0.5rem !important; }
+
+    .mt-2, .my-2 { margin-top: 0.5rem !important; }
+
+    .mr-2, .mx-2 { margin-right: 0.5rem !important; }
+
+    .mb-2, .my-2 { margin-bottom: 0.5rem !important; }
+
+    .ml-2, .mx-2 { margin-left: 0.5rem !important; }
+
+    .m-3 { margin: 1rem !important; }
+
+    .mt-3, .my-3 { margin-top: 1rem !important; }
+
+    .mr-3, .mx-3 { margin-right: 1rem !important; }
+
+    .mb-3, .my-3 { margin-bottom: 1rem !important; }
+
+    .ml-3, .mx-3 { margin-left: 1rem !important; }
+
+    .m-4 { margin: 1.5rem !important; }
+
+    .mt-4, .my-4 { margin-top: 1.5rem !important; }
+
+    .mr-4, .mx-4 { margin-right: 1.5rem !important; }
+
+    .mb-4, .my-4 { margin-bottom: 1.5rem !important; }
+
+    .ml-4, .mx-4 { margin-left: 1.5rem !important; }
+
+    .m-5 { margin: 3rem !important; }
+
+    .mt-5, .my-5 { margin-top: 3rem !important; }
+
+    .mr-5, .mx-5 { margin-right: 3rem !important; }
+
+    .mb-5, .my-5 { margin-bottom: 3rem !important; }
+
+    .ml-5, .mx-5 { margin-left: 3rem !important; }
+
+    .p-0 { padding: 0 !important; }
+
+    .pt-0, .py-0 { padding-top: 0 !important; }
+
+    .pr-0, .px-0 { padding-right: 0 !important; }
+
+    .pb-0, .py-0 { padding-bottom: 0 !important; }
+
+    .pl-0, .px-0 { padding-left: 0 !important; }
+
+    .p-1 { padding: 0.25rem !important; }
+
+    .pt-1, .py-1 { padding-top: 0.25rem !important; }
+
+    .pr-1, .px-1 { padding-right: 0.25rem !important; }
+
+    .pb-1, .py-1 { padding-bottom: 0.25rem !important; }
+
+    .pl-1, .px-1 { padding-left: 0.25rem !important; }
+
+    .p-2 { padding: 0.5rem !important; }
+
+    .pt-2, .py-2 { padding-top: 0.5rem !important; }
+
+    .pr-2, .px-2 { padding-right: 0.5rem !important; }
+
+    .pb-2, .py-2 { padding-bottom: 0.5rem !important; }
+
+    .pl-2, .px-2 { padding-left: 0.5rem !important; }
+
+    .p-3 { padding: 1rem !important; }
+
+    .pt-3, .py-3 { padding-top: 1rem !important; }
+
+    .pr-3, .px-3 { padding-right: 1rem !important; }
+
+    .pb-3, .py-3 { padding-bottom: 1rem !important; }
+
+    .pl-3, .px-3 { padding-left: 1rem !important; }
+
+    .p-4 { padding: 1.5rem !important; }
+
+    .pt-4, .py-4 { padding-top: 1.5rem !important; }
+
+    .pr-4, .px-4 { padding-right: 1.5rem !important; }
+
+    .pb-4, .py-4 { padding-bottom: 1.5rem !important; }
+
+    .pl-4, .px-4 { padding-left: 1.5rem !important; }
+
+    .p-5 { padding: 3rem !important; }
+
+    .pt-5, .py-5 { padding-top: 3rem !important; }
+
+    .pr-5, .px-5 { padding-right: 3rem !important; }
+
+    .pb-5, .py-5 { padding-bottom: 3rem !important; }
+
+    .pl-5, .px-5 { padding-left: 3rem !important; }
+
+    .m-n1 { margin: -0.25rem !important; }
+
+    .mt-n1, .my-n1 { margin-top: -0.25rem !important; }
+
+    .mr-n1, .mx-n1 { margin-right: -0.25rem !important; }
+
+    .mb-n1, .my-n1 { margin-bottom: -0.25rem !important; }
+
+    .ml-n1, .mx-n1 { margin-left: -0.25rem !important; }
+
+    .m-n2 { margin: -0.5rem !important; }
+
+    .mt-n2, .my-n2 { margin-top: -0.5rem !important; }
+
+    .mr-n2, .mx-n2 { margin-right: -0.5rem !important; }
+
+    .mb-n2, .my-n2 { margin-bottom: -0.5rem !important; }
+
+    .ml-n2, .mx-n2 { margin-left: -0.5rem !important; }
+
+    .m-n3 { margin: -1rem !important; }
+
+    .mt-n3, .my-n3 { margin-top: -1rem !important; }
+
+    .mr-n3, .mx-n3 { margin-right: -1rem !important; }
+
+    .mb-n3, .my-n3 { margin-bottom: -1rem !important; }
+
+    .ml-n3, .mx-n3 { margin-left: -1rem !important; }
+
+    .m-n4 { margin: -1.5rem !important; }
+
+    .mt-n4, .my-n4 { margin-top: -1.5rem !important; }
+
+    .mr-n4, .mx-n4 { margin-right: -1.5rem !important; }
+
+    .mb-n4, .my-n4 { margin-bottom: -1.5rem !important; }
+
+    .ml-n4, .mx-n4 { margin-left: -1.5rem !important; }
+
+    .m-n5 { margin: -3rem !important; }
+
+    .mt-n5, .my-n5 { margin-top: -3rem !important; }
+
+    .mr-n5, .mx-n5 { margin-right: -3rem !important; }
+
+    .mb-n5, .my-n5 { margin-bottom: -3rem !important; }
+
+    .ml-n5, .mx-n5 { margin-left: -3rem !important; }
+
+    .m-auto { margin: auto !important; }
+
+    .mt-auto, .my-auto { margin-top: auto !important; }
+
+    .mr-auto, .mx-auto { margin-right: auto !important; }
+
+    .mb-auto, .my-auto { margin-bottom: auto !important; }
+
+    .ml-auto, .mx-auto { margin-left: auto !important; }
+
+    .text-justify { text-align: justify !important; }
+
+    .text-wrap { white-space: normal !important; }
+
+    .text-nowrap { white-space: nowrap !important; }
+
+    .text-truncate { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+    .text-left { text-align: left !important; }
+
+    .text-right { text-align: right !important; }
+
+    .text-center { text-align: center !important; }
+
+    .border { border: 2px solid #dee2e6 !important; }
+
+    .border-top { border-top: 1px solid #dee2e6 !important; }
+
+    .border-right { border-right: 1px solid #dee2e6 !important; }
+
+    .border-bottom { border-bottom: 1px solid #dee2e6 !important; }
+
+    .border-left { border-left: 1px solid #dee2e6 !important; }
+
+    .border-0 { border: 0 !important; }
+
+    .clearfix:before, .clearfix:after, .dl-horizontal dd:before, .dl-horizontal dd:after, .container:before, .container:after, .container-fluid:before, .container-fluid:after, .row:before, .row:after, .form-horizontal .form-group:before, .form-horizontal .form-group:after, .btn-toolbar:before, .btn-toolbar:after, .btn-group-vertical > .btn-group:before, .btn-group-vertical > .btn-group:after, .nav:before, .nav:after, .navbar:before, .navbar:after, .navbar-header:before, .navbar-header:after, .navbar-collapse:before, .navbar-collapse:after, .pager:before, .pager:after, .panel-body:before, .panel-body:after, .modal-header:before, .modal-header:after, .modal-footer:before, .modal-footer:after { display: table; content: " "; }
+
+    .clearfix:after, .dl-horizontal dd:after, .container:after, .container-fluid:after, .row:after, .form-horizontal .form-group:after, .btn-toolbar:after, .btn-group-vertical > .btn-group:after, .nav:after, .navbar:after, .navbar-header:after, .navbar-collapse:after, .pager:after, .panel-body:after, .modal-header:after, .modal-footer:after { clear: both; }
+
+    .row { margin-right: -15px; margin-left: -15px; }
+
+    .row-no-gutters { margin-right: 0; margin-left: 0; }
+
+    .row-no-gutters [class*="col-"] { padding-right: 0; padding-left: 0; }
+
+    .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 { position: relative; min-height: 1px; padding-right: 15px; padding-left: 15px; }
+
+    .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 { float: left; }
+
+    .col-xs-12 { width: 100%; }
+
+    .col-xs-11 { width: 91.66666667%; }
+
+    .col-xs-10 { width: 83.33333333%; }
+
+    .col-xs-9 { width: 75%; }
+
+    .col-xs-8 { width: 66.66666667%; }
+
+    .col-xs-7 { width: 58.33333333%; }
+
+    .col-xs-6 { width: 50%; }
+
+    .col-xs-5 { width: 41.66666667%; }
+
+    .col-xs-4 { width: 33.33333333%; }
+
+    .col-xs-3 { width: 25%; }
+
+    .col-xs-2 { width: 16.66666667%; }
+
+    .col-xs-1 { width: 8.33333333%; }
+
+
+
+    .float-left { float: left !important; }
+
+    .float-right { float: right !important; }
+
+    .float-none { float: none !important; }
+
+    .clearfix::after { display: block; clear: both; content: ""; }
+
+    .page-break { width: 1170px; margin: 0 auto; min-height: 100%; overflow: hidden; page-break-after: always !important; position: relative; background-color: #fff; }
+
+    .container { padding-right: 15px; padding-left: 15px; margin-right: auto; margin-left: auto; }
+
+    .header, .footer { background-color: #000; color: #fff;padding:15px; }
+
+    .header .logo { display: block; padding-left: 15px; }
+
+    .header .nav > ul { margin-bottom: 0; }
+
+    .header .nav > ul > li { float: left; display: block; }
+
+    .header .nav > ul > li > a { color: #fff; font-weight: bold; text-decoration: none; font-size: 18px; padding: 25px 25px; display: block; }
+
+    .header .nav > ul > li .bom { color: #fff; background-color: #41c363; }
+
+    .product-basis .product-title { padding-top: 60px; }
+
+    .product-basis .image { padding-top: 30px; padding-bottom: 10px; }
+
+    .product-basis .image img { width: 500px; }
+
+    .product-basis .btn-inquiry { display: table; color: #fff; margin: 0 auto; background-color: #41c363; border-radius: 5px; }
+
+    .product-basis .btn-inquiry > a { color: #fff; padding: 16px 50px; display: inline-block; text-decoration: none; }
+
+    .product-info { padding-top: 50px; }
+
+    .product-info .item { padding-bottom: 30px; }
+
+    .product-info .item dd { font-weight: bold; font-size: 28px; }
+
+    .product-info .item dd img { max-width: 100%; }
+
+    .product-info .item dl { border-bottom: 2px #bfbfbf solid; }
+
+    .product-category { text-align: center; }
+
+    .product-category .title { font-weight: bold; font-size: 18px; text-align: center; display: table; padding: 15px 5px; border-bottom: 1px #bfbfbf solid; margin: 0 auto 20px auto; }
+
+    .product-category .text { font-size: 14px; color: #666; padding: 0 45px; }
+
+    .footer { padding: 10px 15px; font-size: 14px; position: fixed; left: 0; right: 0; bottom: 0; }
+
+    .footer span { padding-left: 15px; display: inline-block; }
+
+    .footer a { color: #eee; }
+
+    .product-attributes { padding-top: 10px; }
+
+    .product-attributes .title { font-weight: bold; font-size: 18px; text-align: center; display: block; margin: 20px auto 20px auto; }
+
+    .table-list table > tbody > tr > td:nth-child(1) { text-align: right; background-color: #eee; }
+
+    .product-about { padding: 8px 12px; border: 2px #bfbfbf solid; border-radius: 8px; }
+
+    .product-about > p { margin-bottom: 0; }
+
+    .product-list .list { padding: 16px 20px 8px 20px; border: 2px #bfbfbf solid; margin-bottom: -2px; }
+
+    .product-list .list dl { margin-bottom: 0; }
+
+    .product-list .list .part-number { font-size: 14px; font-weight: bold; }
+
+    .product-list .list .manufacturer { font-size: 12px; color: #666; }
+
+    .product-list .list .description { height: 2.6rem; color: #676767; font-size: 12px; display: inline-block; overflow: hidden; }
+
+    .product-list .list .thumbnail { width: 80px; height: 80px; }
+
+    .product-list .list a { text-decoration: none; color: #212529; line-height: 1.8rem; overflow: hidden; height: 1.8rem; display: block; }
+
+    .email { display: inline-block; padding-left: 5px; }
+    @media screen and (max-width: 1222px) { 
+.header .nav{display:none; }
+}
+
+</style>
+<body>
+<div class="product-body clearfix">
+<div class="header clearfix">
+<div class="container">
+<div class="float-left logo"><a href="/"><img src="/images/abcsemi-logo-pdf.png" /></a></div>
+<div class="float-left nav" style="padding-left:30px">
+<h1><a>MN41464A-18</a> Datasheet</h1>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="product-attr mb-5">
+<h3 class="py-3">Specifications for MN41464A-18</h3>
+<div class="list">
+<div class="row">
+<div class="col-md-12">
+<div class="row item-title">
+<span class="col-12 col-sm-3">Part Number :</span>
+<span class="col-12 col-sm-9">MN41464A-18</span>
+</div>
+</div>
+<div class="col-md-12">
+<div class="row item-title">
+<span class="col-12 col-sm-3">Manufacturer :</span>
+<span class="col-12 col-sm-9">ORIGINAL</span>
+</div>
+</div>
+<div class="col-md-12">
+<div class="row item-title">
+<span class="col-12 col-sm-3">Description :</span>
+<span class="col-12 col-sm-9">Package DIP-18 ORIGINAL MN41464A-18 New original parts</span>
+</div>
+</div>
+<div class="col-md-12">
+<div class="row item-title">
+<span class="col-12 col-sm-3">Series :</span>
+<span class="col-12 col-sm-9">MN41464A-18</span>
+</div>
+</div>
+<div class="col-md-12">
+<div class="row item-title">
+<span class="col-12 col-sm-3">Series :</span>
+<span class="col-12 col-sm-9">MN41464A-18</span>
+</div>
+</div>
+<div class="col-md-12">
+<div class="row item-title">
+<span class="col-12 col-sm-3">Part Status :</span>
+<span class="col-12 col-sm-9">Active</span>
+</div>
+</div>
+ <div class="col-md-12">
+<div class="row item-title">
+<span class="col-12 col-sm-3">Replacement :</span>
+<span class="col-12 col-sm-9">-</span>
+</div>
+</div>
+<div class="col-md-12">
+<div class="row item-title">
+<span class="col-12 col-sm-3">Tolerance :</span>
+<span class="col-12 col-sm-9">-</span>
+</div>
+</div>
+<div class="col-md-12">
+<div class="row item-title">
+<span class="col-12 col-sm-3">Rated Voltage :</span>
+<span class="col-12 col-sm-9">-</span>
+</div>
+</div>
+<div class="col-md-12">
+<div class="row item-title">
+<span class="col-12 col-sm-3">Rated Current :</span>
+<span class="col-12 col-sm-9">-</span>
+</div>
+</div>
+<div class="col-md-12">
+<div class="row item-title">
+<span class="col-12 col-sm-3">Operating Temperature :</span>
+<span class="col-12 col-sm-9">-</span>
+</div>
+</div>
+<div class="col-md-12">
+<div class="row item-title">
+<span class="col-12 col-sm-3">Features :</span>
+<span class="col-12 col-sm-9">-</span>
+</div>
+</div>
+<div class="col-md-12">
+<div class="row item-title">
+<span class="col-12 col-sm-3">Applications :</span>
+<span class="col-12 col-sm-9">-</span>
+</div>
+</div>
+<div class="col-md-12">
+<div class="row item-title">
+<span class="col-12 col-sm-3">Mounting Type :</span>
+<span class="col-12 col-sm-9">SMD or Through Hole</span>
+</div>
+</div>
+<div class="col-md-12">
+<div class="row item-title">
+<span class="col-12 col-sm-3">Package / Case :</span>
+<span class="col-12 col-sm-9">-</span>
+</div>
+</div>
+<div class="col-md-12">
+<div class="row item-title">
+<span class="col-12 col-sm-3">Weight :</span>
+<span class="col-12 col-sm-9">-</span>
+</div>
+</div>
+<div class="col-md-12">
+<div class="row item-title">
+<span class="col-12 col-sm-3">Condition :</span>
+<span class="col-12 col-sm-9">New and original</span>
+</div>
+</div>
+<div class="col-md-12">
+<div class="row item-title">
+<span class="col-12 col-sm-3">Quality Guarantee :</span>
+ <span class="col-12 col-sm-9">365 days warranty</span>
+</div>
+</div>
+<div class="col-md-12">
+<div class="row item-title">
+<span class="col-12 col-sm-3">Stock Resource :</span>
+<span class="col-12 col-sm-9">Franchised Distributor / Manufacturer Direct</span>
+</div>
+</div>
+<div class="col-md-12">
+<div class="row item-title">
+<span class="col-12 col-sm-3">Country of Origin :</span>
+<span class="col-12 col-sm-9">USA / TAIWAN / MEXICO / MALAYSIA / PHI</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-12 col-sm-4">
+<div class="product-image w-100"><script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="747b7882e8ec311b86a4f21a-|49"></script><img class="border img-fluid" src="https://www.abc-semi.com/images/sample-image.jpg" onerror="javascript:this.src='/images/sample-image.jpg'" /></div>
+</div>
+<div class="col-12 col-sm-8">
+<div class="row item-title">
+<div class="col-12 col-sm-4">Manufacturer Part Number</div>
+<div class="col-12 col-sm-8"><a href="/products/E6C/MN41464A-18.html">MN41464A-18</a></div>
+</div>
+<div class="row item-title">
+<div class="col-12 col-sm-4">Internal Part Number</div>
+<div class="col-12 col-sm-8">ABC-<a>MN41464A-18</a></div>
+</div>
+<div class="row item-title">
+<div class="col-12 col-sm-4">Manufacturer</div>
+<div class="col-12 col-sm-8"><a>ORIGINAL</a></div>
+</div>
+<div class="row item-title">
+<div class="col-12 col-sm-4">Brief Description</div>
+<div class="col-12 col-sm-8">Package DIP-18 ORIGINAL MN41464A-18 New original parts</div>
+</div>
+<div class="row item-title">
+<div class="col-12 col-sm-4">RoHS Status</div>
+<div class="col-12 col-sm-8"><em class="rohs">Lead free / RoHS Compliant</em></div>
+</div>
+<div class="row item-title">
+<div class="col-12 col-sm-4">Delivery Time</div>
+<div class="col-12 col-sm-8">1-2 days</div>
+</div>
+<div class="row item-title">
+<div class="col-12 col-sm-4">Available Quantity</div>
+<div class="col-12 col-sm-8">88832 Pieces</div>
+</div>
+<div class="row item-title">
+<div class="col-12 col-sm-4">Reference Price</div>
+<div class="col-12 col-sm-8"><s>USD 0</s></div>
+</div>
+<div class="row item-title">
+<div class="col-12 col-sm-4">Our Price</div>
+<div class="col-12 col-sm-8">- (Please contact us for a better price: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a4d7c5c8c1d7e4c5c6c789d7c1c9cd8ac7cbc9">[email&#160;protected]</a>)</div>
+</div>
+<div class="inquiry-box clearfix">
+<div class="input-group quantity">
+<input type="text" id="Quantity" class="form-control" placeholder="Enter Quantity" data-toggle="tooltip" data-placement="bottom" title="Request Qty cannot be blank." />
+<div class="input-group-append">
+<button class="btn btn-dark" id="InquiryPrice" data-var="MN41464A-18" type="button"><span class="icon-cart"></span> Buy</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr />
+<div class="product-info clearfix">
+<div class="row">
+<dl class="col-md-12">
+<dd class="pt-2 family-categories">ABC Semiconductor have MN41464A-18 in stock for sell. We can ship to you within 1-2 days. Please contact us for a better price for MN41464A-18. Our email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="95e6f4f9f0e6d5f4f7f6b8e6f0f8fcbbf6faf8">[email&#160;protected]</a></dd>
+ </dl>
+<dl class="col-md-6">
+<dt>Shipping options and shipping time:</dt>
+<dd class="pt-2 family-categories">DHL: 2-3 days.</dd>
+<dd class="pt-1 family-categories">FEDEX: 2-3 days.</dd>
+<dd class="pt-1 family-categories">UPS: 2-4 days.</dd>
+<dd class="pt-1 family-categories">TNT: 3-5 days.</dd>
+<dd class="pt-1 family-categories">EMS: 5-8 days.</dd>
+<dd class="pt-1 family-categories">Normal Post: 10-15 days.</dd>
+</dl>
+<dl class="col-md-6">
+<dt>Payment Options:</dt>
+<dd class="pt-2 family-categories">Paypal (Credit Card)</dd>
+<dd class="pt-1 family-categories">Bank Transfer (Wire Transfer)</dd>
+<dd class="pt-1 family-categories">Western Union</dd>
+<dd class="pt-1 family-categories">MoneyGram</dd>
+</dl>
+</div>
+</div>
+<hr />
+<div class="row">
+<div class="card-body p-0 key-part-list">
+<h3 class="py-3">Related products for MN41464A-18 ORIGINAL</h3>
+<table class="table table-condensed">
+<thead>
+<tr>
+<th>Part Number</th>
+<th>Brand</th>
+<th class="d-none d-sm-table-cell">Description</th>
+<th>Buy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="part">
+<p class="key-part"><a href="/products/122/XCR3512XL-10FT256I.html">XCR3512XL-10FT256I</a></p>
+</td>
+<td class="part">
+<p class="manufacturer">Xilinx Inc.</p>
+</td>
+<td class="d-none d-sm-table-cell"><p>IC CPLD 512MC 9NS 256BGA</p></td>
+<td><p><button class="AddToCart btn btn-sm btn-dark btn-block" data-var="XCR3512XL-10FT256I">Buy</button></p></td>
+</tr>
+<tr>
+<td class="part">
+<p class="key-part"><a href="/products/153/EPM7128AETA100-10N.html">EPM7128AETA100-10N</a></p>
+</td>
+<td class="part">
+<p class="manufacturer">Intel</p>
+</td>
+<td class="d-none d-sm-table-cell"><p>IC CPLD 128MC 10NS 100FBGA</p></td>
+<td><p><button class="AddToCart btn btn-sm btn-dark btn-block" data-var="EPM7128AETA100-10N">Buy</button></p></td>
+</tr>
+<tr>
+<td class="part">
+<p class="key-part"><a href="/products/128/EPM2210GF324C3N.html">EPM2210GF324C3N</a></p>
+</td>
+<td class="part">
+<p class="manufacturer">Intel</p>
+</td>
+<td class="d-none d-sm-table-cell"><p>IC CPLD 1700MC 7NS 324FBGA</p></td>
+<td><p><button class="AddToCart btn btn-sm btn-dark btn-block" data-var="EPM2210GF324C3N">Buy</button></p></td>
+</tr>
+<tr>
+ <td class="part">
+<p class="key-part"><a href="/products/037/M5LV-384120-15YI.html">M5LV-384/120-15YI</a></p>
+</td>
+<td class="part">
+<p class="manufacturer">Lattice Semiconductor Corporation</p>
+</td>
+<td class="d-none d-sm-table-cell"><p>IC CPLD 384MC 15NS 160QFP</p></td>
+<td><p><button class="AddToCart btn btn-sm btn-dark btn-block" data-var="M5LV-384120-15YI">Buy</button></p></td>
+</tr>
+<tr>
+<td class="part">
+<p class="key-part"><a href="/products/391/EPM7064QC100-15MM.html">EPM7064QC100-15MM</a></p>
+</td>
+<td class="part">
+<p class="manufacturer">Intel</p>
+</td>
+<td class="d-none d-sm-table-cell"><p>IC CPLD 64MC 15NS 100QFP</p></td>
+<td><p><button class="AddToCart btn btn-sm btn-dark btn-block" data-var="EPM7064QC100-15MM">Buy</button></p></td>
+</tr>
+<tr>
+<td class="part">
+<p class="key-part"><a href="/products/81F/XC2C512-7FT256C.html">XC2C512-7FT256C</a></p>
+</td>
+<td class="part">
+<p class="manufacturer">Xilinx Inc.</p>
+</td>
+<td class="d-none d-sm-table-cell"><p>IC CPLD 512MC 7.1NS 256BGA</p></td>
+<td><p><button class="AddToCart btn btn-sm btn-dark btn-block" data-var="XC2C512-7FT256C">Buy</button></p></td>
+</tr>
+<tr>
+<td class="part">
+<p class="key-part"><a href="/products/A30/M4A5-256128-65YNC.html">M4A5-256/128-65YNC</a></p>
+</td>
+<td class="part">
+<p class="manufacturer">Lattice Semiconductor Corporation</p>
+</td>
+<td class="d-none d-sm-table-cell"><p>IC CPLD 256MC 6.5NS 208QFP</p></td>
+<td><p><button class="AddToCart btn btn-sm btn-dark btn-block" data-var="M4A5-256128-65YNC">Buy</button></p></td>
+</tr>
+<tr>
+<td class="part">
+<p class="key-part"><a href="/products/8C3/EPM7256AETI100-7.html">EPM7256AETI100-7</a></p>
+</td>
+<td class="part">
+<p class="manufacturer">Intel</p>
+</td>
+<td class="d-none d-sm-table-cell"><p>IC CPLD 256MC 7.5NS 100TQFP</p></td>
+<td><p><button class="AddToCart btn btn-sm btn-dark btn-block" data-var="EPM7256AETI100-7">Buy</button></p></td>
+</tr>
+<tr>
+<td class="part">
+<p class="key-part"><a href="/products/3F3/M4A5-19296-6VC.html">M4A5-192/96-6VC</a></p>
+</td>
+<td class="part">
+<p class="manufacturer">Lattice Semiconductor Corporation</p>
+</td>
+<td class="d-none d-sm-table-cell"><p>IC CPLD 192MC 6NS 144TQFP</p></td>
+<td><p><button class="AddToCart btn btn-sm btn-dark btn-block" data-var="M4A5-19296-6VC">Buy</button></p></td>
+</tr>
+<tr>
+<td class="part">
+<p class="key-part"><a href="/products/944/EPM7512AETC144-7.html">EPM7512AETC144-7</a></p>
+</td>
+<td class="part">
+<p class="manufacturer">Intel</p>
+</td>
+<td class="d-none d-sm-table-cell"><p>IC CPLD 512MC 7.5NS 144TQFP</p></td>
+<td><p><button class="AddToCart btn btn-sm btn-dark btn-block" data-var="EPM7512AETC144-7">Buy</button></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="clearfix">
+<div class="ss-idx-bnr-bg-axsemi"></div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/old/js/jquery.min.js" type="747b7882e8ec311b86a4f21a-text/javascript"></script>
+<script src="/old/js/bootstrap.bundle.min.js" type="747b7882e8ec311b86a4f21a-text/javascript"></script>
+<script src="https://www.abc-semi.com/old/js/main.js" type="747b7882e8ec311b86a4f21a-text/javascript"></script>
+<script type="747b7882e8ec311b86a4f21a-text/javascript">
+
+    $(function () {
+
+        //$('.toast').toast('show');
+
+        CartConf.TC.AddCartUrl = '/api/cart/add.html';
+
+        CartConf.TC.AddCartSuccess = 'The item has been added to the BOM';
+
+        $("#InquiryPrice").click(function () {
+
+            var QuantityVal = $("#Quantity").val();
+
+            if (QuantityVal) {
+
+                mallbuy.AddToCart($(this).attr('data-var'), QuantityVal);
+
+            } else {
+
+                console.log(123);
+
+                $('#Quantity').tooltip('show');
+
+            }
+
+        });
+
+    });
+
+</script>
+<script type="747b7882e8ec311b86a4f21a-text/javascript">
+
+        $(function () {
+
+            CartConf.TC.AddCartUrl = '/api/cart/add.html';
+
+            CartConf.TC.AddCartSuccess = 'The item has been added to the <a href="/quotation.html">BOM</a>';
+
+            $(".AddToCart").click(function () {
+
+                mallbuy.AddToCart($(this).attr('data-var'));
+
+            });
+
+        });
+
+    </script>
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="747b7882e8ec311b86a4f21a-|49" defer=""></script></body>
+</html>
