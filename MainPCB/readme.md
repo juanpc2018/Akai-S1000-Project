@@ -112,4 +112,4 @@ or </br>
 2x SMPS MeanWell RS-25-15 "15v 25w 1.6A" or similar </br>
 RS-15-xx too small. </br>
 RS-50-xx too Big. </br>
-RD-3513 is an option, 13.5vdc 1.3A 35w/2=17.5w "Barelly works" adjustable: 11.5v-15.5v </br>
+1x RD-3513 is an option, 13.5vdc 1.3A 35w/2=17.5w "Barelly works" adjustable: 11.5v-15.5v </br>
