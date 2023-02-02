@@ -32,11 +32,15 @@ but MainPCB connector is on the Front of the case, with a long cable. </br>
 Crazy design / Things to improve. </br>
 
 The linear Regulators +12/-12vdc on the MainPCB, </br>
-seems to be an independent circuit, but some traces go somewhere, Voltage Drop & Current limited with Diodes. </br>
-Analog PCB should be +15/-15vdc, or best case +18/-18vdc, </br>
-dropped voltage goes somewhere, something requires +10/-10vdc, probably Headphone output circuit on the ther side of the MainPCB. </br>
-
+is an independent circuit on the MainPCB, but some traces go somewhere, Voltage Drop & Current limited with Diodes. </br>
+dropped voltage goes somewhere, probably to Headphone output circuit on the ther side of the MainPCB. </br>
 Analog Audio PCB i/o PCB is appart, connected with a 50-pin ribbon cable, and another 3-pin for +12/-12dc.</br>  
+Analog PCB should be +15/-15vdc, or best case +18/-18vdc, </br>
 
 The +12/-12 Linear Voltage Regulators, Diode Bridge, AC-AC Transformer can be Replaced with: </br>
 2x SMPS MeanWell RS-25-12 "12v 25w 2A" or similar + 2x large >2200µF 25v. </br>
+or </br>
+2x SMPS MeanWell RS-25-15 "15v 25w 1.6A" or similar </br>
+RS-15-xx are too small. </br>
+RS-50-xx are too Big. </br>
+RD-1313 is an option. </br>
