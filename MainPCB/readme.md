@@ -1,6 +1,6 @@
 Dimensions: </br>
 365.25mm = 14,37992125984252" Measured. </br>
-365.252mm = 14,38" Guessed. </br>
+365.252mm = 14,38" Aprox.</br>
 x </br>
 220.50mm = 8,681102362204724" Measured. </br>
 220.472mm = 8,68" Aprox.</br>
