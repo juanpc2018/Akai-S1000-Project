@@ -1,12 +1,13 @@
 Dimensions: </br>
-365.25mm </br>
+365.25mm = 14,37992125984252" </br>
 x </br>
-220.50mm </br>
+220.50mm = 8,681102362204724" </br>
 
-its a 4-Layer Board, </br>
-but Layer 2-3, seem to be very large planes only for (+) & GND, Unconfirmed. </br>
-most compenents are on Layer-1. </br>
-most traces are on Layer-4, almost all have a Classic Digital Horizontal Design. </br>
+4-Layer Board, </br>
+but Layer 2-3, seem to be very large planes only for (+) & GND, Unconfirmed, </br>
+very large planes close to eachother seem to be emulating a Cappacitor, Unknown cappacitance. </br>
+most components are on Layer-1, SMT & Throughole. </br>
+most traces are on Layer-4, almost all have Classic Digital Horizontal Design. </br>
 
 Scanning The Bottom Layer-4 on a Cheap scanner with RGB-LED + Monochromatic CCD </br>
 Scanner moves Vertical, Scans Horizontal PCB traces flawless, </br>
