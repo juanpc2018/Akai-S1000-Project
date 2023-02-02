@@ -23,7 +23,7 @@ Weird things: </br>
 cutting traces on Later-4 to install more than 2MB sample memory. </br>
 Headphone output pcb is on the Back of the Chasis, over the Regulators Heatsink "front of the MainPCB."</br>
 but MainPCB connector is on the Front of the case "back of the PCB.", with a long cable. </br>
-Crazy design. </br>
+Crazy design "Things to improve". </br>
 
 The linear Regulators +12/-12vdc on the Top Left of the MainPCB, </br>
 seems to be an independent circuit, but some traces go somewhere, Voltage Drop & Current limited with Diodes. </br>
