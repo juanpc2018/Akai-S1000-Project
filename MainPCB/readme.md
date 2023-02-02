@@ -83,7 +83,7 @@ P112 10-Pin Front Panel </br>
 P114 Back-Light </br>
 P117 </br>
 P118 4-Pin Floppy Power connector. </br>
-P119 </br>
+P119 6-Pin </br>
 P111 5vdc 6A </br>
 P115 12-0-12 AC Power Input </br>
 J101 MIDI In/Out/Thru </br>
