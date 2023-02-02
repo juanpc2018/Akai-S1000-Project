@@ -41,6 +41,6 @@ The +12/-12 Linear Voltage Regulators, Diode Bridge, AC-AC Transformer can be Re
 2x SMPS MeanWell RS-25-12 "12v 25w 2A" or similar + 2x large >2200µF 25v. </br>
 or </br>
 2x SMPS MeanWell RS-25-15 "15v 25w 1.6A" or similar </br>
-RS-15-xx are too small. </br>
+RS-15-xx too small. </br>
 RS-50-xx too Big. </br>
 RD-3513 is an option, 13.5vdc 1.3A 35w/2=17.5w "Barelly works" adjustable: 11.5v-15.5v </br>
