@@ -4,7 +4,7 @@ Hitachi HD44780 compatible, Akai S1000 has Sanyo LC7981 | 8F2 controller IC, </b
 Sony CXK5816PN-12L Memory.</br>
 
 There are 3 options: </br>
-A) replace the backlight of the original screen, its a slide-in card </br>
+A) replace the backlight of the original screen, slide-in </br>
 with a cellphone backlight, and cut to proper size. </br>
 
 B) replace the whole screen with a New compatible LM200 LED or OLED. </br>
