@@ -47,7 +47,7 @@ emulate the controller with a micro ATmega2560, FPGA or similar, </br>
 Read signals coming from the Nec v50 "8088" CPU and 16-Bit multiplexer TEL TE7730 | 8926 Z78 </br>
 translate LC7981 Byte instructions to other graphical screen controller instructions. </br>
 
-3. Modify the Akai BIOS ROM Firmware to replace Sanyo LC bytes to other controlle like T6963C. </br>
+3. Modify the Akai BIOS ROM Firmware to replace Sanyo LC7981 bytes to other like T6963C. </br>
 
 There are many different sceens today, for PI and Arduino. </br>
 some graphical, some fixed characters, </br>
