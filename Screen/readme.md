@@ -73,3 +73,8 @@ TFT320QVT 3.2″ 320×240 3.3vdc ILI9341 | touch ic: XPT2046 </br>
 3.5" </br>
 MPI3501 320x480 XPT2046 Pi </br>
 MAR3513 320x480 ILI9486/ILI9488 Arduino Mega2560 pin compatible. </br>
+
+looking all screens side by side, 3.5" seems best/minimum size option. </br>
+same pixel size is another option. </br>
+miniature screen could be fun, but Not a long term sollution, </br>
+unless you have a magnifier lens infront to see from far. </br>
