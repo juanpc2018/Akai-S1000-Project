@@ -1,7 +1,6 @@
 The Screen is a Hitachi LM200 240x64 110x30mm, 140x40mm frame, </br>
-controlleer is Not on the Screen, like most screens </br>
-Hitachi HD44780 compatible, 
-Akai S1000 has Sanyo LC7981 | 8F2 controller IC, </br>
+controller is Not on the Screen, like most screens </br>
+Hitachi HD44780 compatible, Akai S1000 has Sanyo LC7981 | 8F2 controller IC, </br>
 Sony CXK5816PN-12L Memory.</br>
 
 There are 3 options: </br>
