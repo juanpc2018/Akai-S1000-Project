@@ -38,13 +38,13 @@ simple installation (no soldering required). </br>
 Method C) is the most complicated, </br>
 There is 3 ways to do it, </br>
 1. Translate signals coming from 10-pin connector,</br>
-from Sanyo LC controller out with a micro like ATmega or similar, </br>
+from Sanyo LC controller out with a micro like ATmega, FPGA or similar, </br>
 Screen refresh is around 500kHz. </br>
 this is the less invasive method. </br>
 
 2. Best invasive option: </br>
 desolder the Sanyo LC ocontroller, </br>
-emulate the controller with a micro ATmega2560 or similar, </br>
+emulate the controller with a micro ATmega2560, FPGA or similar, </br>
 Read signals coming from the Nec v50 "8088" CPU and 16-Bit multiplexer TEL TE7730 | 8926 Z78 </br>
 translate LC7981 Byte instructions to other graphical screen controller instructions. </br>
 
