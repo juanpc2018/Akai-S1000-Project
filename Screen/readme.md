@@ -65,7 +65,7 @@ Adafruit-4393 miniPiTFT 1.14" 240x135, similar.  </br>
 Same Jumbo Pixel Size: LGM240128A-NSW-BBW with Toshiba T6963C controller. </br>
 that screen is "the same" but 240x128, Not 240x64. </br>
 64 pixels must be unused, empty, 32 top, 32 bottom to center the image, </br>
-or 64 empty at the bottom, to fit the screen in the S1000 chasis, Not a glove fit. </br>
+or 64 empty at the bottom, to fit the screen in the S1000 chasis, requires standoffs. </br>
 
 there are 2.8" | 3.2" and 3.5" </br>
 2.8" Adafruit-1601 PiTFT 320x240 TFT+Touchscreen Pi </br>
