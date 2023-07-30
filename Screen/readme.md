@@ -32,7 +32,7 @@ Akai S3200XL </br>
 Akai VX600 </br>
 
 New LED Screen = NO NEED for Inverter. </br>
-simple installation (no soldering required). </br>
+simple installation (No soldering required). </br>
 
 Method C) is the most complicated, </br>
 There is 3 ways to do it, </br>
