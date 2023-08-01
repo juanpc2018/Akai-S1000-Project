@@ -82,4 +82,4 @@ miniature screen could be fun, but Not a long term sollution, </br>
 unless you have a magnifier lens infront to see from far. </br>
 
 Last option is to create a VGA output: </br>
-RGBHV signal 320x240, must be compablde with modern / cheap VGA to HDMI converters. </br>
+RGBHV signal 320x240, must be compable with modern / cheap VGA to HDMI converters. </br>
