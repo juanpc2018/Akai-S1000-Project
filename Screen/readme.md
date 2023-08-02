@@ -8,7 +8,7 @@ LM215 480x128 a bit Bigger size. </br>
 LM200 graphic display was designed for Hitachi HD61830 control LSI, </br>
 Not the common HD44780 like Sitronix ST7920 </br>
 
-Akai S1000 has Sanyo LC7981 controller IC, </br>
+Akai S1000 has Sanyo LC7981 control IC, </br>
 Sony CXK5816PN-12L Memory.</br>
 
 HD61830 developer boards: </br>
