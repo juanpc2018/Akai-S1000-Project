@@ -1,5 +1,7 @@
-The Screen is a Hitachi LM200 240x64, 110x30mm, 140x40mm frame, </br>
+The Screen is a Hitachi LM200 240x64 </br>
+180x75mm PCB, 132x39mm screen, 127x34mm pixels, 1.6mm pcb, 4.5~6.0mm front depth </br>
 controller is Not on the Screen, like most screens. </br>
+
 LM213B 256x64 is the only with built-in controller from that range. </br>
 LM215 is double pixels 480x128. </br>
 
@@ -8,7 +10,7 @@ Akai S1000 has Sanyo LC7981 controller IC, </br>
 Sony CXK5816PN-12L Memory.</br>
 
 HD61830 developer boards: </br>
-Hitachi "Control Circuit Board" CB-Series  </br>
+Hitachi "Control Circuit Board" CB-Series:  </br>
 CB1020R, CB1026R, CB1030R. </br>
 Akai S1000 circuit is similar to CB1020R. </br>
 
