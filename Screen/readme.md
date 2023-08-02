@@ -3,7 +3,7 @@ The Screen is a Hitachi LM200 240x64 with HD44104 driver IC</br>
 controller is Not on the Screen, like most screens. </br>
 
 LM213B 256x64 is the only with built-in controller from that era. </br>
-LM215 480x128 a Big biggerr size. </br>
+LM215 480x128 a bit Bigger size. </br>
 
 LM200 graphic display was designed for Hitachi HD61830 control LSI, </br>
 Not the common HD44780 like Sitronix ST7920 </br>
