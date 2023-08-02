@@ -97,7 +97,7 @@ MAR3513 320x480 ILI9486/ILI9488 Arduino Mega2560 pin compatible. </br>
 looking all screens side by side, 3.5" seems the minimum size, </br>
 or same pixel size. </br>
 miniature screen could be fun, but Not long term sollution, </br>
-unless you have a magnifier fresnel lens i-nfront, to see from far. </br>
+unless you have a magnifier fresnel lens in front, to see from far. </br>
 
 4. Last option is to create a VGA output: </br>
 RGBHV signal 320x240, must be compatible with modern / cheap VGA to HDMI converters & Composite / Component / Y-C SuperVideo converters. </br>
