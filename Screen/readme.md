@@ -11,7 +11,7 @@ with a cellphone backlight, and cut to proper size. </br>
 B) replace the whole screen with a New compatible LM200 LED or OLED. </br>
 Positive or Negative "Dark Background, White Letters". </br>
 
-C) replace with other incompatible screen. </br>
+C) replace with incompatible screen. </br>
 
 Method A) is the most economical & easy. </br>
 but visually Not the best, </br>
@@ -59,14 +59,18 @@ screens work in i2c or ISP mode, but... </br>
 SSD1306 are tiny small, miniature, micro size. </br>
 thats miniaturizing too much. </br>
 sister screen: </br>
-SH1106 is a bit bigger 1.3" but still very small. </br>
+SH1106 is a bit bigger 1.3" x2 but still very small. </br>
 
-Adafruit-4393 miniPiTFT 1.14" 240x135, similar.  </br>
+Adafruit-4393 miniPiTFT 1.14" 240x135, smaller.  </br>
 
-Same Jumbo Pixel Size: LGM240128A-NSW-BBW with Toshiba T6963C controller. </br>
-that screen is "the same" but 240x128, Not 240x64. </br>
+Same Jumbo Pixel Size: </br>
+LGM240128A-NSW-BBW with Toshiba T6963C controller. </br>
+that screen is 240x128, Not 240x64. </br>
 64 pixels must be unused, empty, 32 top, 32 bottom to center the image, </br>
 or 64 empty at the bottom, to fit the screen in the S1000 chasis, requires standoffs. </br>
+
+There is also a Jumbo screen 128x64 with ST7920. </br>
+Requires 2x like the smaller, but edge are bigger, very visible. </br>
 
 there are 2.8" | 3.2" and 3.5" </br>
 2.8" Adafruit-1601 PiTFT 320x240 TFT+Touchscreen Pi </br>
@@ -76,10 +80,10 @@ TFT320QVT 3.2″ 320×240 3.3vdc ILI9341 | touch ic: XPT2046 </br>
 MPI3501 320x480 XPT2046 Pi </br>
 MAR3513 320x480 ILI9486/ILI9488 Arduino Mega2560 pin compatible. </br>
 
-looking all screens side by side, 3.5" seems best/minimum size option. </br>
-same pixel size is another option. </br>
+looking all screens side by side, 3.5" seems the minimum size, </br>
+or same pixel size. </br>
 miniature screen could be fun, but Not a long term sollution, </br>
-unless you have a magnifier lens infront to see from far. </br>
+unless you have a magnifier lens infront, to see from far. </br>
 
-Last option is to create a VGA output: </br>
-RGBHV signal 320x240, must be compable with modern / cheap VGA to HDMI converters. </br>
+4. Last option is to create a VGA output: </br>
+RGBHV signal 320x240, must be compatible with modern / cheap VGA to HDMI converters. </br>
