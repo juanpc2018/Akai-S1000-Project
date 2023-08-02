@@ -10,6 +10,9 @@ Sony CXK5816PN-12L Memory.</br>
 HD61830 developer boards: </br>
 Hitachi "Control Circuit Board" CB-Series  </br>
 CB1020R, CB1026R, CB1030R. </br>
+Akai S1000 circuit is similar to CB1020R. </br>
+
+------
 
 There are 3 options: </br>
 A) Replace the backlight of the original screen, slide-in </br>
