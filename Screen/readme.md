@@ -73,7 +73,7 @@ screens work in i2c or ISP mode, but... </br>
 SSD1306 are tiny small, miniature, micro size. </br>
 thats miniaturizing too much. </br>
 sister screen: </br>
-SH1106 is a bit bigger 1.3" x2 but still very small. </br>
+SH1106 is a bit bigger 1.3" x2 but still small. </br>
 
 Adafruit-4393 miniPiTFT 1.14" 240x135, smaller.  </br>
 
