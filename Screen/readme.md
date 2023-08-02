@@ -1,21 +1,28 @@
-The Screen is a Hitachi LM200 240x64 110x30mm, 140x40mm frame, </br>
-controller is Not on the Screen, like most screens </br>
-Hitachi HD44780 compatible, like Sitronix ST7920 </br>
-Akai S1000 has Sanyo LC7981 | 8F2 controller IC, </br>
+The Screen is a Hitachi LM200 240x64, 110x30mm, 140x40mm frame, </br>
+controller is Not on the Screen, like most screens. </br>
+LM213B 256x64 is the only with built-in controller from that range. </br>
+LM215 is double pixels 480x128. </br>
+
+Hitachi HD61830 control LSI, Not common HD44780 like Sitronix ST7920 </br>
+Akai S1000 has Sanyo LC7981 controller IC, </br>
 Sony CXK5816PN-12L Memory.</br>
 
+HD61830 developer boards: </br>
+Hitachi "Control Circuit Board" CB-Series  </br>
+CB1020R, CB1026R, CB1030R. </br>
+
 There are 3 options: </br>
-A) replace the backlight of the original screen, slide-in </br>
+A) Replace the backlight of the original screen, slide-in </br>
 with a cellphone backlight, and cut to proper size. </br>
 
-B) replace the whole screen with a New compatible LM200 LED or OLED. </br>
+B) Replace the whole screen with a New LM200 compatible LED or OLED. </br>
 Positive or Negative "Dark Background, White Letters". </br>
 
-C) replace with incompatible screen. </br>
+C) Replace Original screen with incompatible screen. </br>
 
 Method A) is the most economical & easy. </br>
 but visually Not the best, </br>
-Original/Old screen has a pale washed Cyan color, Not the most pleasing. </br>
+Old screen has a pale washed Cyan color, Not the most pleasing. </br>
 
 Method B) $120usd + shipping. </br>
 LM200 screen is similar for: </br>
