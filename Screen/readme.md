@@ -50,19 +50,19 @@ New LED Screen = NO NEED for Inverter. </br>
 simple installation (No soldering required). </br>
 
 Method C) is the most complicated, </br>
-There is 3 ways to do it, </br>
+There are 3 ways to do it, </br>
 1. Translate signals coming from 10-pin connector,</br>
-from Sanyo LC controller out with a micro like ATmega, FPGA or similar, </br>
-Screen refresh is around 500kHz. </br>
+from Sanyo LC controller out with a micro like ATmega, FPGA, STM32 or similar, </br>
+Screen clock is around ~500kHz. </br>
 this is the less invasive method. </br>
 
-2. Best invasive option: </br>
-desolder the Sanyo LC ocontroller, </br>
-emulate the controller with a micro ATmega2560, FPGA or similar, </br>
-Read signals coming from the Nec v50 "8088" CPU and 16-Bit multiplexer TEL TE7730 | 8926 Z78 </br>
+2. Invasive method: </br>
+desolder the Sanyo LC controller, </br>
+emulate the controller with a micro ATmega2560, FPGA, STM32 or similar, </br>
+Read & Translate signals coming from Nec v50 "8088" CPU and 16-Bit multiplexer TEL TE7730 </br>
 translate LC7981 Byte instructions to other graphical screen controller instructions. </br>
 
-3. Modify the S1000 ROM Firmware to replace Sanyo LC7981 bytes to other like T6963C, RA6963, ST75256P. </br>
+3. Modify the S1000 ROM Firmware to replace Sanyo LC7981 to other like T6963C, RA6963, ST75256P. </br>
 
 There are many different sceens today, for PI and Arduino. </br>
 some graphical, some fixed characters, </br>
@@ -84,7 +84,7 @@ that screen is 240x128, Not 240x64. </br>
 or 64 empty at the bottom, to fit the screen in the S1000 chasis, requires standoffs. </br>
 
 There is also a Jumbo screen 128x64 with ST7920. </br>
-Requires 2x like the smaller, but edge are bigger, very visible. </br>
+Requires 2x like the smaller, but screen edge is bigger, very visible. </br>
 
 there are 2.8" | 3.2" and 3.5" </br>
 2.8" Adafruit-1601 PiTFT 320x240 TFT+Touchscreen Pi </br>
@@ -96,8 +96,8 @@ MAR3513 320x480 ILI9486/ILI9488 Arduino Mega2560 pin compatible. </br>
 
 looking all screens side by side, 3.5" seems the minimum size, </br>
 or same pixel size. </br>
-miniature screen could be fun, but Not a long term sollution, </br>
-unless you have a magnifier lens infront, to see from far. </br>
+miniature screen could be fun, but Not long term sollution, </br>
+unless you have a magnifier fresnel lens i-nfront, to see from far. </br>
 
 4. Last option is to create a VGA output: </br>
-RGBHV signal 320x240, must be compatible with modern / cheap VGA to HDMI converters. </br>
+RGBHV signal 320x240, must be compatible with modern / cheap VGA to HDMI converters & Composite / Component converters to use CRT sceen. </br>
