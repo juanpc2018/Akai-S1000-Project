@@ -5,15 +5,16 @@ controller is Not on the Screen, like most screens. </br>
 LM213B 256x64 is the only with built-in controller from that era. </br>
 LM215 480x128 a bit Bigger size. </br>
 
-LM200 graphic display was designed for Hitachi HD61830 control LSI, </br>
+LM200 display was designed for Hitachi HD61830 control LSI, </br>
 Not the common HD44780 like Sitronix ST7920 </br>
 
-Akai S1000 has Sanyo LC7981 control IC, </br>
+Akai S1000 has Sanyo LC7981 control LSI, </br>
 Sony CXK5816PN-12L Memory.</br>
 
 HD61830 developer boards: </br>
 Hitachi "Control Circuit Board" CB-Series:  </br>
 CB1020R, CB1026R, CB1030R. </br>
+
 Akai S1000 display circuit is similar to CB1020R. </br>
 
 ------
