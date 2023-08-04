@@ -110,6 +110,6 @@ MAR3513 320x480 ILI9486/ILI9488 Arduino Mega2560 pin compatible. </br>
 
 looking all screens side by side, 3.5" seems the minimum size, </br>
 or same pixel size. </br>
-miniature screen could be fun, but Not long term sollution, </br>
+miniature screen could be fun, but Not a long term sollution, </br>
 unless you have a magnifier fresnel lens in front, to see from far. </br>
 
