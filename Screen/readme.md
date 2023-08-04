@@ -50,23 +50,23 @@ Akai VX600 </br>
 
 New LED Screen = NO NEED for Inverter. </br>
 simple installation (No soldering required). </br>
-but is Not a long term sollution if New 10-pin compatible screens are No longer manufactured. </br>
-price is already double vs. New 240x64 screen. </br>
+This is Not a long term sollution if New 10-pin compatible screens are No longer manufactured. </br>
+price is already double vs. similar 240x64 screen. </br>
 
 Method C) is the most complicated, </br>
 There are 3 ways to do it, </br>
 1. Translate signals coming from 10-pin connector,</br>
 from Sanyo LC7981 with a micro like ATmega, FPGA, STM32 or similar, </br>
 Screen clock is around ~500kHz. </br>
-this is the less invasive method, but is Not a long term sollution if LC7981 fail. </br>
+this is the less invasive method, but Not a long term sollution if LC7981 on the S1000 fail. </br>
 
 2. Invasive method: </br>
-desolder the Sanyo LC controller, </br>
-emulate the controller with a micro ATmega2560, FPGA, STM32 or similar, </br>
-Read & Translate signals coming from Nec v50 "8088" CPU and 16-Bit multiplexer TEL TE7730 </br>
-translate LC7981 Byte instructions to other graphical screen controller instructions. </br>
-
-3. Modify the S1000 ROM Firmware to replace Sanyo LC7981 to other like T6963C, RA6963, ST75256P. </br>
+desolder the Sanyo LC7981 controller on the S1000, </br>
+A) remplace screen with built-in LC7981. </br>
+B) Emulate LC7981 with a micro like ATmega2560, FPGA, STM32 or similar.. </br>
+Read signals coming from Nec v50 "8088" CPU and 16-Bit multiplexer TEL TE7730 </br>
+Translate LC7981 Byte instructions to other graphical screen controller instructions. </br>
+C) Modify the Akai S1000 ROM Firmware to replace Sanyo LC7981 to other like T6963C, RA6963, ST75256P. </br>
 
 There are many different sceens today, for PI and Arduino. </br>
 some graphical, some fixed characters, </br>
@@ -103,5 +103,6 @@ or same pixel size. </br>
 miniature screen could be fun, but Not long term sollution, </br>
 unless you have a magnifier fresnel lens in front, to see from far. </br>
 
-4. Last option is to create a VGA output: </br>
-RGBHV signal 320x240, must be compatible with modern / cheap VGA to HDMI converters & Composite / Component / Y-C SuperVideo converters. </br>
+3. Create a VGA DB15 output: </br>
+RGBHV+G signal 320x240 </br>
+must be compatible with modern / cheap VGA to HDMI converters, Composite / Component / Y-C SuperVideo converters. </br>
