@@ -68,6 +68,10 @@ Read signals coming from Nec v50 "8088" CPU and 16-Bit multiplexer TEL TE7730 </
 Translate LC7981 Byte instructions to other graphical screen controller instructions. </br>
 C) Modify the Akai S1000 ROM Firmware to replace Sanyo LC7981 to other like T6963C, RA6963, ST75256P. </br>
 
+3. Create a VGA output 60Hz or Component YPbPr / Y-C SuperVideo 480i/p 50Hz / 60Hz: </br>
+RGBHV signal 320x240 </br>
+VGA must be compatible with modern / cheap VGA to HDMI converters. </br>
+
 There are many different sceens today, for PI and Arduino. </br>
 some graphical, some fixed characters, </br>
 Example: </br>
@@ -103,6 +107,3 @@ or same pixel size. </br>
 miniature screen could be fun, but Not long term sollution, </br>
 unless you have a magnifier fresnel lens in front, to see from far. </br>
 
-3. Create a VGA DB15 output: </br>
-RGBHV+G signal 320x240 </br>
-must be compatible with modern / cheap VGA to HDMI converters, Composite / Component / Y-C SuperVideo converters. </br>
