@@ -1,5 +1,5 @@
-The Screen is a Hitachi LM200 240x64 with HD44104 driver IC</br>
-180x75mm PCB, 132x39mm screen, 127x34mm pixels, 1.6mm pcb, 4.5~6.0mm front depth </br>
+The Screen is a Hitachi LM200 240x64 pixels with HD44104 driver IC</br>
+180x75mm PCB, 132x39mm screen, 127x34mm pixel area, 1.6mm pcb, 4.5~6.0mm front depth </br>
 controller is Not on the Screen, like most screens. </br>
 
 LM213B 256x64 is the only with built-in controller from that era. </br>
