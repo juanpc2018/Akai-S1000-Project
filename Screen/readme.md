@@ -58,19 +58,22 @@ There are 3 ways to do it, </br>
 1. Translate signals coming from 10-pin connector,</br>
 from Sanyo LC7981 with a micro like ATmega, FPGA, STM32 or similar, </br>
 Screen clock is around ~500kHz. </br>
-this is the less invasive method, but Not a long term sollution if LC7981 on the S1000 fail. </br>
+Convert to other graphical screen instructions D0-D7. </br>
+this is the less invasive method, </br>
+Not a long term sollution if LC7981 on the S1000 fail. </br>
 
-2. Invasive method: </br>
-desolder the Sanyo LC7981 controller on the S1000, </br>
-A) remplace screen with built-in LC7981. </br>
+3. Invasive method: </br>
+Desolder Sanyo LC7981 IC on the S1000 </br>
+A) Remplace screen with built-in LC7981. </br>
 B) Emulate LC7981 with a micro like ATmega2560, FPGA, STM32 or similar.. </br>
-Read signals coming from Nec v50 "8088" CPU and 16-Bit multiplexer TEL TE7730 </br>
-Translate LC7981 Byte instructions to other graphical screen controller instructions. </br>
-C) Modify the Akai S1000 ROM Firmware to replace Sanyo LC7981 to other like T6963C, RA6963, ST75256P. </br>
+Read signals from Nec v50 "8088" CPU and 16-Bit multiplexer TEL TE7730 </br>
+Translate LC7981 instructions to other graphical screen controller instructions. </br>
+C) Modify Akai S1000 ROM Firmware to replace Sanyo LC7981 to other like T6963C, RA6963, ST75256P. </br>
 
-3. Create a VGA output 60Hz or Component YPbPr / Y-C SuperVideo 480i/p 50Hz / 60Hz: </br>
+4. Create a VGA output 60Hz or Component YPbPr / Y-C SuperVideo 480i/p 50Hz / 60Hz: </br>
 RGBHV signal 320x240 </br>
-VGA must be compatible with modern / cheap VGA to HDMI converters. </br>
+VGA must be compatible with modern / cheap VGA to HDMI converters, </br>
+from 10-pin signal or emulated LC7981 or modified Akai ROM. </br>
 
 There are many different sceens today, for PI and Arduino. </br>
 some graphical, some fixed characters, </br>
