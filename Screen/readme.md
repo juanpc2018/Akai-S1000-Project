@@ -24,9 +24,9 @@ A) Replace the backlight of the original screen, slide-in </br>
 with a cellphone backlight, and cut to proper size. </br>
 
 B) Replace the whole screen with a New LM200 compatible LED or OLED, </br>
-No LC7981 Controller on the screen,  </br>
-Positive or Negative "Dark Background, White Letters". </br>
-Replacing old screen with a New screen that has the controller Built-in is similar to Method C)  </br>
+10-pin version = No LC7981 Controller built-in,  </br>
+Positive "Blue/White" or Negative "Dark/White". </br>
+Replacing old screen with a New screen that has controller Built-in is similar to Method C) </br>
 
 C) Replace Original screen with incompatible screen. </br>
 
