@@ -51,6 +51,7 @@ Akai VX600 </br>
 
 New LED Screen = NO NEED for Inverter. </br>
 simple installation (No soldering required). </br>
+
 This is Not a long term sollution if New 10-pin compatible screens are No longer manufactured. </br>
 price is already double vs. similar 240x64 screen. </br>
 
@@ -64,14 +65,15 @@ this is the less invasive method, </br>
 Not a long term sollution if LC7981 on the S1000 fail. </br>
 
 3. Invasive method: </br>
-Desolder Sanyo LC7981 IC on the S1000 </br>
-A) Remplace screen with built-in LC7981. </br>
-B) Emulate LC7981 with a micro like ATmega2560, FPGA, STM32 or similar.. </br>
+Desolder LC7981 on the S1000 </br>
+A) Remplace screen with built-in LC7981 compaticle controller. </br>
+B) Emulate LC7981 with a micro: ATmega2560, FPGA, STM32 or similar.. </br>
 Read signals from Nec v50 "8088" CPU and 16-Bit multiplexer TEL TE7730 </br>
 Translate LC7981 instructions to other graphical screen controller instructions. </br>
 C) Modify Akai S1000 ROM Firmware to replace Sanyo LC7981 to other like T6963C, RA6963, ST75256P. </br>
 
-4. Create a VGA output 60Hz or Component YPbPr / Y-C SuperVideo 480i/p 50Hz / 60Hz: </br>
+4. Create a VGA output 60Hz or Compositre, Component YPbPr, Y-C SuperVideo, </btr>
+480i/p 50Hz / 60Hz or </br>
 RGBHV signal 320x240 </br>
 VGA must be compatible with modern / cheap VGA to HDMI converters, </br>
 from 10-pin signal or emulated LC7981 or modified Akai ROM. </br>
