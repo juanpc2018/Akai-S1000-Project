@@ -50,13 +50,15 @@ Akai VX600 </br>
 
 New LED Screen = NO NEED for Inverter. </br>
 simple installation (No soldering required). </br>
+but is Not a long term sollution if New 10-pin compatible screens are No longer manufactured. </br>
+price is already double vs. New 240x64 screen. </br>
 
 Method C) is the most complicated, </br>
 There are 3 ways to do it, </br>
 1. Translate signals coming from 10-pin connector,</br>
-from Sanyo LC controller out with a micro like ATmega, FPGA, STM32 or similar, </br>
+from Sanyo LC7981 with a micro like ATmega, FPGA, STM32 or similar, </br>
 Screen clock is around ~500kHz. </br>
-this is the less invasive method. </br>
+this is the less invasive method, but is Not a long term sollution if LC7981 fail. </br>
 
 2. Invasive method: </br>
 desolder the Sanyo LC controller, </br>
