@@ -28,10 +28,11 @@ there are several options. </br>
 Option: </br>
 A) Intel Edison an x86 Atom CPU 386-Pentium, dual core, 500MHz, 1GB Ram, </br>
 but pins are incompatible. </br>
-B) Mame CPU emulator, for making a "Virtual S-1000",</br>
+B) Mame CPU emulator or similar, for making a "Virtual S-1000",</br>
 Virtual S-1000 could be used to test modifications, similar to Commander X16. </br>
 but the goal is to make a Real S-1000. </br>
-in theory PCem can also be used to make a Virtual S-1000 </br>
+in theory [PCem](https://www.pcem-emulator.co.uk/), and [86box](http://86box.net/2022/11/26/86box-v3-11.html) can also be used to make a Virtual S-1000 </br>
+ 
 C) Altera Terasic DE10nano or better FPGA with 80186 core, Cyclone III/IV </br> 
 FPGA can be pin compatible with V50, </br>
 but Emulation always has a layer of uncertainty, </br>
@@ -44,6 +45,10 @@ Seems Akai S-1000 is based on a modified XT/286 board, with Apple inspired Nubus
 dedicated Only for Audio, that Runs entirely on the Bios. </br>
 
 Links: </br>
+Mame CPUs </br>
+[NEC](https://github.com/mamedev/mame/tree/master/src/devices/cpu/nec) </br>
+[i186](https://github.com/mamedev/mame/tree/master/src/devices/cpu/i86) </br>
+
 https://www.cpu-world.com/CPUs/V50/NEC-D70216GF-8.html </br>
 http://www.scss.com.au/family/andrew/pdas/psion/v30inst.pdf </br>
 https://www.datasheetarchive.com/pdf/download.php?id=5105ac5fdbf4b3f06cfde451ad5c0ff3da23ce&type=M&term=UPD70208GF103B9 </br>
