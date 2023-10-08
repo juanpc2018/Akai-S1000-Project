@@ -7,16 +7,13 @@ NEC V50 </br>
 used in:  </br>
 [Psion Series 3](https://en.wikipedia.org/wiki/Psion_Series_3) </br>
 Korg M1 </br>
-
-V20 was a popular speed upgrade for 8088 XT machines. </br>
+[V20](https://en.wikipedia.org/wiki/NEC_V20) popular speed upgrade for 8088 XT machines. </br>
 
 V50 is pin compatible, code compatible with 80186 "x86 on Steroids" Lawsuit included. </br>
-https://en.wikipedia.org/wiki/NEC_V20 </br>
-
-V20 is a faster 8-Bit 8088 </br> 
-V30 is a 16-Bit 8086 with more instructions = 80186, pre-80286 era. </br>
+V20 is a 5%-15% faster 8-Bit 8088 at same clock speed </br> 
+V30 is a 16-Bit like 8086 with more instructions = 80186, pre-80286 era. </br>
 V50 is a version of the v30, different package. </br>
-"Embedded V30" Runs at 8MHz, but connected to a 16MHz XO, internally divided. </br>
+"Embedded V30" similar package to 386sx, Runs at 8MHz, connected to a 16MHz XO, internally divided. </br>
 V60 is completely different architecture "after lawsuit" </br>
 
 since V50 Nor 80186 are No longer made, and V50 is Surface mount package, </br>
