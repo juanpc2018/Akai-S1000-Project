@@ -55,6 +55,8 @@ https://web.archive.org/web/20061207021425/http://www.emccsoft.com:80/devzone/pp
 http://www.scss.com.au/family/andrew/pdas/psion/myprogs/ </br>
 https://archive.org/search?query=+Programming+Psion+Computers </br>
 http://www.scss.com.au/family/andrew/pdas/psion/ </br>
+http://www.oldskool.org/guides/tvdog/documents.html </br>
+https://www.pcorner.com/list/MISC/NEC-V20.ZIP/INFO/ </br>
 
 -------
 
