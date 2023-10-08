@@ -5,8 +5,8 @@ NEC V50 </br>
 1984 </br>
 
 used in:  </br>
-https://en.wikipedia.org/wiki/Psion_Series_3 </br>
-Korm M1 </br>
+[Psion Series 3](https://en.wikipedia.org/wiki/Psion_Series_3) </br>
+Korg M1 </br>
 
 V20 was a popular speed upgrade for 8088 XT machines. </br>
 
