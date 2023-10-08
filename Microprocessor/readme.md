@@ -1,15 +1,49 @@
 CPU / Microprocessor </br>
 
-NEC uPD70216GF-8 V50 </br>
+NEC uPD70216GF-8 also known as:</br>
+NEC V50 </br>
 1984 </br>
 
-similar used in:  </br>
+used in:  </br>
 https://en.wikipedia.org/wiki/Psion_Series_3 </br>
+Korm M1 </br>
 
-pin compatible, code compatible with 8088 "x86 architecture on Steroids." Lawsuit included. </br>
+V20 was a popular speed upgrade for 8088 XT machines. </br>
+
+V50 is pin compatible, code compatible with 80186 "x86 on Steroids" Lawsuit included. </br>
 https://en.wikipedia.org/wiki/NEC_V20 </br>
-V50 "Embedded V20" Runs at 8MHz, but its connected to a 16MHz XO, internally divided. </br>
 
+V20 is a faster 8-Bit 8088 </br> 
+V30 is a 16-Bit 8086 with more instructions = 80186, pre-80286 era. </br>
+V50 is a version of the v30, different package. </br>
+"Embedded V30" Runs at 8MHz, but connected to a 16MHz XO, internally divided. </br>
+V60 is completely different architecture "after lawsuit" </br>
+
+since V50 Nor 80186 are No longer made, and V50 is Surface mount package, </br>
+Not like V20 that was through hole DIP </br>
+to keep the S-1000 alive, </br>
+requires a CPU replacement, pin & opcode compatible, </br>
+there are several options. </br>
+
+Option: </br>
+A) Intel Edison its an x86 Atom CPU 386-Pentium, dual core, 500MHz, 1GB Ram, </br>
+but pins are incompatible. </br>
+B) Mame CPU emulator, for making a "Virtual S-1000",</br>
+Virtual S-1000 could be used to test modifications, similar to Commander X16. </br>
+but the goal is to make a Real S-1000. </br>
+in theory PCem can also be used to make a Virtual S-1000 </br>
+C) Altera Terasic DE10nano or better FPGA with 80186 core, Cyclone III/IV </br> 
+FPGA can be pin compatible with V50, </br>
+but Emulation always has a layer of uncertainty, </br>
+Emulator Timings may Not be clock perfect, like the real V50,</br> 
+instructions can have Bugs, etc...</br> but all that can be solved in time</br>
+Out-of-the-Box, Edison could be a better replacement, </br>
+but Edison is "Abandonware" and FPGA still rocks.</br>
+
+Seems Akai S-1000 is based on a modified XT/286 board, dedicated for Audio,</br>
+that Runs entirely on the Bios. </br>
+
+Links: </br>
 https://www.cpu-world.com/CPUs/V50/NEC-D70216GF-8.html </br>
 http://www.scss.com.au/family/andrew/pdas/psion/v30inst.pdf </br>
 https://www.datasheetarchive.com/pdf/download.php?id=5105ac5fdbf4b3f06cfde451ad5c0ff3da23ce&type=M&term=UPD70208GF103B9 </br>
