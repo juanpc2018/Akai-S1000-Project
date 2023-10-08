@@ -40,8 +40,8 @@ instructions can have Bugs, etc...</br> but all that can be solved in time</br>
 Out-of-the-Box, Edison could be a better replacement, </br>
 but Edison is "Abandonware" and FPGA still rocks.</br>
 
-Seems Akai S-1000 is based on a modified XT/286 board, dedicated for Audio,</br>
-that Runs entirely on the Bios. </br>
+Seems Akai S-1000 is based on a modified XT/286 board, with Apple inspired Nubus type connectors </br>
+dedicated Only for Audio, that Runs entirely on the Bios. </br>
 
 Links: </br>
 https://www.cpu-world.com/CPUs/V50/NEC-D70216GF-8.html </br>
