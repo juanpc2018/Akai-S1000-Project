@@ -23,7 +23,7 @@ requires a CPU replacement, pin & opcode compatible, </br>
 there are several options. </br>
 
 Option: </br>
-A) Intel Edison an x86 Atom CPU 386-Pentium, dual core, 500MHz, 1GB Ram, </br>
+A) Intel Edison x86 Atom CPU 386-Pentium, dual core, 500MHz, 1GB Ram, </br>
 but pins are incompatible. </br>
 B) Mame CPU emulator or similar, for making a "Virtual S-1000",</br>
 Virtual S-1000 could be used to test modifications, similar to Commander X16. </br>
