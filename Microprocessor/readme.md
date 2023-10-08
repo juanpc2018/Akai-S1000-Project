@@ -7,7 +7,7 @@ NEC V50 </br>
 used in:  </br>
 [Psion Series 3](https://en.wikipedia.org/wiki/Psion_Series_3) </br>
 Korg M1 </br>
-[V20](https://en.wikipedia.org/wiki/NEC_V20) popular speed upgrade for 8088 XT machines. </br>
+[V20](https://en.wikipedia.org/wiki/NEC_V20) speed upgrade for 8088 XT machines. </br>
 
 V50 is pin compatible, code compatible with 80186 "x86 on Steroids" Lawsuit included. </br>
 V20 is a 5%-15% faster 8-Bit 8088 at same clock speed </br> 
