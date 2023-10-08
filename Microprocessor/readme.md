@@ -14,7 +14,7 @@ V20 is a 5%-15% faster 8-Bit 8088 at same clock speed </br>
 V30 is a 16-Bit like 8086 with more instructions = 80186, pre-80286 era. </br>
 V50 is a version of the v30, different package. </br>
 "Embedded V30" similar package to 386sx, Runs at 8MHz, connected to a 16MHz XO, internally divided. </br>
-V60 is completely different architecture "after lawsuit" </br>
+V60 is a completely different architecture "after lawsuit" </br>
 
 since V50 Nor 80186 are No longer made, and V50 is Surface mount package, </br>
 Not like V20 that was through hole DIP </br>
