@@ -58,7 +58,7 @@ price is already double vs. similar 240x64 screen. </br>
 
 Method C) the most complicated, </br>
 There are 3 ways to do it, </br>
-1. Less invasive method:
+1. Less invasive method: </br>
 Translate signals coming from 10-pin connector,</br>
 from Sanyo LC7981 with a micro like ATmega, FPGA, STM32 or similar, </br>
 Screen clock is around ~500kHz. </br>
