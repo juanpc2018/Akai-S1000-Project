@@ -1,19 +1,22 @@
-The Screen is a Hitachi LM200 240x64 pixels with HD44104 driver IC</br>
-180x75mm PCB, 132x39mm screen, 127x34mm pixel area, 1.6mm pcb, 4.5~6.0mm front depth </br>
+Screen is a Hitachi LM200 240x64 pixels with HD44104 driver IC</br>
+180x75mm PCB, </br>
+132x39mm screen, </br>
+127x34mm pixel area, </br>
+1.6mm pcb, 4.5~6.0mm front depth </br>
 controller is Not on the Screen, like most screens. </br>
 
 LM213B 256x64 is the only with built-in controller from that era. </br>
-LM215 480x128 a bit Bigger size. </br>
+LM215 480x128 Bigger. </br>
 
 LM200 was designed for Hitachi HD61830 control LSI, </br>
-Not the common HD44780 like Sitronix ST7920 </br>
+Not the common HD44780, like Sitronix ST7920 </br>
 but... </br>
 Akai S1000 has Sanyo LC7981 control LSI, </br>
 Sony CXK5816PN-12L Memory.</br>
 
 Akai S1000 display circuit is similar to CB1020R. </br>
-HD61830 developer boards: </br>
-Hitachi "Control Circuit Board" CB-Series:  </br>
+Hitachi HD61830 developer boards: </br>
+"Control Circuit Board" CB-Series:  </br>
 CB1020R, CB1026R, CB1030R. </br>
 
 ------
@@ -48,7 +51,7 @@ Akai S3200XL </br>
 Akai VX600 </br>
 
 New LED Screen = No Inverter. </br>
-simple installation (No soldering). </br>
+simple installation ("No soldering"). </br>
 
 This is Not a long term sollution if New 10-pin compatible screens are No longer manufactured. </br>
 price is already double vs. similar 240x64 screen. </br>
