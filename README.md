@@ -19,9 +19,9 @@ close but never the same. </br>
 The reasons are simple: </br>
 Modern CPU has 10 Million Interrupts per second, </br>
 Audio Algorithms do Not like to be interrupted. </br>
-Maybe L1 cache is Not Big Enough for a modern OS, </br>
+L1/L2/L3 cache is Not Big Enough for a modern OS, </br>
 Modern CPU's have Branch Prediction algorithms </br>
-predictions are used to fake "increase" speed by guessing the result before result is computed </br>
+predictions are used to "fake" increase speed by guessing the result before result is computed </br>
 but predictions can never be 100% accurate, and millions of predictions per second, affect sound. </br>
 There is something lost, distorted in the process, makes sound plastic / artificial. </br> 
 
