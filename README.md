@@ -78,7 +78,10 @@ There were many 3rd party 8MB developers in the 90s, </br>
 most used different chipset, some had resistor networks, capacitors, others Not, </br>
 some had electrolitics, others tantalum, some branded, some generic. </br>
 i have a 8MB Generic 4-layer PCB, </br>
-16x Ti TMS44100DJ PCP 4063 IN -80 + 2x 74HC541 + 2x 74AC541 + 3x Res Net 4-101GB. </br> 
+16x Ti TMS44100DJ PCP 4063 IN -80 </br>
+2x 74HC541 </br>
+2x 74AC541 </br>
+3x Res Net 4-101GB </br> 
 
 32MB of RAM is plenty for a single instrument. </br>
 A) download a very large SoundFont like: Musyng Kite.sf2 and split the instruments, </br>
