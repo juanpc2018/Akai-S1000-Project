@@ -112,7 +112,7 @@ miniature screen could be fun, </br>
 with a magnifier fresnel lens in front, to see from far. </br>
 
 There is a Wide screeen 256x64 [SSD1322](https://support.newhavendisplay.com/hc/en-us/articles/4414477846679-SSD1322) controller </br>
-2.8" NHD-2.8-25664UCB2 Blue </br>
-3.12" NHD-3.12-25664UCB2 Blue </br>
-3.12" NHD-3.12-25664UCW2 White </br>
+2.8" [NHD-2.8-25664UCB2](https://newhavendisplay.com/2-8-inch-blue-graphic-oled-module/) Blue </br>
+3.12" [NHD-3.12-25664UCB2](https://newhavendisplay.com/3-12-inch-blue-graphic-oled-module/) Blue </br>
+3.12" [NHD-3.12-25664UCW2](https://newhavendisplay.com/3-12-inch-white-graphic-oled-module/) White </br>
 other similar brands have the connector on the side, Not on the Top. </br>
