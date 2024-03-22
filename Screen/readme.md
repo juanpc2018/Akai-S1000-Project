@@ -56,7 +56,7 @@ simple installation ("No soldering"). </br>
 This is Not a long term sollution if New 10-pin compatible screens are No longer manufactured. </br>
 price is already double vs. similar 240x64 screen. </br>
 
-Method C) most complicated, </br>
+Method C) the most complicated, </br>
 There are 3 ways to do it, </br>
 1. Less invasive method:
 Translate signals coming from 10-pin connector,</br>
