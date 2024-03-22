@@ -14,13 +14,16 @@ the problem with Software vs. Real S1000 Hardware, Real EPROM v2.2 </br>
 is the same problem with all software: </br>
 CPU vs. DSP </br>
 No matter how good the code is, </br>
-CPU can never have the same result, </br>
+SW can never have the same result, </br>
 close but never the same. </br>
 The reasons are simple: </br>
-CPU has 10 Million Interrupts per second, </br>
+Modern CPU has 10 Million Interrupts per second, </br>
 Audio Algorithms do Not like to be interrupted. </br>
-L1 cache is Not Big Enough, </br>
-There is something lost, or distorted in the process. </br> 
+Maybe L1 cache is Not Big Enough for a modern OS, </br>
+Modern CPU's have Branch Prediction algorithms </br>
+predictions are used to fake "increase" speed by guessing the result before result is computed </br>
+but predictions can never be 100% accurate, and millions of predictions per second, affect sound. </br>
+There is something lost, distorted in the process, makes sound plastic / artificial. </br> 
 
 Digital Audio is a Serial Sample & Hold,  </br>
 Interrupts create another Sample & Hold on top of that Sample & Hold. </br>
