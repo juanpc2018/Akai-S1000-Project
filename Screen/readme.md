@@ -55,7 +55,7 @@ simple installation (No soldering required). </br>
 This is Not a long term sollution if New 10-pin compatible screens are No longer manufactured. </br>
 price is already double vs. similar 240x64 screen. </br>
 
-Method C) is the most complicated, </br>
+Method C) the most complicated, </br>
 There are 3 ways to do it, </br>
 1. Translate signals coming from 10-pin connector,</br>
 from Sanyo LC7981 with a micro like ATmega, FPGA, STM32 or similar, </br>
@@ -66,11 +66,11 @@ Not a long term sollution if LC7981 on the S1000 fail. </br>
 
 3. Invasive method: </br>
 Desolder LC7981 on the S1000 </br>
-A) Remplace screen with built-in LC7981 compaticle controller. </br>
-B) Emulate LC7981 with a micro: ATmega2560, FPGA, STM32 or similar.. </br>
-Read signals from Nec v50 "8088" CPU and 16-Bit multiplexer TEL TE7730 </br>
-Translate LC7981 instructions to other graphical screen controller instructions. </br>
-C) Modify Akai S1000 ROM Firmware to replace Sanyo LC7981 to other like T6963C, RA6963, ST75256P. </br>
+A) Replace screen with built-in LC7981 compaticle controller. </br>
+B) Emulate LC7981 with micro: ATmega2560, FPGA, STM32 or similar.. </br>
+Read signals from Nec v50 "80186" CPU and 16-Bit multiplexer TEL TE7730 </br>
+Translate LC7981 type signals to other graphical screen controller. </br>
+C) Modify Akai S1000 ROM Firmware to replace Sanyo LC7981 to other like T6963C, RA6963, ST75256P, SSD1322. </br>
 
 4. Create a VGA output 60Hz or Compositre, Component YPbPr, Y-C SuperVideo, </btr>
 480i/p 50Hz / 60Hz or </br>
@@ -78,7 +78,7 @@ RGBHV signal 320x240 </br>
 VGA must be compatible with modern / cheap VGA to HDMI converters, </br>
 from 10-pin signal or emulated LC7981 or modified Akai ROM. </br>
 
-There are many different sceens today, for PI and Arduino. </br>
+There are many different sceens today, for Pi and Arduino. </br>
 some graphical, some fixed characters, </br>
 Example: </br>
 SSD1306 0.96" </br>
@@ -88,7 +88,7 @@ SSD1306 are tiny small, miniature, micro size. </br>
 thats miniaturizing too much. </br>
 sister screen: </br>
 SH1106 is a bit bigger 1.3" x2 but still small. </br>
-
+ther is a bigger 2.42" hard to find <br>
 Adafruit-4393 miniPiTFT 1.14" 240x135, smaller.  </br>
 
 Same Jumbo Pixel Size: </br>
@@ -113,3 +113,8 @@ or same pixel size. </br>
 miniature screen could be fun, but Not a long term sollution, </br>
 unless you have a magnifier fresnel lens in front, to see from far. </br>
 
+There is a Wide screeen 256x64 [SSD1322](https://support.newhavendisplay.com/hc/en-us/articles/4414477846679-SSD1322) controller </br>
+2.8" NHD-2.8-25664UCB2 Mono-Blue </br>
+3.12" NHD-3.12-25664UCB2 Blue </br>
+3.12" NHD-3.12-25664UCW2 White </br>
+other brands have the connector on the side, Not on the Top. </br>
