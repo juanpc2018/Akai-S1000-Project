@@ -70,8 +70,8 @@ Desolder LC7981 on the S1000 </br>
 A) Replace screen with built-in LC7981 compaticle controller. </br>
 B) Emulate LC7981 with micro: ATmega2560, FPGA, STM32 or similar.. </br>
 Read signals from Nec v50 "80186" CPU and 16-Bit multiplexer TEL TE7730 </br>
-Translate LC7981 type signals to other graphical screen controller. </br>
-C) Modify Akai S1000 ROM Firmware to replace Sanyo LC7981 to other like T6963C, RA6963, ST75256P, SSD1322. </br>
+Translate LC7981 commands to other graphical screen controller. </br>
+C) Modify Akai S1000 ROM Firmware to replace LC7981, to other like T6963C, RA6963, ST75256P, SSD1322. </br>
 
 3. Create a VGA output 60Hz or Compositre, Component YPbPr, Y-C SuperVideo, </btr>
 480i/p 50Hz / 60Hz or </br>
