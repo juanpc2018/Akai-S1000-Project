@@ -58,7 +58,7 @@ example: Chauvet Q-Scan 250 </br>
 #4. The S1000 Service Manual is very Basic, only has DC offset "Class A/B" calibration procedure for the AD/DA boards, </br>
 does Not even tell what voltage to measure in the SMPS & Linear PSUs, you have to unscrew the PSU to know its a 5v 6A, </br>
 take photos of the linear regulators to know the voltages for the Analog circuit. </br>
-the Original Back Panel PSU / Transformer / Flyback or what ever it is... is Unknown. </br>
+the Original Back Panel PSU / Transformer / Flyback / Inverter... is Unknown. </br>
 
 The Project RoadMap: </br>
 1. Collect all information. </br>
