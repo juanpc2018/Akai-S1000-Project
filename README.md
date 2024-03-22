@@ -62,8 +62,8 @@ the Original Back Panel PSU / Transformer / Flyback / Inverter... is Unknown. </
 
 The Project RoadMap: </br>
 1. Collect all information. </br>
-2. Recreate all boards in KiCAd or similar, Target3001!, etc... </br>
-3. Reduce Size, Replace all CMOS logic with FPGA. </br> 
+2. Recreate all boards in KiCad or similar: Target3001!, etc... </br>
+3. Reduce Size, Replace all CMOS logic with FPGA or micros. </br> 
 mini Akai S1000, similar to PiAmiga and A1500 Amiga cases. </br>
 4. design a complete SMT version. </br>
 5. replace hard to find components with easy to find components, like the screen, </br>
